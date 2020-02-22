@@ -1,0 +1,6 @@
+.DS_Store
+.vscode/
+data/
+*.csv
+*.mat
+__pycache__
