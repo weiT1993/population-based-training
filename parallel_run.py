@@ -3,6 +3,7 @@ from worker import Worker
 from mpi4py import MPI
 from models import create_FCNN
 from utils.datasets import get_dataset
+import tensorflow as tf
 
 def evolve(comm, worker, generation, epochs):
     population_size = comm.Get_size()
@@ -17,6 +18,7 @@ def evolve(comm, worker, generation, epochs):
 
         max_score = worker.score
         max_idx = worker.idx
+        max_model = worker.model
         for i in range(population_size-1):
             state = MPI.Status()
             worker_generation, worker_idx, worker_score = comm.recv(source=MPI.ANY_SOURCE,status=state)
@@ -25,6 +27,7 @@ def evolve(comm, worker, generation, epochs):
                 max_score = worker_score
                 max_idx = worker_idx
         
+        max_model.save('./checkpoints/generation_%d.h5'%generation)
         for i in range(population_size-1):
             comm.send((generation,max_idx,max_score), dest=i)
     else:
@@ -42,9 +45,11 @@ def evolve(comm, worker, generation, epochs):
     # print('Generation %d: Worker-%d START with %.3f'%(generation,worker.idx,worker.score),flush=True)
     
     if worker.idx != max_idx:
-        worker.exploit(max_score=max_score)
+        max_model = tf.keras.models.load_model('./checkpoints/generation_%d.h5'%generation)
+        worker.exploit(best_model=max_model)
         worker.explore()
-        print('Generation %d: Worker-%d inherited from worker-%d = %.3f, explore'%(generation,worker.idx,max_idx,max_score),flush=True)
+        print('Generation %d: Worker-%d inherited from worker-%d = %.3f, exploited score = %.3f'%(
+            generation,worker.idx,max_idx,max_score,worker.score),flush=True)
     
     if worker.idx == population_size-1:
         for i in range(population_size-1):
@@ -52,11 +57,11 @@ def evolve(comm, worker, generation, epochs):
             end_signal = comm.recv(source=MPI.ANY_SOURCE,status=state)
             if end_signal != 'Generation %d DONE'%generation:
                 raise Exception('Illegal end_signal : ',end_signal)
-        print('Generation %d: Worker-%d DONE with %.3f'%(generation,worker.idx,worker.score),flush=True)
+        # print('Generation %d: Worker-%d DONE with %.3f'%(generation,worker.idx,worker.score),flush=True)
         print('-'*30,'Generation %d DONE'%generation,'-'*30,flush=True)
     else:
         comm.send('Generation %d DONE'%generation, dest=population_size-1)
-        print('Generation %d: Worker-%d DONE with %.3f'%(generation,worker.idx,worker.score),flush=True)
+        # print('Generation %d: Worker-%d DONE with %.3f'%(generation,worker.idx,worker.score),flush=True)
 
 if __name__ == '__main__':
     comm = MPI.COMM_WORLD

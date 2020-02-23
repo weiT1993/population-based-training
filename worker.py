@@ -14,8 +14,10 @@ class Worker():
         x_valid, y_valid = self.dataset_valid
         self.score = self.model.evaluate(x_valid, y_valid, verbose=0)[1]
 
-    def exploit(self,max_score):
-        self.score = max_score
+    def exploit(self,best_model):
+        self.best_model = best_model
+        x_valid, y_valid = self.dataset_valid
+        self.score = self.best_model.evaluate(x_valid, y_valid, verbose=0)[1]
     
     def explore(self):
-        1+1
+        self.model = self.best_model
