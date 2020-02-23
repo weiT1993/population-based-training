@@ -6,7 +6,7 @@ import os
 import pickle
 
 def read_mat(file_name, time_range, concat):
-    print("Loading %s" % file_name)
+    # print("Loading %s" % file_name)
     f = loadmat(file_name)
     ground_I = np.array(f.get('groundI'))[:,310:min(310+time_range, 2048)]
     ground_Q = np.array(f.get('groundQ'))[:,310:min(310+time_range, 2048)]
