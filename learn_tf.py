@@ -2,7 +2,6 @@ import tensorflow as tf
 import numpy as np
 from utils.datasets import get_dataset
 
-
 (x_train, y_train), (x_test, y_test) = get_dataset(data_file='./data/power_15freq_7.3202.mat',time_range=300,concat=False)
 
 print(type(x_train))
