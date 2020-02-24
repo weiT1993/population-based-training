@@ -1,4 +1,4 @@
-import random
+import tensorflow as tf
 
 class Worker():
     def __init__(self, idx, model, dataset_train, dataset_valid):
@@ -14,10 +14,20 @@ class Worker():
         x_valid, y_valid = self.dataset_valid
         self.score = self.model.evaluate(x_valid, y_valid, verbose=0)[1]
 
-    def exploit(self,best_model):
-        self.best_model = best_model
+    def exploit(self,best_model_h5):
+        best_model = tf.keras.models.load_model(best_model_h5)
+        old_score = self.score
+        print('Worker-%d exploit, old score = %.5f'%(self.idx,old_score))
         x_valid, y_valid = self.dataset_valid
-        self.score = self.best_model.evaluate(x_valid, y_valid, verbose=0)[1]
+        new_score = best_model.evaluate(x_valid, y_valid, verbose=0)[1]
+        print('Worker-%d exploit, new score = %.5f'%(self.idx,new_score))
+        print('Worker-%d exploit, %.5f-->%.5f'%(self.idx,old_score,new_score),flush=True)
     
     def explore(self):
-        self.model = self.best_model
+        # # self.model.summary()
+        # # self.best_model.summary()
+        # best_weights = self.best_model.weights
+        # print(type(best_weights))
+        # print(type(best_weights[0]))
+        # print(best_weights[0])
+        1+1
