@@ -1,5 +1,5 @@
 import tensorflow as tf
-from models import explore_FCNN, create_FCNN
+from models import explore_FCNN, create_FCNN, create_CNN, explore_CNN
 
 class Worker():
     def __init__(self, idx, model, dataset_train, dataset_valid):
@@ -26,9 +26,9 @@ class Worker():
         x_valid, y_valid = self.dataset_valid
         best_score = self.best_model.evaluate(x_valid, y_valid, verbose=0)[1]
         if best_score < 0.8:
-            self.model = create_FCNN(num_layers=3,worker_idx=self.idx)
+            self.model = create_CNN(num_layers=3,worker_idx=self.idx)
             print('Worker-%d resample, %.5f'%(self.idx,old_score),flush=True)
         else:
-            self.model = explore_FCNN(good_model=self.best_model, bad_model=self.model, worker_idx=self.idx)
+            self.model = explore_CNN(good_model=self.best_model, bad_model=self.model, worker_idx=self.idx)
             new_score = self.model.evaluate(x_valid, y_valid, verbose=0)[1]
             print('Worker-%d explore, %.5f-->%.5f'%(self.idx,old_score,new_score),flush=True)
