@@ -63,12 +63,15 @@ def save_winner(comm, worker, generation):
 
 def exploit_winner(comm, worker, generation):
     # print('Generation {:d}: Worker-{:d} has winner_idx = {}'.format(generation,worker.idx,worker.winner_idx),flush=True)
+    # NOTE: Should be better ways
+    random.seed(worker.idx)
     assert worker.winner_idx[0] == generation
     if worker.winner_idx[1] == worker.idx:
         pass
     else:
         while not os.path.isfile('./checkpoints/generation_%d.h5'%generation):
             time.sleep(1)
+        time.sleep(random.random())
         worker.exploit(best_model_h5='./checkpoints/generation_%d.h5'%generation)
         worker.explore()
 

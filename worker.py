@@ -18,10 +18,6 @@ class Worker():
 
     def exploit(self,best_model_h5):
         best_model = tf.keras.models.load_model(best_model_h5)
-        # old_score = self.score
-        # x_valid, y_valid = self.dataset_valid
-        # new_score = best_model.evaluate(x_valid, y_valid, verbose=0)[1]
-        # print('Worker-%d exploit, %.5f-->%.5f'%(self.idx,old_score,new_score),flush=True)
         self.best_model = best_model
     
     def explore(self):
