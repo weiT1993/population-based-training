@@ -3,4 +3,5 @@
 data/
 *.csv
 *.mat
+*.p
 __pycache__

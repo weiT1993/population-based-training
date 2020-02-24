@@ -43,19 +43,15 @@ def read_mat(file_name, time_range, concat):
 def read_file(filename):
     if os.path.isfile(filename):
         f = open(filename,'rb')
-        file_content = []
+        file_content = {}
         while 1:
             try:
-                row = pickle.load(f)
+                file_content.update(pickle.load(f))
             except (EOFError):
                 break
-            if len(file_content) == 0:
-                file_content = np.array(row)
-            else:
-                file_content = np.append(file_content,row,axis=0)
         f.close()
     else:
-        file_content = []
+        file_content = {}
     return file_content
 
 def find_rank_files(files,rank,num_workers):
