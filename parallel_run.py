@@ -101,6 +101,6 @@ if __name__ == '__main__':
     model = create_FCNN(num_layers=3, worker_idx=rank)
     worker = Worker(idx=rank,model=model,dataset_train=dataset_train,dataset_valid=dataset_valid)
 
-    max_generation = 2
+    max_generation = 50
     for i in range(max_generation):
         evolve(comm=comm, worker=worker, generation=i, max_generation=max_generation, epochs=3)
