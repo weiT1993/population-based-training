@@ -93,6 +93,7 @@ if __name__ == '__main__':
     else:
         state = MPI.Status()
         data_dict = comm.recv(source=size-1,status=state)
+        print('Rank %d received'%rank,data_dict.keys())
     
     dataset_train = data_dict['train']
     dataset_valid = data_dict['valid']
@@ -102,6 +103,6 @@ if __name__ == '__main__':
     worker = Worker(idx=rank,model=model,dataset_train=dataset_train,dataset_valid=dataset_valid)
     worker.model.summary()
 
-    max_generation = 1
+    max_generation = 10
     for i in range(max_generation):
         evolve(comm=comm, worker=worker, generation=i, max_generation=max_generation, epochs=3)
