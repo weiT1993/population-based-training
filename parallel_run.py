@@ -70,6 +70,7 @@ def exploit_winner(comm, worker, generation):
         while not os.path.isfile('./checkpoints/generation_%d.h5'%generation):
             time.sleep(1)
         worker.exploit(best_model_h5='./checkpoints/generation_%d.h5'%generation)
+        worker.explore()
 
 def evolve(comm, worker, generation, epochs):
     train(comm, worker, generation, epochs)
@@ -93,8 +94,8 @@ if __name__ == '__main__':
     dataset_valid = data_dict['valid']
     dataset_test = data_dict['test']
 
-    model = create_FCNN(num_layers=3)
+    model = create_FCNN(num_layers=3, worker_idx=rank)
     worker = Worker(idx=rank,model=model,dataset_train=dataset_train,dataset_valid=dataset_valid)
 
-    for i in range(3):
-        evolve(comm=comm, worker=worker, generation=i, epochs=1)
+    for i in range(5):
+        evolve(comm=comm, worker=worker, generation=i, epochs=3)
