@@ -2,6 +2,7 @@ import time
 import random
 import pickle
 import re
+import os
 from worker import Worker
 from mpi4py import MPI
 from models import create_FCNN
@@ -40,6 +41,7 @@ def save_winner(comm, worker, generation):
         if max_idx == worker.idx:
             worker.model.save('./checkpoints/generation_%d.h5'%generation,overwrite=True)
             print('Generation %d: Worker-%d saved best model'%(generation,worker.idx),flush=True)
+        worker.winner_idx = (generation, max_idx)
         for i in range(population_size-1):
             comm.send('Generation %d WINNER: %d'%(generation, max_idx), dest=i)
     else:
@@ -57,10 +59,22 @@ def save_winner(comm, worker, generation):
             if max_idx == worker.idx:
                 worker.model.save('./checkpoints/generation_%d.h5'%generation,overwrite=True)
                 print('Generation %d: Worker-%d saved best model'%(generation,worker.idx),flush=True)
+            worker.winner_idx = (generation, max_idx)
+
+def exploit_winner(comm, worker, generation):
+    # print('Generation {:d}: Worker-{:d} has winner_idx = {}'.format(generation,worker.idx,worker.winner_idx),flush=True)
+    assert worker.winner_idx[0] == generation
+    if worker.winner_idx[1] == worker.idx:
+        pass
+    else:
+        while not os.path.isfile('./checkpoints/generation_%d.h5'%generation):
+            time.sleep(1)
+        worker.exploit(best_model_h5='./checkpoints/generation_%d.h5'%generation)
 
 def evolve(comm, worker, generation, epochs):
     train(comm, worker, generation, epochs)
     save_winner(comm, worker, generation)
+    exploit_winner(comm, worker, generation)
 
 if __name__ == '__main__':
     comm = MPI.COMM_WORLD
