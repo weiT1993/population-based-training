@@ -25,7 +25,7 @@ def train(comm, worker, generation, epochs):
         assert start_signal == 'Generation %d START'%generation
     print('Generation %d: Worker-%d changed from %.5f to %.5f'%(generation,worker.idx,old_score,new_score),flush=True)
 
-def save_winner(comm, worker, generation):
+def save_winner(comm, worker, generation, max_generation):
     population_size = comm.Get_size()
     if worker.idx == population_size-1:
         max_score = worker.score
@@ -39,7 +39,8 @@ def save_winner(comm, worker, generation):
                 max_idx = worker_idx
         print('Generation %d: Worker-%d has best model, score = %.5f'%(generation,max_idx,max_score),flush=True)
         if max_idx == worker.idx:
-            worker.model.save('./checkpoints/generation_%d.h5'%generation,overwrite=True)
+            worker.model.save('./checkpoints/generation_%d.h5'%generation if generation<max_generation-1 else './checkpoints/final_architecture.h5',
+            overwrite=True)
             print('Generation %d: Worker-%d saved best model'%(generation,worker.idx),flush=True)
         worker.winner_idx = (generation, max_idx)
         for i in range(population_size-1):
@@ -57,25 +58,30 @@ def save_winner(comm, worker, generation):
             max_idx = int(m.group(2))
             assert comparison_generation == generation
             if max_idx == worker.idx:
-                worker.model.save('./checkpoints/generation_%d.h5'%generation,overwrite=True)
+                worker.model.save('./checkpoints/generation_%d.h5'%generation if generation<max_generation-1 else './checkpoints/final_architecture.h5',
+                overwrite=True)
                 print('Generation %d: Worker-%d saved best model'%(generation,worker.idx),flush=True)
             worker.winner_idx = (generation, max_idx)
 
 def exploit_winner(comm, worker, generation):
     # print('Generation {:d}: Worker-{:d} has winner_idx = {}'.format(generation,worker.idx,worker.winner_idx),flush=True)
+    # NOTE: Should be better ways
+    random.seed(worker.idx)
     assert worker.winner_idx[0] == generation
     if worker.winner_idx[1] == worker.idx:
         pass
     else:
         while not os.path.isfile('./checkpoints/generation_%d.h5'%generation):
             time.sleep(1)
+        time.sleep(random.random())
         worker.exploit(best_model_h5='./checkpoints/generation_%d.h5'%generation)
         worker.explore()
 
-def evolve(comm, worker, generation, epochs):
+def evolve(comm, worker, generation, max_generation, epochs):
     train(comm, worker, generation, epochs)
-    save_winner(comm, worker, generation)
-    exploit_winner(comm, worker, generation)
+    save_winner(comm, worker, generation,max_generation)
+    if generation<max_generation-1:
+        exploit_winner(comm, worker, generation)
 
 if __name__ == '__main__':
     comm = MPI.COMM_WORLD
@@ -97,5 +103,6 @@ if __name__ == '__main__':
     model = create_FCNN(num_layers=3, worker_idx=rank)
     worker = Worker(idx=rank,model=model,dataset_train=dataset_train,dataset_valid=dataset_valid)
 
-    for i in range(5):
-        evolve(comm=comm, worker=worker, generation=i, epochs=3)
+    max_generation = 3
+    for i in range(max_generation):
+        evolve(comm=comm, worker=worker, generation=i, max_generation=max_generation, epochs=3)
