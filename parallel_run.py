@@ -75,10 +75,11 @@ def exploit_winner(comm, worker, generation):
         worker.exploit(best_model_h5='./checkpoints/generation_%d.h5'%generation)
         worker.explore()
 
-def evolve(comm, worker, generation, epochs):
+def evolve(comm, worker, generation, max_generation, epochs):
     train(comm, worker, generation, epochs)
     save_winner(comm, worker, generation)
-    exploit_winner(comm, worker, generation)
+    if generation<max_generation-1:
+        exploit_winner(comm, worker, generation)
 
 if __name__ == '__main__':
     comm = MPI.COMM_WORLD
@@ -99,6 +100,8 @@ if __name__ == '__main__':
 
     model = create_FCNN(num_layers=3, worker_idx=rank)
     worker = Worker(idx=rank,model=model,dataset_train=dataset_train,dataset_valid=dataset_valid)
+    worker.model.summary()
 
-    for i in range(1000):
-        evolve(comm=comm, worker=worker, generation=i, epochs=3)
+    max_generation = 1
+    for i in range(max_generation):
+        evolve(comm=comm, worker=worker, generation=i, max_generation=max_generation, epochs=3)
