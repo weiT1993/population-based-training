@@ -26,37 +26,38 @@ def explore_FCNN(good_model, bad_model, worker_idx):
     explore_model = tf.keras.models.Sequential(tf.keras.layers.Flatten(input_shape=input_shape,name='input_layer_%d'%worker_idx))
 
     layer_ctr = 1
-    for good_l, bad_l in zip(good_layers[1:-1],bad_layers[1:-1]):
-        explore_output_shape = int(0.8*(good_l.output_shape[1] - bad_l.output_shape[1])) + good_l.output_shape[1]
-        
-        explore_layer = tf.keras.layers.Dense(explore_output_shape, 
-        activation=good_l.activation,
-        name='dense%d_%d'%(layer_ctr,worker_idx),
-        kernel_initializer=tf.keras.initializers.Zeros())
-        explore_model.add(explore_layer)
-        
-        good_kernel = good_l.weights[0].numpy()
-        explore_kernel = explore_layer.weights[0].numpy()
-        for i in range(explore_kernel.shape[0]):
-            for j in range(explore_kernel.shape[1]):
-                if i < good_kernel.shape[0] and j<good_kernel.shape[1]:
-                    explore_kernel[i][j] = good_kernel[i][j]
+    for good_l, bad_l in zip(good_layers[1:],bad_layers[1:]):
+        if layer_ctr<len(good_layers):
+            explore_output_shape = abs(int(0.8*(good_l.output_shape[1] - bad_l.output_shape[1]))) + good_l.output_shape[1]
+            assert explore_output_shape >= good_l.output_shape[1]
+            
+            explore_layer = tf.keras.layers.Dense(explore_output_shape,
+            activation=good_l.activation,
+            name='dense%d_%d'%(layer_ctr,worker_idx),
+            kernel_initializer=tf.keras.initializers.Zeros())
+            explore_model.add(explore_layer)
+            
+            good_kernel = good_l.weights[0].numpy()
+            explore_kernel = explore_layer.weights[0].numpy()
+            for i in range(explore_kernel.shape[0]):
+                for j in range(explore_kernel.shape[1]):
+                    if i < good_kernel.shape[0] and j<good_kernel.shape[1]:
+                        explore_kernel[i][j] = good_kernel[i][j]
+                    else:
+                        explore_kernel[i][j] = 0
+            explore_layer.weights[0].assign(explore_kernel)
+
+            good_bias = good_l.weights[1].numpy()
+            explore_bias = explore_layer.weights[1].numpy()
+            for i in range(explore_bias.shape[0]):
+                if i < good_bias.shape[0]:
+                    explore_bias[i] = good_bias[i]
                 else:
-                    explore_kernel[i][j] = 0
-        explore_layer.weights[0].assign(explore_kernel)
-
-        good_bias = good_l.weights[1].numpy()
-        explore_bias = explore_layer.weights[1].numpy()
-        for i in range(explore_bias.shape[0]):
-            if i < good_bias.shape[0]:
-                explore_bias[i] = good_bias[i]
-            else:
-                explore_bias[i] = 0
-        explore_layer.weights[1].assign(explore_bias)
-
+                    explore_bias[i] = 0
+            explore_layer.weights[1].assign(explore_bias)
+        else:
+            explore_model.add(good_l)
         layer_ctr += 1
-
-    explore_model.add(tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer_%d'%worker_idx))
 
     optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
 
