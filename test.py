@@ -7,7 +7,7 @@ x_train, y_train = data_dict['train']
 dataset_valid = data_dict['valid']
 x_test, y_test = data_dict['test']
 
-good_model = tf.keras.models.load_model('./checkpoints/generation_0.h5', custom_objects={'leaky_relu': tf.nn.leaky_relu,
+good_model = tf.keras.models.load_model('./checkpoints/final_architecture.h5', custom_objects={'leaky_relu': tf.nn.leaky_relu,
         'crelu_v2':tf.nn.crelu})
 good_model.fit(x_train, y_train, epochs=3, verbose=2)
 good_score = good_model.evaluate(x_test, y_test, verbose=0)[1]

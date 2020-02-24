@@ -27,8 +27,7 @@ class Worker():
         best_score = self.best_model.evaluate(x_valid, y_valid, verbose=0)[1]
         if best_score < 0.8:
             self.model = create_FCNN(num_layers=3,worker_idx=self.idx)
-            new_score = self.model.evaluate(x_valid, y_valid, verbose=0)[1]
-            print('Worker-%d resample, %.5f-->%.5f'%(self.idx,old_score,new_score),flush=True)
+            print('Worker-%d resample, %.5f'%(self.idx,old_score),flush=True)
         else:
             self.model = explore_FCNN(good_model=self.best_model, bad_model=self.model, worker_idx=self.idx)
             new_score = self.model.evaluate(x_valid, y_valid, verbose=0)[1]

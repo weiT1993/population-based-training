@@ -2,12 +2,17 @@ import tensorflow as tf
 import random
 
 def create_FCNN(num_layers, worker_idx):
+    random.seed(random.randint(worker_idx*1000,worker_idx*1000+1000))
     activations = ['sigmoid','selu','relu',tf.nn.leaky_relu]
 
     model = tf.keras.models.Sequential()
-    model.add(tf.keras.layers.Flatten(input_shape=(2, 300),name='input_layer_%d'%worker_idx))
+    input_layer = tf.keras.layers.Flatten(input_shape=(2, 300),name='input_layer_%d'%worker_idx)
+    model.add(input_layer)
+    kernel_size = 600
     for i in range(num_layers):
-        model.add(tf.keras.layers.Dense(random.randint(50,100), activation=random.choice(activations),name='dense%d_%d'%(i,worker_idx)))
+        kernel_size = random.randint(int(kernel_size/2),kernel_size)
+        dense_layer = tf.keras.layers.Dense(kernel_size, activation=random.choice(activations),name='dense%d_%d'%(i,worker_idx))
+        model.add(dense_layer)
     model.add(tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer_%d'%worker_idx))
 
     optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
@@ -34,13 +39,15 @@ def explore_FCNN(good_model, bad_model, worker_idx):
             continue
         elif 'output' in good_l.name:
             explore_output_shape = 2
+            layer_name = 'output_layer_%d'%worker_idx
         else:
-            explore_output_shape = max(abs(int(0.8*(good_l.output_shape[1] - bad_l.output_shape[1])) + good_l.output_shape[1]),3)
+            explore_output_shape = max(abs(int(0.8*(good_l.output_shape[1] - bad_l.output_shape[1])) + good_l.output_shape[1]),10)
+            layer_name = 'dense%d_%d'%(layer_ctr,worker_idx)
         # print('Layer-%d, good-%d, bad-%d, explore-%d'%(layer_ctr,good_l.output_shape[1],bad_l.output_shape[1],explore_output_shape))
         
         explore_layer = tf.keras.layers.Dense(explore_output_shape,
         activation=good_l.activation,
-        name='dense%d_%d'%(layer_ctr,worker_idx),
+        name=layer_name,
         kernel_initializer=tf.keras.initializers.Zeros())
         explore_model.add(explore_layer)
         
