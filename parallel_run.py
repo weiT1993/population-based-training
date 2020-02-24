@@ -83,6 +83,7 @@ if __name__ == '__main__':
 
     model = create_FCNN(num_layers=3)
     data_dict = read_file(filename='./data/dataset.p')
+    print(data_dict.keys())
     dataset_train = data_dict['train']
     dataset_valid = data_dict['valid']
     dataset_test = data_dict['test']
