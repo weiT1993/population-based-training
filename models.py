@@ -6,7 +6,7 @@ def create_FCNN(num_layers, worker_idx):
 
     model = tf.keras.models.Sequential()
     model.add(tf.keras.layers.Flatten(input_shape=(2, 300),name='input_layer_%d'%worker_idx))
-    for i in range(num_layers-1):
+    for i in range(num_layers):
         model.add(tf.keras.layers.Dense(random.randint(50,100), activation=random.choice(activations),name='dense%d_%d'%(i,worker_idx)))
     model.add(tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer_%d'%worker_idx))
 

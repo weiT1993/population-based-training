@@ -9,7 +9,7 @@ x_test, y_test = data_dict['test']
 
 good_model = tf.keras.models.load_model('./checkpoints/generation_0.h5', custom_objects={'leaky_relu': tf.nn.leaky_relu,
         'crelu_v2':tf.nn.crelu})
-good_model.fit(x_train, y_train, epochs=10, verbose=2)
+good_model.fit(x_train, y_train, epochs=3, verbose=2)
 good_score = good_model.evaluate(x_test, y_test, verbose=0)[1]
 
 worker_idx = -1
@@ -29,5 +29,6 @@ explore_pred = explore_model.predict(x_test[:1])
 good_pred = good_model.predict(x_test[:1])
 print(explore_pred,good_pred)
 
+bad_model.summary()
 good_model.summary()
 explore_model.summary()
