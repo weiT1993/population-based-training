@@ -13,6 +13,7 @@ class Worker():
         self.model.fit(x_train, y_train, epochs=epochs, verbose=0)
         x_valid, y_valid = self.dataset_valid
         self.score = self.model.evaluate(x_valid, y_valid, verbose=0)[1]
+        self.winner_idx = self.idx
 
     def exploit(self,best_model_h5):
         best_model = tf.keras.models.load_model(best_model_h5)
