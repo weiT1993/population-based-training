@@ -100,5 +100,5 @@ if __name__ == '__main__':
     model = create_FCNN(num_layers=3, worker_idx=rank)
     worker = Worker(idx=rank,model=model,dataset_train=dataset_train,dataset_valid=dataset_valid)
 
-    for i in range(5):
+    for i in range(1000):
         evolve(comm=comm, worker=worker, generation=i, epochs=3)
