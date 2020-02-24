@@ -7,6 +7,7 @@ from worker import Worker
 from mpi4py import MPI
 from models import create_FCNN
 from utils.datasets import get_dataset
+from utils.helper_fun import read_file
 import tensorflow as tf
 
 def train(comm, worker, generation, epochs):
@@ -80,13 +81,19 @@ if __name__ == '__main__':
     rank = comm.Get_rank()
     size = comm.Get_size()
 
-    model = create_FCNN(num_layers=3)
-    data_dict = pickle.load(open('./data/dataset.p','rb'))
-    print(data_dict.keys())
+    if rank == size-1:
+        data_dict = read_file(filename='./data/dataset.p')
+        for i in range(size-1):
+            comm.send(data_dict, dest=i)
+    else:
+        state = MPI.Status()
+        data_dict = comm.recv(source=size-1,status=state)
+    
     dataset_train = data_dict['train']
     dataset_valid = data_dict['valid']
     dataset_test = data_dict['test']
 
+    model = create_FCNN(num_layers=3)
     worker = Worker(idx=rank,model=model,dataset_train=dataset_train,dataset_valid=dataset_valid)
 
     for i in range(3):
