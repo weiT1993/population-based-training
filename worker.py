@@ -1,3 +1,5 @@
+import time
+import argparse
 import tensorflow as tf
 from models import explore_FCNN, create_FCNN
 
@@ -32,3 +34,18 @@ class Worker():
             self.model = explore_FCNN(good_model=self.best_model, bad_model=self.model, worker_idx=self.idx)
             new_score = self.model.evaluate(x_valid, y_valid, verbose=0)[1]
             print('Worker-%d explore, %.5f-->%.5f'%(self.idx,old_score,new_score),flush=True)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Worker instance')
+    parser.add_argument('--idx', metavar='N', type=int,help='Worker Index')
+    parser.add_argument('--phase', type=str, choices=['init','train','explore','exploit'])
+    args = parser.parse_args()
+
+    if args.phase == 'init':
+        print('Worker %d instantiated'%args.idx,flush=True)
+    elif args.phase == 'train':
+        print('Worker %d train'%args.idx,flush=True)
+    elif args.phase == 'explore':
+        print('Worker %d explore'%args.idx,flush=True)
+    else:
+        print('Worker %d exploit'%args.idx,flush=True)
