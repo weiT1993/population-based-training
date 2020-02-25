@@ -100,7 +100,7 @@ if __name__ == '__main__':
     dataset_valid = data_dict['valid']
     dataset_test = data_dict['test']
 
-    model = create_CNN(num_layers=3, worker_idx=rank)
+    model = create_FCNN(num_layers=3, worker_idx=rank)
     worker = Worker(idx=rank,model=model,dataset_train=dataset_train,dataset_valid=dataset_valid)
 
     max_generation = 3
