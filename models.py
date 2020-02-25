@@ -78,3 +78,23 @@ def explore_FCNN(good_model, bad_model, worker_idx):
     metrics=['accuracy'])
 
     return explore_model
+
+def create_CNN(num_layers, worker_idx):
+    activations = ['sigmoid','selu','relu',tf.nn.leaky_relu]
+    model = tf.keras.models.Sequential()
+    model.add(tf.keras.layers.Conv1D(filters=32, kernel_size=3, activation=random.choice(activations), input_shape=(2, 300)))
+    # model.add(tf.keras.layers.AveragePooling1D(pool_size=2))
+    # model.add(tf.keras.layers.Conv1D(filters=16, kernel_size=50, activation=random.choice(activations)))
+    # model.add(tf.keras.layers.AveragePooling1D(pool_size=2))
+    # model.add(tf.keras.layers.Conv1D(filters=8, kernel_size=20, activation=random.choice(activations)))
+    model.add(tf.keras.layers.Flatten())
+    model.add(tf.keras.layers.Dense(2, activation='softmax'))
+
+    optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
+    model.compile(optimizer=optimizer,
+              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+              metrics=['accuracy'])
+    return model
+
+def explore_CNN(good_model, bad_model, worker_idx):
+    return good_model

@@ -5,7 +5,7 @@ import re
 import os
 from worker import Worker
 from mpi4py import MPI
-from models import create_FCNN
+from models import create_FCNN, create_CNN
 from utils.datasets import get_dataset
 from utils.helper_fun import read_file
 import tensorflow as tf
