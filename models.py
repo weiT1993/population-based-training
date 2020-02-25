@@ -1,8 +1,20 @@
 import tensorflow as tf
 import random
 
+class FC():
+    def __init__(self, architecture):
+        if architecture == None:
+            self.model = random_model()
+        else:
+            self.model = build_model(architecture)
+    
+    def random_model(self):
+        activations = ['sigmoid','selu','relu',tf.nn.leaky_relu]
+        model = tf.keras.models.Sequential()
+        input_layer = tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer_%d'%worker_idx)
+
+
 def create_FCNN(num_layers, worker_idx):
-    random.seed(random.randint(worker_idx*1000,worker_idx*1000+1000))
     activations = ['sigmoid','selu','relu',tf.nn.leaky_relu]
 
     model = tf.keras.models.Sequential()
