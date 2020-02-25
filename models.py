@@ -3,37 +3,39 @@ import random
 
 class FC():
     def __init__(self, architecture):
-        if architecture == None:
-            self.model = random_model()
+        if 'structure' not in architecture:
+            self.model = self.random_model(architecture['num_layers'])
         else:
-            self.model = build_model(architecture)
+            self.model = self.build_model(architecture['structure'])
     
-    def random_model(self):
+    def random_model(self, num_layers):
         activations = ['sigmoid','selu','relu',tf.nn.leaky_relu]
         model = tf.keras.models.Sequential()
-        input_layer = tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer_%d'%worker_idx)
-
-
-def create_FCNN(num_layers, worker_idx):
-    activations = ['sigmoid','selu','relu',tf.nn.leaky_relu]
-
-    model = tf.keras.models.Sequential()
-    input_layer = tf.keras.layers.Flatten(input_shape=(2, 300),name='input_layer_%d'%worker_idx)
-    model.add(input_layer)
-    kernel_size = 600
-    for i in range(num_layers):
-        kernel_size = random.randint(int(kernel_size/2),kernel_size)
-        dense_layer = tf.keras.layers.Dense(kernel_size, activation=random.choice(activations),name='dense%d_%d'%(i,worker_idx))
-        model.add(dense_layer)
-    model.add(tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer_%d'%worker_idx))
-
-    optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
+        input_layer = tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer')
+        model.add(input_layer)
+        for i in range(num_layers):
+            dense_layer = tf.keras.layers.Dense(random.randint(10,600), activation=random.choice(activations))
+            model.add(dense_layer)
+        model.add(tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer'))
+        optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
+        model.compile(optimizer=optimizer,
+        loss=tf.losses.SparseCategoricalCrossentropy(from_logits=True),
+        metrics=['accuracy'])
+        return model
     
-    model.compile(optimizer=optimizer,
-    loss=tf.losses.SparseCategoricalCrossentropy(from_logits=True),
-    metrics=['accuracy'])
-
-    return model
+    def build_model(self, structure):
+        model = tf.keras.models.Sequential()
+        input_layer = tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer')
+        model.add(input_layer)
+        for layer in structure['layers']:
+            dense_layer = tf.keras.layers.Dense(layer['kernel_size'], activation=layer['activation'])
+            model.add(dense_layer)
+        model.add(tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer'))
+        optimizer = tf.keras.optimizers.Adam(learning_rate=structure['lr'])
+        model.compile(optimizer=optimizer,
+        loss=tf.losses.SparseCategoricalCrossentropy(from_logits=True),
+        metrics=['accuracy'])
+        return model
 
 def explore_FCNN(good_model, bad_model, worker_idx):
     good_layers = good_model.layers
