@@ -2,6 +2,7 @@ import argparse
 import subprocess
 import math
 import random
+import pickle
 from utils.helper_fun import read_file
 
 def train(num_workers):
@@ -13,10 +14,10 @@ def train(num_workers):
     for cp in child_processes:
         cp.wait()
 
-def explore(num_workers,best_worker_ids):
+def explore(num_workers,best_worker_ids,worst_worker_ids):
     child_processes = []
     for i in range(num_workers):
-        if i not in best_worker_ids:
+        if i in worst_worker_ids:
             explore_target = random.choice(best_worker_ids)
             p = subprocess.Popen(args=['python', 'worker.py','--idx','%d'%i,'--phase','explore','--target-idx','%d'%explore_target])
             child_processes.append(p)
@@ -24,24 +25,46 @@ def explore(num_workers,best_worker_ids):
     for cp in child_processes:
         cp.wait()
 
-def find_best_worker():
+def compete():
     scores_dict = read_file(filename='./population/scores.p')
     workers = list(scores_dict.keys())
     scores = list(scores_dict.values())
     scores, workers = zip(*sorted(zip(scores, workers),reverse=True))
     population_retain = math.ceil(0.2 * len(workers))
+    population_dump = len(workers) - population_retain
     best_workers = workers[:population_retain]
     best_scores = scores[:population_retain]
-    return best_workers, best_scores
+    worst_workers = workers[-population_dump:]
+    worst_scores = scores[-population_dump:]
+    
+    leaderboard = read_file(filename='./population/leaderboard.p')
+    for i in workers:
+        if i in best_workers and i in leaderboard:
+            leaderboard[i] += 1
+        elif i in best_workers and i not in leaderboard:
+            leaderboard[i] = 1
+        else:
+            leaderboard[i] = 0
+    pickle.dump(leaderboard,open('./population/leaderboard.p','ab'))
+    print('Leaderboard:',leaderboard)
+    winner_idx = -1
+    for worker_idx in leaderboard:
+        if leaderboard[worker_idx] >= 3:
+            winner_idx = worker_idx
+    return best_workers, best_scores, worst_workers, worst_scores, winner_idx
 
 def evolve(generation,num_workers,max_generations):
     print('*'*50,'Generation %d START'%generation,'*'*50,flush=True)
     train(num_workers=num_workers)
-    best_workers, best_scores = find_best_worker()
-    print('Best workers : {}\nBest scores : {}'.format(best_workers,best_scores),flush=True)
-    if generation<max_generations-1:
+    best_workers, best_scores, worst_workers, worst_scores, winner_idx = compete()
+    print('Best workers : {}\nBest scores : {}\nWorst workers : {}\nWorst scores : {}'.format(best_workers,best_scores,
+    worst_workers,worst_scores),flush=True)
+    if generation<max_generations-1 and winner_idx==-1:
         subprocess.run(args=['rm','./population/scores.p'])
-        explore(num_workers=num_workers,best_worker_ids=best_workers)
+        explore(num_workers=num_workers,best_worker_ids=best_workers,worst_worker_ids=worst_workers)
+        return best_workers, winner_idx
+    else:
+        return best_workers, winner_idx
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Worker instance')
@@ -57,4 +80,12 @@ if __name__ == '__main__':
         p.wait()
 
     for i in range(args.num_generations):
-        evolve(generation=i,num_workers=args.num_workers,max_generations=args.num_generations)
+        best_workers, winner_idx = evolve(generation=i,num_workers=args.num_workers,max_generations=args.num_generations)
+        if winner_idx != -1:
+            subprocess.run(args=['python', 'worker.py','--idx','%d'%winner_idx,'--phase','won'])
+            break
+    
+    if winner_idx==-1:
+        subprocess.run(args=['python', 'worker.py','--idx','%d'%best_workers[0],'--phase','conclude'])
+    else:
+        raise Exception('Evolution complete, should not be possible')
