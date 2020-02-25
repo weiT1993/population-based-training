@@ -14,13 +14,14 @@ if __name__ == '__main__':
 
     if args.phase == 'init':
         print('Worker %d instantiated'%args.idx,flush=True)
-        worker = FC(structure={'num_layers':3},worker_idx=args.idx)
+        worker = FC(worker_idx=args.idx)
+        worker.random_model(num_layers=3)
         worker.save_model()
     elif args.phase == 'train':
-        structure = pickle.load(open('./population/worker_%d.p'%args.idx,'rb'))
-        worker = FC(structure=structure,worker_idx=args.idx)
-        old_score = worker.score
+        worker = FC(worker_idx=args.idx)
         data_dict = read_file(filename='./data/dataset.p')
+        worker.load_model(model_h5='./population/worker_%d.h5'%args.idx,dataset_valid=data_dict['valid'])
+        old_score = worker.score
         worker.train(dataset_train=data_dict['train'],dataset_valid=data_dict['valid'])
         worker.save_model()
         new_score = worker.score
