@@ -49,7 +49,7 @@ def compete():
     print('Leaderboard:',leaderboard)
     winner_idx = -1
     for worker_idx in leaderboard:
-        if leaderboard[worker_idx] >= 3:
+        if leaderboard[worker_idx] >= 5:
             winner_idx = worker_idx
     return best_workers, best_scores, worst_workers, worst_scores, winner_idx
 
@@ -87,5 +87,3 @@ if __name__ == '__main__':
     
     if winner_idx==-1:
         subprocess.run(args=['python', 'worker.py','--idx','%d'%best_workers[0],'--phase','conclude'])
-    else:
-        raise Exception('Evolution complete, should not be possible')
