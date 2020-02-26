@@ -3,6 +3,30 @@ import random
 import pickle
 import time
 
+class Model():
+    def __init__(self, worker_idx, num_layers, model):
+        if model == 'fc':
+            self.worker = FC(worker_idx=worker_idx,num_layers=num_layers)
+        elif model == 'cnn':
+            self.worker = CNN(worker_idx=worker_idx,num_layers=num_layers)
+        else:
+            raise Exception('Model %s is not implemented'%model)
+    
+    def random_model(self):
+        self.worker.random_model()
+    
+    def load_model(self,dataset_valid):
+        self.worker.load_model(dataset_valid=dataset_valid)
+
+    def explore_model(self,good_model):
+        self.worker.explore_model(good_model=good_model)
+    
+    def save_model(self,save_mode):
+        self.worker.save_model(save_mode=save_mode)
+    
+    def train(self,dataset_train,dataset_valid):
+        self.worker.train(dataset_train=dataset_train,dataset_valid=dataset_valid)
+
 class FC():
     def __init__(self, worker_idx, num_layers):
         self.worker_idx = worker_idx
@@ -32,7 +56,7 @@ class FC():
         x_valid, y_valid = dataset_valid
         self.score = self.model.evaluate(x_valid,y_valid,verbose=0)[1]
     
-    def explore_model(self,good_model,dataset_valid):
+    def explore_model(self,good_model):
         activations = [tf.nn.selu,tf.nn.relu,tf.nn.leaky_relu]
         good_layers = good_model.layers
         bad_layers = self.model.layers
@@ -56,10 +80,7 @@ class FC():
         loss=tf.losses.SparseCategoricalCrossentropy(from_logits=True),
         metrics=['accuracy'])
         self.model = explore_model
-        x_valid, y_valid = dataset_valid
-        self.score = self.model.evaluate(x_valid,y_valid,verbose=0)[1]
-        if self.score < 0.1:
-            raise Exception('Explore model score is suspiciously low')
+        self.score = -1
 
     def save_model(self, save_mode):
         if save_mode == 0:
@@ -198,10 +219,7 @@ class CNN():
         loss=tf.losses.SparseCategoricalCrossentropy(from_logits=True),
         metrics=['accuracy'])
         self.model = explore_model
-        x_valid, y_valid = dataset_valid
-        self.score = self.model.evaluate(x_valid,y_valid,verbose=0)[1]
-        if self.score < 0.1:
-            raise Exception('Explore model score is suspiciously low')
+        self.score = -1
 
     def save_model(self, save_mode):
         if save_mode == 0:

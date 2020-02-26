@@ -1,10 +1,11 @@
+import os
 import tensorflow as tf
 import numpy as np
 from utils.datasets import get_dataset
 from utils.helper_fun import read_file
-from models import FC, CNN
+from models import Model
 
-# data_dict = read_file(filename='./data/dataset.p')
+data_dict = read_file(filename='./data/dataset.p')
 # x_train, y_train = data_dict['train']
 # x_valid, y_valid = data_dict['valid']
 # x_test, y_test = data_dict['test']
@@ -35,9 +36,15 @@ from models import FC, CNN
 # 	if isinstance(layer,tf.keras.layers.Conv1D):
 # 		print(layer)
 
-worker = CNN(worker_idx=0)
-worker.random_model(num_layers=3)
-worker.model.summary()
-for layer in worker.model.layers:
-	print(layer)
-	print(layer.kernel_size)
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+worker = Model(worker_idx=0,num_layers=4,model='fc')
+worker.load_model(dataset_valid=data_dict['valid'])
+print(worker.worker.score)
+
+good_worker = Model(worker_idx=1,num_layers=4,model='fc')
+good_worker.load_model(dataset_valid=data_dict['valid'])
+print(good_worker.worker.score)
+
+worker.explore_model(good_model=good_worker.worker.model)
+print(worker.worker.score)
