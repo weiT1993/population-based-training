@@ -30,8 +30,8 @@ def compete():
     workers = list(scores_dict.keys())
     scores = list(scores_dict.values())
     scores, workers = zip(*sorted(zip(scores, workers),reverse=True))
-    population_retain = math.ceil(0.2 * len(workers))
-    population_dump = len(workers) - population_retain
+    population_retain = math.ceil(0.1 * len(workers))
+    population_dump = math.ceil(0.5 * len(workers))
     best_workers = workers[:population_retain]
     best_scores = scores[:population_retain]
     worst_workers = workers[-population_dump:]
@@ -49,7 +49,7 @@ def compete():
     print('Leaderboard:',leaderboard)
     winner_idx = -1
     for worker_idx in leaderboard:
-        if leaderboard[worker_idx] >= 5:
+        if leaderboard[worker_idx] >= 10:
             winner_idx = worker_idx
     return best_workers, best_scores, worst_workers, worst_scores, winner_idx
 
