@@ -1,9 +1,11 @@
 from utils.helper_fun import read_mat
 from sklearn.model_selection import train_test_split
 import pickle
+import numpy as np
 
 def get_dataset(data_file,time_range,concat):
     X, y = read_mat(file_name=data_file,time_range=time_range,concat=concat)
+    X = np.transpose(X, (0,2,1))
     X_train, X_remaining, y_train, y_remaining = train_test_split(X, y, test_size=0.4)
     dataset_train = (X_train, y_train)
 
