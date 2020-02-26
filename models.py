@@ -1,7 +1,10 @@
+import os
 import tensorflow as tf
 import random
 import pickle
 import time
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 class Model():
     def __init__(self, worker_idx, num_layers, model):
