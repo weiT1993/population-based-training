@@ -5,6 +5,7 @@ import random
 import pickle
 from utils.helper_fun import read_file
 import os
+from time import time
 
 def train(num_workers):
     child_processes = []
@@ -82,8 +83,12 @@ if __name__ == '__main__':
     for p in init_processes:
         p.wait()
 
+    begin = time()
     for i in range(args.num_generations):
         best_workers, winner_idx = evolve(generation=i,num_workers=args.num_workers,max_generations=args.num_generations)
+        time_elapsed = time() - begin
+        eta = time_elapsed/(i+1)*args.num_generations - time_elapsed
+        print('ETA = %d seconds'%eta,flush=True)
         if winner_idx != -1:
             subprocess.run(args=['python', 'worker.py','--idx','%d'%winner_idx,'--phase','won'])
             break
