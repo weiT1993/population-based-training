@@ -144,8 +144,8 @@ class CNN():
                 bad_l = bad_conv_layers[bad_conv_ctr]
 
                 explore_filters = random.randint(1,bad_l.filters-1) if good_l.filters<bad_l.filters else random.randint(bad_l.filters+1,self.max_filters)
-                explore_kernel_size = random.randint(1,bad_l.kernel_size) if good_l.kernel_size<bad_l.kernel_size else random.randint(bad_l.kernel_size,self.max_kernel_size)
-                explore_strides = random.randint(1,bad_l.strides) if good_l.strides<bad_l.strides else random.randint(bad_l.kernel_size,self.max_strides)
+                explore_kernel_size = random.randint(1,bad_l.kernel_size[0]) if good_l.kernel_size[0]<bad_l.kernel_size[0] else random.randint(bad_l.kernel_size[0],self.max_kernel_size)
+                explore_strides = random.randint(1,bad_l.strides) if good_l.strides<bad_l.strides else random.randint(bad_l.kernel_size[0],self.max_strides)
                 
                 input_layer = tf.keras.layers.Conv1D(filters=explore_filters,
                 kernel_size=explore_kernel_size,
@@ -160,13 +160,13 @@ class CNN():
                 max_kernel_size = model.layers[-1].output_shape[1]
 
                 explore_filters = random.randint(1,bad_l.filters-1) if good_l.filters<bad_l.filters else random.randint(bad_l.filters+1,self.max_filters)
-                explore_strides = random.randint(1,bad_l.strides) if good_l.strides<bad_l.strides else random.randint(bad_l.kernel_size,self.max_strides)
+                explore_strides = random.randint(1,bad_l.strides) if good_l.strides<bad_l.strides else random.randint(bad_l.kernel_size[0],self.max_strides)
 
-                if good_l.kernel_size<bad_l.kernel_size:
-                    explore_kernel_size = random.randint(1,min(bad_l.kernel_size,max_kernel_size))
+                if good_l.kernel_size[0]<bad_l.kernel_size[0]:
+                    explore_kernel_size = random.randint(1,min(bad_l.kernel_size[0],max_kernel_size))
                 else:
                     # NOTE: may be wrong
-                    explore_kernel_size = random.randint(bad_l.kernel_size,max_kernel_size)
+                    explore_kernel_size = random.randint(bad_l.kernel_size[0],max_kernel_size)
 
                 conv_layer = tf.keras.layers.Conv1D(filters=explore_filters,
                 kernel_size=explore_kernel_size,

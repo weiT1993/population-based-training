@@ -37,3 +37,7 @@ from models import FC, CNN
 
 worker = CNN(worker_idx=0)
 worker.random_model(num_layers=3)
+worker.model.summary()
+for layer in worker.model.layers:
+	print(layer)
+	print(layer.kernel_size)
