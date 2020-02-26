@@ -2,8 +2,9 @@ import time
 import random
 import argparse
 import pickle
+import os
 import tensorflow as tf
-from models import FC
+from models import FC, CNN
 from utils.helper_fun import read_file
 
 if __name__ == '__main__':
@@ -13,14 +14,16 @@ if __name__ == '__main__':
     parser.add_argument('--target-idx', metavar='N', default=-1, type=int,help='Best Worker Index')
     args = parser.parse_args()
 
+    os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
     if args.phase == 'init':
         print('Worker-%d instantiated'%args.idx,flush=True)
-        worker = FC(worker_idx=args.idx)
+        worker = CNN(worker_idx=args.idx)
         worker.random_model(num_layers=3)
         worker.save_model(save_mode=0)
     elif args.phase == 'train':
         data_dict = read_file(filename='./data/dataset.p')
-        worker = FC(worker_idx=args.idx)
+        worker = CNN(worker_idx=args.idx)
         worker.load_model(dataset_valid=data_dict['valid'])
         old_score = worker.score
         worker.train(dataset_train=data_dict['train'],dataset_valid=data_dict['valid'])
@@ -32,9 +35,9 @@ if __name__ == '__main__':
         pickle.dump({args.idx:new_score},open('./population/scores.p','ab'))
     elif args.phase == 'explore':
         data_dict = read_file(filename='./data/dataset.p')
-        good_worker = FC(worker_idx=args.target_idx)
+        good_worker = CNN(worker_idx=args.target_idx)
         good_worker.load_model(dataset_valid=data_dict['valid'])
-        worker = FC(worker_idx=args.idx)
+        worker = CNN(worker_idx=args.idx)
         worker.load_model(dataset_valid=data_dict['valid'])
         old_score = worker.score
         worker.explore_model(good_model=good_worker.model,dataset_valid=data_dict['valid'])
@@ -43,13 +46,13 @@ if __name__ == '__main__':
         good_worker.worker_idx,good_worker.score,worker.score),flush=True)
     elif args.phase == 'conclude':
         data_dict = read_file(filename='./data/dataset.p')
-        worker = FC(worker_idx=args.idx)
+        worker = CNN(worker_idx=args.idx)
         worker.load_model(dataset_valid=data_dict['valid'])
         worker.save_model(save_mode=1)
         print('Worker-%d has the best architecture. Score : %.5f'%(args.idx,worker.score),flush=True)
     elif args.phase == 'won':
         data_dict = read_file(filename='./data/dataset.p')
-        worker = FC(worker_idx=args.idx)
+        worker = CNN(worker_idx=args.idx)
         worker.load_model(dataset_valid=data_dict['valid'])
         worker.save_model(save_mode=2)
         print('Worker-%d has won! Score : %.5f'%(args.idx,worker.score),flush=True)

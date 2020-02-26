@@ -4,6 +4,7 @@ import math
 import random
 import pickle
 from utils.helper_fun import read_file
+import os
 
 def train(num_workers):
     child_processes = []
@@ -71,6 +72,8 @@ if __name__ == '__main__':
     parser.add_argument('--num-workers', metavar='N', type=int,help='Number of parallel workers')
     parser.add_argument('--num-generations', metavar='N', type=int,help='Number of generations')
     args = parser.parse_args()
+
+    os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
     init_processes = []
     for i in range(args.num_workers):
