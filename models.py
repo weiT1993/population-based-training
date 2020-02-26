@@ -4,17 +4,18 @@ import pickle
 import time
 
 class FC():
-    def __init__(self, worker_idx):
+    def __init__(self, worker_idx, num_layers):
         self.worker_idx = worker_idx
+        self.num_layers = num_layers
     
-    def random_model(self, num_layers):
+    def random_model(self):
         activations = [tf.nn.selu,tf.nn.relu,tf.nn.leaky_relu]
         learning_rates = [0.1,0.05,0.01,0.005,0.001]
         
         model = tf.keras.models.Sequential(name='worker_%d'%self.worker_idx)
         input_layer = tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer')
         model.add(input_layer)
-        for i in range(num_layers):
+        for i in range(self.num_layers):
             dense_layer = tf.keras.layers.Dense(random.randint(10,600),activation=random.choice(activations),name='dense%d'%i)
             model.add(dense_layer)
         model.add(tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer'))
@@ -26,7 +27,7 @@ class FC():
         self.model = model
 
     def load_model(self,dataset_valid):
-        model_h5 = './population/worker_%d.h5'%self.worker_idx
+        model_h5 = './%d-fc-population/worker_%d.h5'%(self.num_layers,self.worker_idx)
         self.model = tf.keras.models.load_model(model_h5, custom_objects={'leaky_relu': tf.nn.leaky_relu})
         x_valid, y_valid = dataset_valid
         self.score = self.model.evaluate(x_valid,y_valid,verbose=0)[1]
@@ -62,11 +63,11 @@ class FC():
 
     def save_model(self, save_mode):
         if save_mode == 0:
-            self.model.save('./population/worker_%d.h5'%self.worker_idx,overwrite=True)
+            self.model.save('./%d-fc-population/worker_%d.h5'%(self.num_layers,self.worker_idx),overwrite=True)
         elif save_mode == 1:
-            self.model.save('./population/best_architecture.h5',overwrite=True)
+            self.model.save('./%d-fc-population/best_architecture.h5'%self.num_layers,overwrite=True)
         elif save_mode == 2:
-            self.model.save('./population/winner_architecture.h5',overwrite=True)
+            self.model.save('./%d-population/winner_architecture.h5'%self.num_layers,overwrite=True)
         else:
             raise Exception('Illegal save_mode = %d'%save_mode)
     
@@ -77,16 +78,17 @@ class FC():
         self.score = self.model.evaluate(x_valid,y_valid,verbose=0)[1]
 
 class CNN():
-    def __init__(self, worker_idx):
+    def __init__(self, worker_idx, num_layers):
         self.worker_idx = worker_idx
+        self.num_layers = num_layers
         self.activations = [tf.nn.selu,tf.nn.relu,tf.nn.leaky_relu]
         self.learning_rates = [0.1,0.05,0.01,0.005,0.001]
         self.max_filters = 50
         self.max_kernel_size = 200
         self.max_strides = 3
     
-    def random_model(self, num_layers):
-        pool_layer_idxs = random.sample(range(num_layers),random.randint(1,int(num_layers/3)))
+    def random_model(self):
+        pool_layer_idxs = random.sample(range(self.num_layers),random.randint(1,int(self.num_layers/3)))
         
         model = tf.keras.models.Sequential(name='worker_%d'%self.worker_idx)
         input_layer = tf.keras.layers.Conv1D(filters=random.randint(2,self.max_filters),
@@ -97,7 +99,7 @@ class CNN():
         input_shape=(300,2))
         model.add(input_layer)
 
-        for i in range(num_layers):
+        for i in range(self.num_layers):
             # print('Adding layer-%d'%i)
             max_kernel_size = model.layers[-1].output_shape[1]
             conv_layer = tf.keras.layers.Conv1D(filters=random.randint(2,self.max_filters),
@@ -124,7 +126,7 @@ class CNN():
         # model.summary()
 
     def load_model(self,dataset_valid):
-        model_h5 = './population/worker_%d.h5'%self.worker_idx
+        model_h5 = './%d-cnn-population/worker_%d.h5'%(self.num_layers,self.worker_idx)
         self.model = tf.keras.models.load_model(model_h5, custom_objects={'leaky_relu': tf.nn.leaky_relu})
         x_valid, y_valid = dataset_valid
         self.score = self.model.evaluate(x_valid,y_valid,verbose=0)[1]
@@ -203,11 +205,11 @@ class CNN():
 
     def save_model(self, save_mode):
         if save_mode == 0:
-            self.model.save('./population/worker_%d.h5'%self.worker_idx,overwrite=True)
+            self.model.save('./%d-cnn-population/worker_%d.h5'%(self.num_layers,self.worker_idx),overwrite=True)
         elif save_mode == 1:
-            self.model.save('./population/best_architecture.h5',overwrite=True)
+            self.model.save('./%d-cnn-population/best_architecture.h5'%self.num_layers,overwrite=True)
         elif save_mode == 2:
-            self.model.save('./population/winner_architecture.h5',overwrite=True)
+            self.model.save('./%d-cnn-population/winner_architecture.h5'%self.num_layers,overwrite=True)
         else:
             raise Exception('Illegal save_mode = %d'%save_mode)
     
