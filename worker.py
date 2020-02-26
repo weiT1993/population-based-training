@@ -19,7 +19,7 @@ if __name__ == '__main__':
     if args.phase == 'init':
         print('Worker-%d instantiated'%args.idx,flush=True)
         worker = FC(worker_idx=args.idx)
-        worker.random_model(num_layers=3)
+        worker.random_model(num_layers=5)
         worker.save_model(save_mode=0)
     elif args.phase == 'train':
         data_dict = read_file(filename='./data/dataset.p')
