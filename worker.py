@@ -42,9 +42,10 @@ if __name__ == '__main__':
         good_worker.load_model(dataset_valid=data_dict['valid'])
         worker = Model(worker_idx=args.idx,num_layers=args.num_layers,model=args.model)
         worker.load_model(dataset_valid=data_dict['valid'])
+        old_score = worker.worker.score
         worker.explore_model(good_model=good_worker.worker.model)
         worker.save_model(save_mode=0)
-        print('Worker-%d (%.5f) explore worker-%d (%.5f), initial score = %.5f'%(worker.worker.worker_idx,worker.worker.score,
+        print('Worker-%d (%.5f) explore worker-%d (%.5f), initial score = %.5f'%(worker.worker.worker_idx,old_score,
         good_worker.worker.worker_idx,good_worker.worker.score,worker.worker.score),flush=True)
     elif args.phase == 'conclude':
         data_dict = read_file(filename='./data/dataset.p')
