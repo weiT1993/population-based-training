@@ -7,55 +7,24 @@ from models import Model
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-# data_dict = read_file(filename='./data/dataset.p')
-# x_train, y_train = data_dict['train']
-# x_valid, y_valid = data_dict['valid']
-# x_test, y_test = data_dict['test']
+data_dict = read_file(filename='./data/dataset.p')
+x_train, y_train = data_dict['train']
+x_valid, y_valid = data_dict['valid']
+x_test, y_test = data_dict['test']
 
-fc_model = tf.keras.models.Sequential([
-  tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer'),
-  tf.keras.layers.Dense(128, activation='relu',kernel_regularizer=tf.keras.regularizers.l2(0.001),name='dense_0'),
-  tf.keras.layers.Dense(130,activation='selu',kernel_regularizer=tf.keras.regularizers.l2(0.0001),name = 'dense_1'),
-  tf.keras.layers.Dropout(0.1, name='dp'),
-  tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer')
-])
-fc_model.summary()
-rand_input = np.array(np.random.rand(1,300,2),dtype='float32')
-predictions = fc_model(rand_input).numpy()
-print(predictions)
-print(fc_model.layers[1].kernel_regularizer.l2)
+# dataset_train, dataset_valid, dataset_test = get_dataset(data_file='./data/power_15freq_7.3202.mat',time_range=300,concat=False)
 
-# c_model = tf.keras.models.Sequential([
-#   tf.keras.layers.Conv1D(filters=16, kernel_size=30, strides=3,activation='relu', input_shape=(300,2)),
-#   tf.keras.layers.Conv1D(filters=8, kernel_size=30, activation='relu'),
-#   tf.keras.layers.AveragePooling1D(pool_size=10,strides=3),
-#   tf.keras.layers.Flatten(),
-#   tf.keras.layers.Dense(2, activation='softmax')
-# ])
-# c_model.summary()
-# rand_input = np.array(np.random.rand(1,300,2),dtype='float32')
-# predictions = c_model(rand_input).numpy()
-# print(predictions)
+rnn_model = tf.keras.Sequential()
+rnn_model.add(tf.keras.layers.Embedding(input_dim=1000, output_dim=64))
+rnn_model.add(tf.keras.layers.LSTM(128))
+rnn_model.add(tf.keras.layers.Dense(2))
+optimizer = tf.keras.optimizers.Adam(learning_rate=0.005)
+rnn_model.compile(optimizer=optimizer,
+loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+metrics=['accuracy'])
+rnn_model.summary()
 
-# print(c_model.layers[2].strides)
-
-# layers = c_model.layers
-# for layer in layers:
-# 	if isinstance(layer,tf.keras.layers.Conv1D):
-# 		print(layer)
-
-# model_0 = Model(worker_idx=0,num_layers=3,model='cnn')
-# model_0.random_model()
-
-# model_1 = Model(worker_idx=1,num_layers=3,model='cnn')
-# model_1.random_model()
-# model_1.worker.model.summary()
-
-# model_0.explore_model(good_model=model_1.worker.model)
-# model_0.worker.model.summary()
-
-# for layer, perturbed_layer in zip(model_1.worker.model.layers,model_0.worker.model.layers):
-#     if isinstance(layer,tf.keras.layers.Conv1D):
-#         print(layer.kernel_size,layer.strides)
-#         print(perturbed_layer.kernel_size,perturbed_layer.strides)
-#         print('-'*50)
+rnn_model.fit(x_train, y_train,
+          validation_data=(x_valid, y_valid),
+          epochs=5)
+rnn_model.evaluate(x_test,y_test,verbose=1)
