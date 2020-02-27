@@ -103,9 +103,9 @@ def convertfile(path_to_file,train,timestep):
             csv_writer.writerows(row for row in data[key])
     return csv_path_to_files
 
-def perturb(a,force_int):
+def perturb(a,coefficient,force_int):
     if a!=0:
-        perturbed = abs(np.random.normal(a,a/3))
+        perturbed = abs(np.random.normal(a,a/coefficient))
     else:
         perturbed = abs(np.random.normal(0,1))
     if force_int:

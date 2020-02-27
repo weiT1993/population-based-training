@@ -14,8 +14,9 @@ dataset_train, dataset_valid, dataset_test = get_dataset(data_file='./data/power
 
 model = tf.keras.models.load_model('./5-cnn-population/winner_architecture.h5', custom_objects={'leaky_relu': tf.nn.leaky_relu})
 model.summary()
+print(model.optimizer.learning_rate)
 
-model.fit(dataset_train[0],dataset_train[1],epochs=10,verbose=1)
+model.fit(dataset_train[0],dataset_train[1],epochs=5,verbose=1)
 val_score = model.evaluate(dataset_valid[0],dataset_valid[1],verbose=1)[1]
 test_score = model.evaluate(dataset_test[0],dataset_test[1],verbose=1)[1]
 print('val score = %.5f, test score = %.5f'%(val_score, test_score))

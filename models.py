@@ -39,14 +39,20 @@ class FC():
     
     def random_model(self):
         activations = [tf.nn.selu,tf.nn.relu,tf.nn.leaky_relu]
-        learning_rates = [0.1,0.05,0.01,0.005,0.001]
+        learning_rates = [0.05,0.01,0.005,0.001]
+        l2_norms = [0.01,0.001,0.0001]
+        dropout_rates = [0.5,0.4,0.3,0.2,0.1]
         
         model = tf.keras.models.Sequential(name='worker_%d'%self.worker_idx)
         input_layer = tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer')
         model.add(input_layer)
         for i in range(self.num_layers):
-            dense_layer = tf.keras.layers.Dense(random.randint(10,600),activation=random.choice(activations),name='dense%d'%i)
+            dense_layer = tf.keras.layers.Dense(random.randint(10,600),
+            activation=random.choice(activations),
+            kernel_regularizer=tf.keras.regularizers.l2(random.choice(l2_norms)))
             model.add(dense_layer)
+            dropout_layer = tf.keras.layers.Dropout(random.choice(dropout_rates))
+            model.add(dropout_layer)
         model.add(tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer'))
         optimizer = tf.keras.optimizers.Adam(learning_rate=random.choice(learning_rates))
         model.compile(optimizer=optimizer,
@@ -70,14 +76,21 @@ class FC():
         for good_l in good_layers:
             if 'input' in good_l.name or 'output' in good_l.name:
                 continue
+            elif isinstance(good_l,tf.keras.layers.Dropout):
+                explore_dropout_rate = perturb(a=good_l.rate,coefficient=10,force_int=False)
+                explore_dropout_layer = tf.keras.layers.Dropout(explore_dropout_rate)
+                explore_model.add(explore_dropout_layer)
             else:
-                explore_units_size = perturb(good_l.units,force_int=True)
-                explore_layer = tf.keras.layers.Dense(explore_units_size,activation=random.choice(activations))
-                explore_model.add(explore_layer)
-        explore_model.add(tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer'))
+                explore_units_size = perturb(a=good_l.units,coefficient=3,force_int=True)
+                explore_l2_norm = perturb(a=good_l.kernel_regularizer.l2,coefficient=10,force_int=False)
+                explore_dense_layer = tf.keras.layers.Dense(explore_units_size,activation=random.choice(activations),
+                kernel_regularizer=tf.keras.regularizers.l2(explore_l2_norm))
+                explore_model.add(explore_dense_layer)
+        output_layer = tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer')
+        explore_model.add(output_layer)
 
         good_optimizer_lr = good_model.optimizer.learning_rate.numpy()
-        explore_optimizer_lr = perturb(good_optimizer_lr,force_int=False)
+        explore_optimizer_lr = perturb(a=good_optimizer_lr,coefficient=5,force_int=False)
         optimizer = tf.keras.optimizers.Adam(learning_rate=explore_optimizer_lr)
         explore_model.compile(optimizer=optimizer,
         loss=tf.losses.SparseCategoricalCrossentropy(from_logits=True),
@@ -113,13 +126,14 @@ class CNN():
     
     def random_model(self):
         pool_layer_idxs = random.sample(range(self.num_layers),random.randint(1,int(self.num_layers/3)))
+        l2_norms = [0.01,0.001,0.0001]
         
         model = tf.keras.models.Sequential(name='worker_%d'%self.worker_idx)
         input_layer = tf.keras.layers.Conv1D(filters=random.randint(2,self.max_filters),
         kernel_size=random.randint(1,self.max_kernel_size),
         strides=random.randint(1,self.max_strides),
         activation=random.choice(self.activations),
-        padding='causal',
+        kernel_regularizer=tf.keras.regularizers.l2(random.choice(l2_norms)),
         input_shape=(300,2))
         model.add(input_layer)
 
@@ -130,7 +144,7 @@ class CNN():
             kernel_size=random.randint(1,max_kernel_size),
             strides=random.randint(1,self.max_strides),
             activation=random.choice(self.activations),
-            padding='causal')
+            kernel_regularizer=tf.keras.regularizers.l2(random.choice(l2_norms)))
             model.add(conv_layer)
             # model.summary()
             if i in pool_layer_idxs:
@@ -164,43 +178,42 @@ class CNN():
         
         explore_model = tf.keras.models.Sequential(name='worker_%d'%self.worker_idx)
 
-        bad_conv_ctr = 0
         for layer_ctr, good_l in enumerate(good_layers):
             if isinstance(good_l,tf.keras.layers.Conv1D) and layer_ctr==0:
 
-                explore_filters = perturb(good_l.filters,force_int=True)
-                explore_kernel_size = perturb(good_l.kernel_size[0],force_int=True)
+                explore_filters = perturb(a=good_l.filters,coefficient=3,force_int=True)
+                explore_kernel_size = perturb(a=good_l.kernel_size[0],coefficient=3,force_int=True)
                 explore_kernel_size = min(300,explore_kernel_size)
-                explore_strides = perturb(good_l.strides[0],force_int=True)
+                explore_strides = perturb(a=good_l.strides[0],coefficient=3,force_int=True)
+                explore_l2_norm = perturb(a=good_l.kernel_regularizer.l2,coefficient=10,force_int=False)
                 
                 input_layer = tf.keras.layers.Conv1D(filters=explore_filters,
                 kernel_size=explore_kernel_size,
                 strides=explore_strides,
                 activation=random.choice(self.activations),
-                padding='causal',
+                kernel_regularizer=tf.keras.regularizers.l2(explore_l2_norm),
                 input_shape=(300,2))
                 explore_model.add(input_layer)
-                bad_conv_ctr += 1
             elif isinstance(good_l,tf.keras.layers.Conv1D):
                 max_kernel_size = explore_model.layers[-1].output_shape[1]
 
-                explore_filters = perturb(good_l.filters,force_int=True)
-                explore_kernel_size = perturb(good_l.kernel_size[0],force_int=True)
+                explore_filters = perturb(a=good_l.filters,coefficient=3,force_int=True)
+                explore_kernel_size = perturb(a=good_l.kernel_size[0],coefficient=3,force_int=True)
                 explore_kernel_size = min(max_kernel_size,explore_kernel_size)
-                explore_strides = perturb(good_l.strides[0],force_int=True)
+                explore_strides = perturb(a=good_l.strides[0],coefficient=3,force_int=True)
+                explore_l2_norm = perturb(a=good_l.kernel_regularizer.l2,coefficient=10,force_int=False)
 
                 conv_layer = tf.keras.layers.Conv1D(filters=explore_filters,
                 kernel_size=explore_kernel_size,
                 strides=explore_strides,
                 activation=random.choice(self.activations),
-                padding='causal')
+                kernel_regularizer=tf.keras.regularizers.l2(explore_l2_norm))
                 explore_model.add(conv_layer)
-                bad_conv_ctr += 1
             elif isinstance(good_l,tf.keras.layers.AveragePooling1D):
                 max_pool_size = explore_model.layers[-1].output_shape[1]
-                explore_pool_size = perturb(good_l.pool_size[0],force_int=True)
+                explore_pool_size = perturb(a=good_l.pool_size[0],coefficient=3,force_int=True)
                 explore_pool_size = min(max_pool_size,explore_pool_size)
-                explore_strides = perturb(good_l.strides[0],force_int=True)
+                explore_strides = perturb(a=good_l.strides[0],coefficient=3,force_int=True)
                 pool_layer = tf.keras.layers.AveragePooling1D(pool_size=explore_pool_size,strides=explore_strides)
                 explore_model.add(pool_layer)
             else:
@@ -210,7 +223,7 @@ class CNN():
         explore_model.add(tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer'))
 
         good_optimizer_lr = good_model.optimizer.learning_rate.numpy()
-        explore_optimizer_lr = perturb(good_optimizer_lr,force_int=False)
+        explore_optimizer_lr = perturb(a=good_optimizer_lr,coefficient=5,force_int=False)
         optimizer = tf.keras.optimizers.Adam(learning_rate=explore_optimizer_lr)
         explore_model.compile(optimizer=optimizer,
         loss=tf.losses.SparseCategoricalCrossentropy(from_logits=True),

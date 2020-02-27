@@ -12,17 +12,18 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 # x_valid, y_valid = data_dict['valid']
 # x_test, y_test = data_dict['test']
 
-# fc_model = tf.keras.models.Sequential([
-#   tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer'),
-#   tf.keras.layers.Dense(128, activation='relu',name='dense_0'),
-#   tf.keras.layers.Dense(130,activation='selu',name = 'dense_1'),
-#   tf.keras.layers.Dropout(0.1, name='dp'),
-#   tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer')
-# ])
-# fc_model.summary()
-# rand_input = np.array(np.random.rand(1,300,2),dtype='float32')
-# predictions = fc_model(rand_input).numpy()
-# print(predictions)
+fc_model = tf.keras.models.Sequential([
+  tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer'),
+  tf.keras.layers.Dense(128, activation='relu',kernel_regularizer=tf.keras.regularizers.l2(0.001),name='dense_0'),
+  tf.keras.layers.Dense(130,activation='selu',kernel_regularizer=tf.keras.regularizers.l2(0.0001),name = 'dense_1'),
+  tf.keras.layers.Dropout(0.1, name='dp'),
+  tf.keras.layers.Dense(2,activation='softmax',name = 'output_layer')
+])
+fc_model.summary()
+rand_input = np.array(np.random.rand(1,300,2),dtype='float32')
+predictions = fc_model(rand_input).numpy()
+print(predictions)
+print(fc_model.layers[1].kernel_regularizer.l2)
 
 # c_model = tf.keras.models.Sequential([
 #   tf.keras.layers.Conv1D(filters=16, kernel_size=30, strides=3,activation='relu', input_shape=(300,2)),
@@ -43,18 +44,18 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 # 	if isinstance(layer,tf.keras.layers.Conv1D):
 # 		print(layer)
 
-model_0 = Model(worker_idx=0,num_layers=3,model='cnn')
-model_0.random_model()
+# model_0 = Model(worker_idx=0,num_layers=3,model='cnn')
+# model_0.random_model()
 
-model_1 = Model(worker_idx=1,num_layers=3,model='cnn')
-model_1.random_model()
-model_1.worker.model.summary()
+# model_1 = Model(worker_idx=1,num_layers=3,model='cnn')
+# model_1.random_model()
+# model_1.worker.model.summary()
 
-model_0.explore_model(good_model=model_1.worker.model)
-model_0.worker.model.summary()
+# model_0.explore_model(good_model=model_1.worker.model)
+# model_0.worker.model.summary()
 
-for layer, perturbed_layer in zip(model_1.worker.model.layers,model_0.worker.model.layers):
-    if isinstance(layer,tf.keras.layers.Conv1D):
-        print(layer.kernel_size,layer.strides)
-        print(perturbed_layer.kernel_size,perturbed_layer.strides)
-        print('-'*50)
+# for layer, perturbed_layer in zip(model_1.worker.model.layers,model_0.worker.model.layers):
+#     if isinstance(layer,tf.keras.layers.Conv1D):
+#         print(layer.kernel_size,layer.strides)
+#         print(perturbed_layer.kernel_size,perturbed_layer.strides)
+#         print('-'*50)
