@@ -54,18 +54,6 @@ def read_file(filename):
         file_content = {}
     return file_content
 
-def find_rank_files(files,rank,num_workers):
-    count = int(len(files)/num_workers)
-    remainder = len(files) % num_workers
-    if rank<remainder:
-        files_start = rank * (count + 1)
-        files_stop = files_start + count + 1
-    else:
-        files_start = rank * count + remainder
-        files_stop = files_start + (count - 1) + 1
-    rank_files = files[files_start:files_stop]
-    return rank_files
-
 def convertfile(path_to_file,train,timestep):
     mat = loadmat(path_to_file)
     mat_shape = mat['excitedI'].shape
@@ -114,3 +102,13 @@ def convertfile(path_to_file,train,timestep):
             csv_writer.writerow(['I_%d'%x for x in range(timestep)]+['Q_%d'%x for x in range(timestep)]+['class'])
             csv_writer.writerows(row for row in data[key])
     return csv_path_to_files
+
+def perturb(a,force_int):
+    if a!=0:
+        perturbed = abs(np.random.normal(a,a/3))
+    else:
+        perturbed = abs(np.random.normal(0,1))
+    if force_int:
+        return math.ceil(perturbed)
+    else:
+        return perturbed
