@@ -15,14 +15,15 @@ x_test, y_test = data_dict['test']
 # dataset_train, dataset_valid, dataset_test = get_dataset(data_file='./data/power_15freq_7.3202.mat',time_range=300,concat=False)
 
 rnn_model = tf.keras.Sequential()
-rnn_model.add(tf.keras.layers.Embedding(input_dim=1000, output_dim=64))
-rnn_model.add(tf.keras.layers.LSTM(128))
-rnn_model.add(tf.keras.layers.Dense(2))
+rnn_model.add(tf.keras.layers.LSTM(128,input_shape=(300,2)))
+rnn_model.add(tf.keras.layers.Dense(2,activation='softmax'))
 optimizer = tf.keras.optimizers.Adam(learning_rate=0.005)
 rnn_model.compile(optimizer=optimizer,
 loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
 metrics=['accuracy'])
 rnn_model.summary()
+# predictions = rnn_model(np.array(np.random.rand(1,300,2),dtype='float32'))
+# print(predictions)
 
 rnn_model.fit(x_train, y_train,
           validation_data=(x_valid, y_valid),
