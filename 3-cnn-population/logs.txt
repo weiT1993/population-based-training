@@ -1,0 +1,3064 @@
+Worker-1 instantiated
+Worker-7 instantiated
+Worker-0 instantiated
+Worker-6 instantiated
+Worker-2 instantiated
+Worker-5 instantiated
+Worker-4 instantiated
+Worker-8 instantiated
+Worker-9 instantiated
+Worker-3 instantiated
+************************************************** Generation 0 START **************************************************
+Worker-0 score trained from 0.48352 --> 0.50046
+Worker-7 score trained from 0.49924 --> 0.91150
+Worker-3 score trained from 0.49069 --> 0.91486
+Worker-1 score trained from 0.50046 --> 0.50046
+Worker-6 score trained from 0.52731 --> 0.50046
+Worker-4 score trained from 0.50442 --> 0.49954
+Worker-5 score trained from 0.49741 --> 0.49954
+Worker-9 score trained from 0.49954 --> 0.49954
+Worker-2 score trained from 0.54867 --> 0.50046
+Worker-8 score trained from 0.49954 --> 0.92691
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9269149,)
+Worst workers : (1, 0, 9, 5, 4)
+Worst scores : (0.50045776, 0.50045776, 0.49954227, 0.49954227, 0.49954227)
+Worker-0 (0.50046) explore worker-8 (0.92691), initial score = -1.00000
+Worker-4 (0.49954) explore worker-8 (0.92691), initial score = -1.00000
+Worker-5 (0.49954) explore worker-8 (0.92691), initial score = -1.00000
+Worker-1 (0.50046) explore worker-8 (0.92691), initial score = -1.00000
+Worker-9 (0.49954) explore worker-8 (0.92691), initial score = -1.00000
+ETA = 310337 seconds
+************************************************** Generation 1 START **************************************************
+Worker-3 score trained from 0.91486 --> 0.91883
+Worker-7 score trained from 0.91150 --> 0.92402
+Worker-6 score trained from 0.50046 --> 0.50046
+Worker-9 score trained from 0.53494 --> 0.90433
+Worker-4 score trained from 0.49908 --> 0.91654
+Worker-2 score trained from 0.50046 --> 0.50046
+Worker-0 score trained from 0.50046 --> 0.50046
+Worker-1 score trained from 0.50046 --> 0.49954
+Worker-8 score trained from 0.92691 --> 0.91837
+Worker-5 score trained from 0.49954 --> 0.49969
+Leaderboard: {8: 0, 3: 0, 7: 1, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (7,)
+Best scores : (0.9240159,)
+Worst workers : (6, 2, 0, 5, 1)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.49969485, 0.49954227)
+Worker-6 (0.50046) explore worker-7 (0.92402), initial score = -1.00000
+Worker-2 (0.50046) explore worker-7 (0.92402), initial score = -1.00000
+Worker-0 (0.50046) explore worker-7 (0.92402), initial score = -1.00000
+Worker-1 (0.49954) explore worker-7 (0.92402), initial score = -1.00000
+Worker-5 (0.49969) explore worker-7 (0.92402), initial score = -1.00000
+ETA = 423716 seconds
+************************************************** Generation 2 START **************************************************
+Worker-6 score trained from 0.49863 --> 0.89625
+Worker-5 score trained from 0.49908 --> 0.91303
+Worker-3 score trained from 0.91883 --> 0.49954
+Worker-2 score trained from 0.50229 --> 0.91318
+Worker-7 score trained from 0.92402 --> 0.92478
+Worker-0 score trained from 0.49954 --> 0.90601
+Worker-1 score trained from 0.49954 --> 0.91974
+Worker-9 score trained from 0.90433 --> 0.90494
+Worker-4 score trained from 0.91654 --> 0.91761
+Worker-8 score trained from 0.91837 --> 0.92463
+Leaderboard: {8: 0, 3: 0, 7: 2, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (7,)
+Best scores : (0.92477876,)
+Worst workers : (5, 0, 9, 6, 3)
+Worst scores : (0.9130302, 0.9060116, 0.9049435, 0.89624655, 0.49954227)
+Worker-5 (0.91303) explore worker-7 (0.92478), initial score = -1.00000
+Worker-3 (0.49954) explore worker-7 (0.92478), initial score = -1.00000
+Worker-0 (0.90601) explore worker-7 (0.92478), initial score = -1.00000
+Worker-6 (0.89625) explore worker-7 (0.92478), initial score = -1.00000
+Worker-9 (0.90494) explore worker-7 (0.92478), initial score = -1.00000
+ETA = 371738 seconds
+************************************************** Generation 3 START **************************************************
+Worker-6 score trained from 0.51541 --> 0.87672
+Worker-0 score trained from 0.50320 --> 0.79112
+Worker-9 score trained from 0.48688 --> 0.90784
+Worker-2 score trained from 0.91318 --> 0.90296
+Worker-3 score trained from 0.49954 --> 0.91700
+Worker-7 score trained from 0.92478 --> 0.93012
+Worker-5 score trained from 0.51129 --> 0.85581
+Worker-1 score trained from 0.91974 --> 0.91898
+Worker-4 score trained from 0.91761 --> 0.91379
+Worker-8 score trained from 0.92463 --> 0.92814
+Leaderboard: {8: 0, 3: 0, 7: 3, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (7,)
+Best scores : (0.93011904,)
+Worst workers : (9, 2, 6, 5, 0)
+Worst scores : (0.9078425, 0.90296, 0.8767165, 0.85581326, 0.79111993)
+Worker-9 (0.90784) explore worker-7 (0.93012), initial score = -1.00000
+Worker-6 (0.87672) explore worker-7 (0.93012), initial score = -1.00000
+Worker-2 (0.90296) explore worker-7 (0.93012), initial score = -1.00000
+Worker-0 (0.79112) explore worker-7 (0.93012), initial score = -1.00000
+Worker-5 (0.85581) explore worker-7 (0.93012), initial score = -1.00000
+ETA = 345067 seconds
+************************************************** Generation 4 START **************************************************
+Worker-9 score trained from 0.49954 --> 0.78517
+Worker-0 score trained from 0.49924 --> 0.91242
+Worker-6 score trained from 0.49954 --> 0.93576
+Worker-3 score trained from 0.91700 --> 0.91273
+Worker-7 score trained from 0.93012 --> 0.92661
+Worker-1 score trained from 0.91898 --> 0.92463
+Worker-2 score trained from 0.49954 --> 0.92569
+Worker-5 score trained from 0.50671 --> 0.87534
+Worker-4 score trained from 0.91379 --> 0.79966
+Worker-8 score trained from 0.92814 --> 0.91501
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 1, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.93576443,)
+Worst workers : (3, 0, 5, 4, 9)
+Worst scores : (0.91272503, 0.9124199, 0.8753433, 0.7996643, 0.78516936)
+Worker-9 (0.78517) explore worker-6 (0.93576), initial score = -1.00000
+Worker-3 (0.91273) explore worker-6 (0.93576), initial score = -1.00000
+Worker-0 (0.91242) explore worker-6 (0.93576), initial score = -1.00000
+Worker-5 (0.87534) explore worker-6 (0.93576), initial score = -1.00000
+Worker-4 (0.79966) explore worker-6 (0.93576), initial score = -1.00000
+ETA = 327890 seconds
+************************************************** Generation 5 START **************************************************
+Worker-3 score trained from 0.51602 --> 0.89365
+Worker-4 score trained from 0.49847 --> 0.84376
+Worker-0 score trained from 0.50565 --> 0.70903
+Worker-5 score trained from 0.50992 --> 0.88770
+Worker-6 score trained from 0.93576 --> 0.93134
+Worker-1 score trained from 0.92463 --> 0.92417
+Worker-7 score trained from 0.92661 --> 0.92676
+Worker-9 score trained from 0.50046 --> 0.93424
+Worker-2 score trained from 0.92569 --> 0.93363
+Worker-8 score trained from 0.91501 --> 0.91486
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 1, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.9342386,)
+Worst workers : (8, 3, 5, 4, 0)
+Worst scores : (0.91486114, 0.89365274, 0.88770217, 0.84375954, 0.70903265)
+Worker-3 (0.89365) explore worker-9 (0.93424), initial score = -1.00000
+Worker-4 (0.84376) explore worker-9 (0.93424), initial score = -1.00000
+Worker-0 (0.70903) explore worker-9 (0.93424), initial score = -1.00000
+Worker-5 (0.88770) explore worker-9 (0.93424), initial score = -1.00000
+Worker-8 (0.91486) explore worker-9 (0.93424), initial score = -1.00000
+ETA = 316293 seconds
+************************************************** Generation 6 START **************************************************
+Worker-3 score trained from 0.51724 --> 0.91608
+Worker-6 score trained from 0.93134 --> 0.92875
+Worker-0 score trained from 0.50046 --> 0.50046
+Worker-7 score trained from 0.92676 --> 0.92722
+Worker-1 score trained from 0.92417 --> 0.93042
+Worker-4 score trained from 0.55767 --> 0.92142
+Worker-8 score trained from 0.53403 --> 0.93531
+Worker-9 score trained from 0.93424 --> 0.93668
+Worker-2 score trained from 0.93363 --> 0.93256
+Worker-5 score trained from 0.49954 --> 0.85459
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 2, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.9366799,)
+Worst workers : (7, 4, 3, 5, 0)
+Worst scores : (0.92722005, 0.921422, 0.9160818, 0.8545926, 0.50045776)
+Worker-7 (0.92722) explore worker-9 (0.93668), initial score = -1.00000
+Worker-3 (0.91608) explore worker-9 (0.93668), initial score = -1.00000
+Worker-4 (0.92142) explore worker-9 (0.93668), initial score = -1.00000
+Worker-0 (0.50046) explore worker-9 (0.93668), initial score = -1.00000
+Worker-5 (0.85459) explore worker-9 (0.93668), initial score = -1.00000
+ETA = 275951 seconds
+************************************************** Generation 7 START **************************************************
+Worker-5 score trained from 0.50122 --> 0.73238
+Worker-7 score trained from 0.49832 --> 0.83933
+Worker-0 score trained from 0.49634 --> 0.50046
+Worker-4 score trained from 0.49954 --> 0.85429
+Worker-6 score trained from 0.92875 --> 0.91273
+Worker-9 score trained from 0.93668 --> 0.92234
+Worker-8 score trained from 0.93531 --> 0.93576
+Worker-1 score trained from 0.93042 --> 0.92112
+Worker-2 score trained from 0.93256 --> 0.92936
+Worker-3 score trained from 0.50015 --> 0.74870
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93576443,)
+Worst workers : (4, 7, 3, 5, 0)
+Worst scores : (0.85428745, 0.8393348, 0.74870306, 0.7323772, 0.50045776)
+Worker-5 (0.73238) explore worker-8 (0.93576), initial score = -1.00000
+Worker-0 (0.50046) explore worker-8 (0.93576), initial score = -1.00000
+Worker-7 (0.83933) explore worker-8 (0.93576), initial score = -1.00000
+Worker-4 (0.85429) explore worker-8 (0.93576), initial score = -1.00000
+Worker-3 (0.74870) explore worker-8 (0.93576), initial score = -1.00000
+ETA = 244617 seconds
+************************************************** Generation 8 START **************************************************
+Worker-0 score trained from 0.50031 --> 0.50046
+Worker-5 score trained from 0.50046 --> 0.92768
+Worker-9 score trained from 0.92234 --> 0.92936
+Worker-6 score trained from 0.91273 --> 0.93195
+Worker-8 score trained from 0.93576 --> 0.93271
+Worker-2 score trained from 0.92936 --> 0.93302
+Worker-1 score trained from 0.92112 --> 0.93042
+Worker-3 score trained from 0.50198 --> 0.91135
+Worker-7 score trained from 0.50275 --> 0.93378
+Worker-4 score trained from 0.49924 --> 0.93271
+Leaderboard: {8: 0, 3: 0, 7: 1, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (7,)
+Best scores : (0.9337809,)
+Worst workers : (1, 9, 5, 3, 0)
+Worst scores : (0.93042415, 0.9293561, 0.92767775, 0.91135186, 0.50045776)
+Worker-0 (0.50046) explore worker-7 (0.93378), initial score = -1.00000
+Worker-5 (0.92768) explore worker-7 (0.93378), initial score = -1.00000
+Worker-9 (0.92936) explore worker-7 (0.93378), initial score = -1.00000
+Worker-3 (0.91135) explore worker-7 (0.93378), initial score = -1.00000
+Worker-1 (0.93042) explore worker-7 (0.93378), initial score = -1.00000
+ETA = 221796 seconds
+************************************************** Generation 9 START **************************************************
+Worker-1 score trained from 0.50015 --> 0.60894
+Worker-9 score trained from 0.49985 --> 0.50046
+Worker-0 score trained from 0.49207 --> 0.50046
+Worker-6 score trained from 0.93195 --> 0.93348
+Worker-3 score trained from 0.50046 --> 0.50046
+Worker-8 score trained from 0.93271 --> 0.93424
+Worker-5 score trained from 0.49954 --> 0.92966
+Worker-2 score trained from 0.93302 --> 0.93058
+Worker-7 score trained from 0.93378 --> 0.93729
+Worker-4 score trained from 0.93271 --> 0.92173
+Leaderboard: {8: 0, 3: 0, 7: 2, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (7,)
+Best scores : (0.9372902,)
+Worst workers : (4, 1, 9, 3, 0)
+Worst scores : (0.9217272, 0.6089411, 0.50045776, 0.50045776, 0.50045776)
+Worker-9 (0.50046) explore worker-7 (0.93729), initial score = -1.00000
+Worker-1 (0.60894) explore worker-7 (0.93729), initial score = -1.00000
+Worker-0 (0.50046) explore worker-7 (0.93729), initial score = -1.00000
+Worker-3 (0.50046) explore worker-7 (0.93729), initial score = -1.00000
+Worker-4 (0.92173) explore worker-7 (0.93729), initial score = -1.00000
+ETA = 203432 seconds
+************************************************** Generation 10 START **************************************************
+Worker-4 score trained from 0.50046 --> 0.50046
+Worker-9 score trained from 0.50854 --> 0.73436
+Worker-6 score trained from 0.93348 --> 0.90311
+Worker-8 score trained from 0.93424 --> 0.93668
+Worker-2 score trained from 0.93058 --> 0.93485
+Worker-5 score trained from 0.92966 --> 0.93714
+Worker-0 score trained from 0.49832 --> 0.81385
+Worker-7 score trained from 0.93729 --> 0.93332
+Worker-3 score trained from 0.50122 --> 0.49954
+Worker-1 score trained from 0.54883 --> 0.91242
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.9371376,)
+Worst workers : (6, 0, 9, 4, 3)
+Worst scores : (0.9031126, 0.81385416, 0.7343607, 0.50045776, 0.49954227)
+Worker-4 (0.50046) explore worker-5 (0.93714), initial score = -1.00000
+Worker-6 (0.90311) explore worker-5 (0.93714), initial score = -1.00000
+Worker-9 (0.73436) explore worker-5 (0.93714), initial score = -1.00000
+Worker-0 (0.81385) explore worker-5 (0.93714), initial score = -1.00000
+Worker-3 (0.49954) explore worker-5 (0.93714), initial score = -1.00000
+ETA = 187981 seconds
+************************************************** Generation 11 START **************************************************
+Worker-3 score trained from 0.50061 --> 0.52807
+Worker-0 score trained from 0.49329 --> 0.49954
+Worker-4 score trained from 0.50870 --> 0.73711
+Worker-6 score trained from 0.50061 --> 0.49954
+Worker-9 score trained from 0.50549 --> 0.69271
+Worker-8 score trained from 0.93668 --> 0.92981
+Worker-2 score trained from 0.93485 --> 0.93576
+Worker-5 score trained from 0.93714 --> 0.93073
+Worker-7 score trained from 0.93332 --> 0.91715
+Worker-1 score trained from 0.91242 --> 0.93348
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 1, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (2,)
+Best scores : (0.93576443,)
+Worst workers : (4, 9, 3, 6, 0)
+Worst scores : (0.7371071, 0.69270676, 0.52807444, 0.49954227, 0.49954227)
+Worker-0 (0.49954) explore worker-2 (0.93576), initial score = -1.00000
+Worker-3 (0.52807) explore worker-2 (0.93576), initial score = -1.00000
+Worker-6 (0.49954) explore worker-2 (0.93576), initial score = -1.00000
+Worker-4 (0.73711) explore worker-2 (0.93576), initial score = -1.00000
+Worker-9 (0.69271) explore worker-2 (0.93576), initial score = -1.00000
+ETA = 174813 seconds
+************************************************** Generation 12 START **************************************************
+Worker-6 score trained from 0.50015 --> 0.50046
+Worker-4 score trained from 0.48947 --> 0.88908
+Worker-3 score trained from 0.50046 --> 0.50046
+Worker-0 score trained from 0.44156 --> 0.92539
+Worker-8 score trained from 0.92981 --> 0.93485
+Worker-5 score trained from 0.93073 --> 0.93576
+Worker-9 score trained from 0.50137 --> 0.61215
+Worker-2 score trained from 0.93576 --> 0.93821
+Worker-7 score trained from 0.91715 --> 0.93622
+Worker-1 score trained from 0.93348 --> 0.93241
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 2, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (2,)
+Best scores : (0.93820566,)
+Worst workers : (0, 4, 9, 6, 3)
+Worst scores : (0.92538905, 0.8890754, 0.61214525, 0.50045776, 0.50045776)
+Worker-6 (0.50046) explore worker-2 (0.93821), initial score = -1.00000
+Worker-3 (0.50046) explore worker-2 (0.93821), initial score = -1.00000
+Worker-0 (0.92539) explore worker-2 (0.93821), initial score = -1.00000
+Worker-9 (0.61215) explore worker-2 (0.93821), initial score = -1.00000
+Worker-4 (0.88908) explore worker-2 (0.93821), initial score = -1.00000
+ETA = 163570 seconds
+************************************************** Generation 13 START **************************************************
+Worker-4 score trained from 0.49954 --> 0.89777
+Worker-3 score trained from 0.49878 --> 0.91669
+Worker-6 score trained from 0.49908 --> 0.61352
+Worker-0 score trained from 0.48169 --> 0.91898
+Worker-9 score trained from 0.49954 --> 0.88602
+Worker-8 score trained from 0.93485 --> 0.93668
+Worker-2 score trained from 0.93821 --> 0.93607
+Worker-5 score trained from 0.93576 --> 0.93699
+Worker-7 score trained from 0.93622 --> 0.93683
+Worker-1 score trained from 0.93241 --> 0.93226
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.9369851,)
+Worst workers : (0, 3, 4, 9, 6)
+Worst scores : (0.9189808, 0.9166921, 0.8977724, 0.8860238, 0.6135185)
+Worker-6 (0.61352) explore worker-5 (0.93699), initial score = -1.00000
+Worker-4 (0.89777) explore worker-5 (0.93699), initial score = -1.00000
+Worker-9 (0.88602) explore worker-5 (0.93699), initial score = -1.00000
+Worker-0 (0.91898) explore worker-5 (0.93699), initial score = -1.00000
+Worker-3 (0.91669) explore worker-5 (0.93699), initial score = -1.00000
+ETA = 153840 seconds
+************************************************** Generation 14 START **************************************************
+Worker-3 score trained from 0.49878 --> 0.50046
+Worker-8 score trained from 0.93668 --> 0.93531
+Worker-0 score trained from 0.50046 --> 0.81523
+Worker-2 score trained from 0.93607 --> 0.93256
+Worker-6 score trained from 0.48825 --> 0.50046
+Worker-5 score trained from 0.93699 --> 0.93607
+Worker-7 score trained from 0.93683 --> 0.93485
+Worker-9 score trained from 0.49954 --> 0.89030
+Worker-1 score trained from 0.93226 --> 0.93515
+Worker-4 score trained from 0.50046 --> 0.93409
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 2, 4: 0}
+Best workers : (5,)
+Best scores : (0.93606955,)
+Worst workers : (2, 9, 0, 6, 3)
+Worst scores : (0.93256027, 0.890296, 0.8152273, 0.50045776, 0.50045776)
+Worker-3 (0.50046) explore worker-5 (0.93607), initial score = -1.00000
+Worker-0 (0.81523) explore worker-5 (0.93607), initial score = -1.00000
+Worker-2 (0.93256) explore worker-5 (0.93607), initial score = -1.00000
+Worker-6 (0.50046) explore worker-5 (0.93607), initial score = -1.00000
+Worker-9 (0.89030) explore worker-5 (0.93607), initial score = -1.00000
+ETA = 145683 seconds
+************************************************** Generation 15 START **************************************************
+Worker-3 score trained from 0.50214 --> 0.50046
+Worker-2 score trained from 0.50671 --> 0.92966
+Worker-8 score trained from 0.93531 --> 0.93775
+Worker-5 score trained from 0.93607 --> 0.93699
+Worker-9 score trained from 0.50366 --> 0.53647
+Worker-7 score trained from 0.93485 --> 0.93760
+Worker-6 score trained from 0.50015 --> 0.93439
+Worker-0 score trained from 0.50046 --> 0.75709
+Worker-1 score trained from 0.93515 --> 0.93775
+Worker-4 score trained from 0.93409 --> 0.93470
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93774796,)
+Worst workers : (6, 2, 0, 9, 3)
+Worst scores : (0.9343912, 0.9296613, 0.7570949, 0.5364663, 0.50045776)
+Worker-3 (0.50046) explore worker-8 (0.93775), initial score = -1.00000
+Worker-2 (0.92966) explore worker-8 (0.93775), initial score = -1.00000
+Worker-9 (0.53647) explore worker-8 (0.93775), initial score = -1.00000
+Worker-0 (0.75709) explore worker-8 (0.93775), initial score = -1.00000
+Worker-6 (0.93439) explore worker-8 (0.93775), initial score = -1.00000
+ETA = 138763 seconds
+************************************************** Generation 16 START **************************************************
+Worker-0 score trained from 0.49374 --> 0.92539
+Worker-6 score trained from 0.50046 --> 0.88892
+Worker-8 score trained from 0.93775 --> 0.93515
+Worker-5 score trained from 0.93699 --> 0.93790
+Worker-9 score trained from 0.47391 --> 0.91211
+Worker-3 score trained from 0.48856 --> 0.58941
+Worker-7 score trained from 0.93760 --> 0.93760
+Worker-1 score trained from 0.93775 --> 0.93561
+Worker-2 score trained from 0.50046 --> 0.93500
+Worker-4 score trained from 0.93470 --> 0.93515
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.93790054,)
+Worst workers : (2, 0, 9, 6, 3)
+Worst scores : (0.93500155, 0.92538905, 0.91211474, 0.8889228, 0.589411)
+Worker-0 (0.92539) explore worker-5 (0.93790), initial score = -1.00000
+Worker-6 (0.88892) explore worker-5 (0.93790), initial score = -1.00000
+Worker-2 (0.93500) explore worker-5 (0.93790), initial score = -1.00000
+Worker-9 (0.91211) explore worker-5 (0.93790), initial score = -1.00000
+Worker-3 (0.58941) explore worker-5 (0.93790), initial score = -1.00000
+ETA = 132641 seconds
+************************************************** Generation 17 START **************************************************
+Worker-0 score trained from 0.49939 --> 0.55127
+Worker-6 score trained from 0.52029 --> 0.78746
+Worker-3 score trained from 0.49954 --> 0.93210
+Worker-8 score trained from 0.93515 --> 0.93348
+Worker-5 score trained from 0.93790 --> 0.93607
+Worker-9 score trained from 0.48566 --> 0.92142
+Worker-7 score trained from 0.93760 --> 0.93775
+Worker-1 score trained from 0.93561 --> 0.93714
+Worker-4 score trained from 0.93515 --> 0.93637
+Worker-2 score trained from 0.50656 --> 0.92554
+Leaderboard: {8: 0, 3: 0, 7: 1, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (7,)
+Best scores : (0.93774796,)
+Worst workers : (3, 2, 9, 6, 0)
+Worst scores : (0.93210256, 0.92554164, 0.921422, 0.78745806, 0.55126643)
+Worker-6 (0.78746) explore worker-7 (0.93775), initial score = -1.00000
+Worker-0 (0.55127) explore worker-7 (0.93775), initial score = -1.00000
+Worker-3 (0.93210) explore worker-7 (0.93775), initial score = -1.00000
+Worker-9 (0.92142) explore worker-7 (0.93775), initial score = -1.00000
+Worker-2 (0.92554) explore worker-7 (0.93775), initial score = -1.00000
+ETA = 127458 seconds
+************************************************** Generation 18 START **************************************************
+Worker-3 score trained from 0.49802 --> 0.50046
+Worker-8 score trained from 0.93348 --> 0.93653
+Worker-5 score trained from 0.93607 --> 0.93699
+Worker-2 score trained from 0.50046 --> 0.74596
+Worker-6 score trained from 0.49954 --> 0.85383
+Worker-7 score trained from 0.93775 --> 0.93668
+Worker-9 score trained from 0.50015 --> 0.84666
+Worker-4 score trained from 0.93637 --> 0.93668
+Worker-1 score trained from 0.93714 --> 0.93546
+Worker-0 score trained from 0.50046 --> 0.88511
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.9369851,)
+Worst workers : (0, 6, 9, 2, 3)
+Worst scores : (0.88510835, 0.85382974, 0.8466585, 0.74595666, 0.50045776)
+Worker-3 (0.50046) explore worker-5 (0.93699), initial score = -1.00000
+Worker-9 (0.84666) explore worker-5 (0.93699), initial score = -1.00000
+Worker-6 (0.85383) explore worker-5 (0.93699), initial score = -1.00000
+Worker-2 (0.74596) explore worker-5 (0.93699), initial score = -1.00000
+Worker-0 (0.88511) explore worker-5 (0.93699), initial score = -1.00000
+ETA = 123826 seconds
+************************************************** Generation 19 START **************************************************
+Worker-2 score trained from 0.49451 --> 0.50046
+Worker-6 score trained from 0.50046 --> 0.75130
+Worker-3 score trained from 0.50137 --> 0.85581
+Worker-8 score trained from 0.93653 --> 0.93164
+Worker-5 score trained from 0.93699 --> 0.93683
+Worker-9 score trained from 0.50046 --> 0.79432
+Worker-7 score trained from 0.93668 --> 0.93760
+Worker-0 score trained from 0.49954 --> 0.69942
+Worker-1 score trained from 0.93546 --> 0.93363
+Worker-4 score trained from 0.93668 --> 0.93302
+Leaderboard: {8: 0, 3: 0, 7: 1, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (7,)
+Best scores : (0.93759537,)
+Worst workers : (3, 9, 6, 0, 2)
+Worst scores : (0.85581326, 0.7943241, 0.75129694, 0.6994202, 0.50045776)
+Worker-2 (0.50046) explore worker-7 (0.93760), initial score = -1.00000
+Worker-6 (0.75130) explore worker-7 (0.93760), initial score = -1.00000
+Worker-3 (0.85581) explore worker-7 (0.93760), initial score = -1.00000
+Worker-0 (0.69942) explore worker-7 (0.93760), initial score = -1.00000
+Worker-9 (0.79432) explore worker-7 (0.93760), initial score = -1.00000
+ETA = 119317 seconds
+************************************************** Generation 20 START **************************************************
+Worker-6 score trained from 0.49924 --> 0.86695
+Worker-8 score trained from 0.93164 --> 0.93210
+Worker-5 score trained from 0.93683 --> 0.93760
+Worker-0 score trained from 0.49969 --> 0.50565
+Worker-7 score trained from 0.93760 --> 0.93729
+Worker-3 score trained from 0.49893 --> 0.88480
+Worker-9 score trained from 0.50046 --> 0.77754
+Worker-1 score trained from 0.93363 --> 0.93439
+Worker-4 score trained from 0.93302 --> 0.93424
+Worker-2 score trained from 0.49054 --> 0.59689
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.93759537,)
+Worst workers : (3, 6, 9, 2, 0)
+Worst scores : (0.8848032, 0.86695147, 0.77754045, 0.5968874, 0.5056454)
+Worker-6 (0.86695) explore worker-5 (0.93760), initial score = -1.00000
+Worker-3 (0.88480) explore worker-5 (0.93760), initial score = -1.00000
+Worker-0 (0.50565) explore worker-5 (0.93760), initial score = -1.00000
+Worker-9 (0.77754) explore worker-5 (0.93760), initial score = -1.00000
+Worker-2 (0.59689) explore worker-5 (0.93760), initial score = -1.00000
+ETA = 116698 seconds
+************************************************** Generation 21 START **************************************************
+Worker-9 score trained from 0.49130 --> 0.79127
+Worker-3 score trained from 0.50198 --> 0.50046
+Worker-8 score trained from 0.93210 --> 0.93668
+Worker-0 score trained from 0.50046 --> 0.90296
+Worker-5 score trained from 0.93760 --> 0.93699
+Worker-7 score trained from 0.93729 --> 0.93653
+Worker-2 score trained from 0.50320 --> 0.50046
+Worker-1 score trained from 0.93439 --> 0.93317
+Worker-6 score trained from 0.49512 --> 0.63015
+Worker-4 score trained from 0.93424 --> 0.93836
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 1}
+Best workers : (4,)
+Best scores : (0.93835825,)
+Worst workers : (0, 9, 6, 3, 2)
+Worst scores : (0.90296, 0.7912725, 0.63014954, 0.50045776, 0.50045776)
+Worker-9 (0.79127) explore worker-4 (0.93836), initial score = -1.00000
+Worker-0 (0.90296) explore worker-4 (0.93836), initial score = -1.00000
+Worker-3 (0.50046) explore worker-4 (0.93836), initial score = -1.00000
+Worker-2 (0.50046) explore worker-4 (0.93836), initial score = -1.00000
+Worker-6 (0.63015) explore worker-4 (0.93836), initial score = -1.00000
+ETA = 112765 seconds
+************************************************** Generation 22 START **************************************************
+Worker-0 score trained from 0.50046 --> 0.50031
+Worker-8 score trained from 0.93668 --> 0.93607
+Worker-5 score trained from 0.93699 --> 0.93668
+Worker-9 score trained from 0.50046 --> 0.61504
+Worker-7 score trained from 0.93653 --> 0.93607
+Worker-1 score trained from 0.93317 --> 0.93699
+Worker-4 score trained from 0.93836 --> 0.93699
+Worker-6 score trained from 0.50046 --> 0.57873
+Worker-3 score trained from 0.50137 --> 0.49664
+Worker-2 score trained from 0.49954 --> 0.75908
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 2}
+Best workers : (4,)
+Best scores : (0.9369851,)
+Worst workers : (2, 9, 6, 0, 3)
+Worst scores : (0.75907844, 0.61504424, 0.5787305, 0.5003052, 0.49664328)
+Worker-0 (0.50031) explore worker-4 (0.93699), initial score = -1.00000
+Worker-9 (0.61504) explore worker-4 (0.93699), initial score = -1.00000
+Worker-3 (0.49664) explore worker-4 (0.93699), initial score = -1.00000
+Worker-6 (0.57873) explore worker-4 (0.93699), initial score = -1.00000
+Worker-2 (0.75908) explore worker-4 (0.93699), initial score = -1.00000
+ETA = 110734 seconds
+************************************************** Generation 23 START **************************************************
+Worker-2 score trained from 0.50915 --> 0.79539
+Worker-8 score trained from 0.93607 --> 0.93515
+Worker-6 score trained from 0.37977 --> 0.92264
+Worker-5 score trained from 0.93668 --> 0.93409
+Worker-7 score trained from 0.93607 --> 0.93164
+Worker-0 score trained from 0.49939 --> 0.75862
+Worker-3 score trained from 0.49954 --> 0.92218
+Worker-1 score trained from 0.93699 --> 0.93851
+Worker-4 score trained from 0.93699 --> 0.93531
+Worker-9 score trained from 0.53189 --> 0.90037
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 1, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (1,)
+Best scores : (0.93851084,)
+Worst workers : (6, 3, 9, 2, 0)
+Worst scores : (0.92264265, 0.92218494, 0.9003662, 0.79539216, 0.7586207)
+Worker-2 (0.79539) explore worker-1 (0.93851), initial score = -1.00000
+Worker-6 (0.92264) explore worker-1 (0.93851), initial score = -1.00000
+Worker-9 (0.90037) explore worker-1 (0.93851), initial score = -1.00000
+Worker-0 (0.75862) explore worker-1 (0.93851), initial score = -1.00000
+Worker-3 (0.92218) explore worker-1 (0.93851), initial score = -1.00000
+ETA = 108018 seconds
+************************************************** Generation 24 START **************************************************
+Worker-0 score trained from 0.49100 --> 0.89640
+Worker-6 score trained from 0.48947 --> 0.75160
+Worker-2 score trained from 0.49771 --> 0.50046
+Worker-9 score trained from 0.48886 --> 0.88068
+Worker-8 score trained from 0.93515 --> 0.93821
+Worker-3 score trained from 0.47788 --> 0.82637
+Worker-5 score trained from 0.93409 --> 0.93699
+Worker-7 score trained from 0.93164 --> 0.93546
+Worker-4 score trained from 0.93531 --> 0.93607
+Worker-1 score trained from 0.93851 --> 0.93668
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93820566,)
+Worst workers : (0, 9, 3, 6, 2)
+Worst scores : (0.89639914, 0.88068354, 0.8263656, 0.75160205, 0.50045776)
+Worker-6 (0.75160) explore worker-8 (0.93821), initial score = -1.00000
+Worker-0 (0.89640) explore worker-8 (0.93821), initial score = -1.00000
+Worker-9 (0.88068) explore worker-8 (0.93821), initial score = -1.00000
+Worker-2 (0.50046) explore worker-8 (0.93821), initial score = -1.00000
+Worker-3 (0.82637) explore worker-8 (0.93821), initial score = -1.00000
+ETA = 104989 seconds
+************************************************** Generation 25 START **************************************************
+Worker-0 score trained from 0.49832 --> 0.49954
+Worker-3 score trained from 0.49771 --> 0.49954
+Worker-2 score trained from 0.49954 --> 0.91273
+Worker-6 score trained from 0.49954 --> 0.80348
+Worker-8 score trained from 0.93821 --> 0.93683
+Worker-9 score trained from 0.49954 --> 0.92997
+Worker-5 score trained from 0.93699 --> 0.93515
+Worker-7 score trained from 0.93546 --> 0.93607
+Worker-1 score trained from 0.93668 --> 0.93897
+Worker-4 score trained from 0.93607 --> 0.93348
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 1, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (1,)
+Best scores : (0.93896854,)
+Worst workers : (9, 2, 6, 3, 0)
+Worst scores : (0.92996645, 0.91272503, 0.8034788, 0.49954227, 0.49954227)
+Worker-0 (0.49954) explore worker-1 (0.93897), initial score = -1.00000
+Worker-6 (0.80348) explore worker-1 (0.93897), initial score = -1.00000
+Worker-3 (0.49954) explore worker-1 (0.93897), initial score = -1.00000
+Worker-2 (0.91273) explore worker-1 (0.93897), initial score = -1.00000
+Worker-9 (0.92997) explore worker-1 (0.93897), initial score = -1.00000
+ETA = 102058 seconds
+************************************************** Generation 26 START **************************************************
+Worker-8 score trained from 0.93683 --> 0.93912
+Worker-5 score trained from 0.93515 --> 0.93531
+Worker-7 score trained from 0.93607 --> 0.93653
+Worker-6 score trained from 0.49771 --> 0.74016
+Worker-2 score trained from 0.50046 --> 0.89274
+Worker-1 score trained from 0.93897 --> 0.93622
+Worker-9 score trained from 0.50549 --> 0.60192
+Worker-4 score trained from 0.93348 --> 0.93775
+Worker-0 score trained from 0.50046 --> 0.86207
+Worker-3 score trained from 0.51068 --> 0.77327
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9391211,)
+Worst workers : (2, 0, 3, 6, 9)
+Worst scores : (0.89273727, 0.86206895, 0.7732682, 0.7401587, 0.6019225)
+Worker-9 (0.60192) explore worker-8 (0.93912), initial score = -1.00000
+Worker-6 (0.74016) explore worker-8 (0.93912), initial score = -1.00000
+Worker-2 (0.89274) explore worker-8 (0.93912), initial score = -1.00000
+Worker-0 (0.86207) explore worker-8 (0.93912), initial score = -1.00000
+Worker-3 (0.77327) explore worker-8 (0.93912), initial score = -1.00000
+ETA = 99851 seconds
+************************************************** Generation 27 START **************************************************
+Worker-9 score trained from 0.49832 --> 0.50046
+Worker-3 score trained from 0.50046 --> 0.93287
+Worker-6 score trained from 0.49954 --> 0.88984
+Worker-8 score trained from 0.93912 --> 0.93683
+Worker-5 score trained from 0.93531 --> 0.93393
+Worker-7 score trained from 0.93653 --> 0.93668
+Worker-0 score trained from 0.50046 --> 0.92081
+Worker-1 score trained from 0.93622 --> 0.93637
+Worker-4 score trained from 0.93775 --> 0.93744
+Worker-2 score trained from 0.66173 --> 0.92768
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 1}
+Best workers : (4,)
+Best scores : (0.9374428,)
+Worst workers : (3, 2, 0, 6, 9)
+Worst scores : (0.93286544, 0.92767775, 0.9208117, 0.8898383, 0.50045776)
+Worker-9 (0.50046) explore worker-4 (0.93744), initial score = -1.00000
+Worker-3 (0.93287) explore worker-4 (0.93744), initial score = -1.00000
+Worker-6 (0.88984) explore worker-4 (0.93744), initial score = -1.00000
+Worker-0 (0.92081) explore worker-4 (0.93744), initial score = -1.00000
+Worker-2 (0.92768) explore worker-4 (0.93744), initial score = -1.00000
+ETA = 97456 seconds
+************************************************** Generation 28 START **************************************************
+Worker-8 score trained from 0.93683 --> 0.93592
+Worker-6 score trained from 0.47986 --> 0.73497
+Worker-5 score trained from 0.93393 --> 0.93378
+Worker-2 score trained from 0.50046 --> 0.67547
+Worker-7 score trained from 0.93668 --> 0.93515
+Worker-3 score trained from 0.48413 --> 0.86771
+Worker-9 score trained from 0.49756 --> 0.75160
+Worker-1 score trained from 0.93637 --> 0.93836
+Worker-4 score trained from 0.93744 --> 0.93454
+Worker-0 score trained from 0.49893 --> 0.49496
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 1, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (1,)
+Best scores : (0.93835825,)
+Worst workers : (3, 9, 6, 2, 0)
+Worst scores : (0.86771435, 0.75160205, 0.734971, 0.67546535, 0.4949649)
+Worker-6 (0.73497) explore worker-1 (0.93836), initial score = -1.00000
+Worker-2 (0.67547) explore worker-1 (0.93836), initial score = -1.00000
+Worker-3 (0.86771) explore worker-1 (0.93836), initial score = -1.00000
+Worker-9 (0.75160) explore worker-1 (0.93836), initial score = -1.00000
+Worker-0 (0.49496) explore worker-1 (0.93836), initial score = -1.00000
+ETA = 95278 seconds
+************************************************** Generation 29 START **************************************************
+Worker-8 score trained from 0.93592 --> 0.93561
+Worker-0 score trained from 0.49908 --> 0.66631
+Worker-5 score trained from 0.93378 --> 0.93180
+Worker-7 score trained from 0.93515 --> 0.93439
+Worker-6 score trained from 0.52579 --> 0.89319
+Worker-3 score trained from 0.50046 --> 0.93088
+Worker-4 score trained from 0.93454 --> 0.93592
+Worker-2 score trained from 0.50320 --> 0.50183
+Worker-1 score trained from 0.93836 --> 0.93790
+Worker-9 score trained from 0.49954 --> 0.93348
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 2, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (1,)
+Best scores : (0.93790054,)
+Worst workers : (5, 3, 6, 0, 2)
+Worst scores : (0.9317974, 0.9308819, 0.893195, 0.66631067, 0.50183094)
+Worker-0 (0.66631) explore worker-1 (0.93790), initial score = -1.00000
+Worker-5 (0.93180) explore worker-1 (0.93790), initial score = -1.00000
+Worker-2 (0.50183) explore worker-1 (0.93790), initial score = -1.00000
+Worker-3 (0.93088) explore worker-1 (0.93790), initial score = -1.00000
+Worker-6 (0.89319) explore worker-1 (0.93790), initial score = -1.00000
+ETA = 93460 seconds
+************************************************** Generation 30 START **************************************************
+Worker-6 score trained from 0.54974 --> 0.92341
+Worker-8 score trained from 0.93561 --> 0.93637
+Worker-2 score trained from 0.50275 --> 0.49954
+Worker-7 score trained from 0.93439 --> 0.93561
+Worker-1 score trained from 0.93790 --> 0.93927
+Worker-0 score trained from 0.49893 --> 0.58346
+Worker-4 score trained from 0.93592 --> 0.93470
+Worker-3 score trained from 0.50732 --> 0.92218
+Worker-5 score trained from 0.51419 --> 0.53906
+Worker-9 score trained from 0.93348 --> 0.93164
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 3, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (1,)
+Best scores : (0.9392737,)
+Worst workers : (6, 3, 0, 5, 2)
+Worst scores : (0.9234055, 0.92218494, 0.5834605, 0.5390601, 0.49954227)
+Worker-2 (0.49954) explore worker-1 (0.93927), initial score = -1.00000
+Worker-6 (0.92341) explore worker-1 (0.93927), initial score = -1.00000
+Worker-3 (0.92218) explore worker-1 (0.93927), initial score = -1.00000
+Worker-5 (0.53906) explore worker-1 (0.93927), initial score = -1.00000
+Worker-0 (0.58346) explore worker-1 (0.93927), initial score = -1.00000
+ETA = 91609 seconds
+************************************************** Generation 31 START **************************************************
+Worker-2 score trained from 0.49908 --> 0.50046
+Worker-0 score trained from 0.49954 --> 0.79310
+Worker-3 score trained from 0.50046 --> 0.76228
+Worker-8 score trained from 0.93637 --> 0.93836
+Worker-5 score trained from 0.47910 --> 0.74306
+Worker-7 score trained from 0.93561 --> 0.93042
+Worker-4 score trained from 0.93470 --> 0.93821
+Worker-1 score trained from 0.93927 --> 0.93714
+Worker-6 score trained from 0.49435 --> 0.84178
+Worker-9 score trained from 0.93164 --> 0.92691
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93835825,)
+Worst workers : (6, 0, 3, 5, 2)
+Worst scores : (0.841776, 0.79310346, 0.76228255, 0.74305767, 0.50045776)
+Worker-2 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-0 (0.79310) explore worker-8 (0.93836), initial score = -1.00000
+Worker-5 (0.74306) explore worker-8 (0.93836), initial score = -1.00000
+Worker-3 (0.76228) explore worker-8 (0.93836), initial score = -1.00000
+Worker-6 (0.84178) explore worker-8 (0.93836), initial score = -1.00000
+ETA = 89881 seconds
+************************************************** Generation 32 START **************************************************
+Worker-0 score trained from 0.49985 --> 0.50046
+Worker-3 score trained from 0.50046 --> 0.50046
+Worker-5 score trained from 0.50046 --> 0.93195
+Worker-6 score trained from 0.50046 --> 0.50046
+Worker-8 score trained from 0.93836 --> 0.93653
+Worker-7 score trained from 0.93042 --> 0.93592
+Worker-2 score trained from 0.49954 --> 0.79493
+Worker-1 score trained from 0.93714 --> 0.93775
+Worker-4 score trained from 0.93821 --> 0.93515
+Worker-9 score trained from 0.92691 --> 0.91807
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 1, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (1,)
+Best scores : (0.93774796,)
+Worst workers : (9, 2, 6, 3, 0)
+Worst scores : (0.9180653, 0.7949344, 0.50045776, 0.50045776, 0.50045776)
+Worker-0 (0.50046) explore worker-1 (0.93775), initial score = -1.00000
+Worker-3 (0.50046) explore worker-1 (0.93775), initial score = -1.00000
+Worker-6 (0.50046) explore worker-1 (0.93775), initial score = -1.00000
+Worker-2 (0.79493) explore worker-1 (0.93775), initial score = -1.00000
+Worker-9 (0.91807) explore worker-1 (0.93775), initial score = -1.00000
+ETA = 88159 seconds
+************************************************** Generation 33 START **************************************************
+Worker-0 score trained from 0.49420 --> 0.74428
+Worker-5 score trained from 0.93195 --> 0.93287
+Worker-2 score trained from 0.50366 --> 0.50046
+Worker-6 score trained from 0.50442 --> 0.81248
+Worker-8 score trained from 0.93653 --> 0.93760
+Worker-7 score trained from 0.93592 --> 0.93576
+Worker-3 score trained from 0.55081 --> 0.84849
+Worker-1 score trained from 0.93775 --> 0.93592
+Worker-4 score trained from 0.93515 --> 0.93744
+Worker-9 score trained from 0.49939 --> 0.91334
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93759537,)
+Worst workers : (9, 3, 6, 0, 2)
+Worst scores : (0.9133354, 0.84848946, 0.8124809, 0.7442783, 0.50045776)
+Worker-6 (0.81248) explore worker-8 (0.93760), initial score = -1.00000
+Worker-0 (0.74428) explore worker-8 (0.93760), initial score = -1.00000
+Worker-2 (0.50046) explore worker-8 (0.93760), initial score = -1.00000
+Worker-3 (0.84849) explore worker-8 (0.93760), initial score = -1.00000
+Worker-9 (0.91334) explore worker-8 (0.93760), initial score = -1.00000
+ETA = 86489 seconds
+************************************************** Generation 34 START **************************************************
+Worker-2 score trained from 0.50214 --> 0.50046
+Worker-9 score trained from 0.50320 --> 0.50046
+Worker-3 score trained from 0.49924 --> 0.85276
+Worker-5 score trained from 0.93287 --> 0.93439
+Worker-0 score trained from 0.50198 --> 0.50046
+Worker-8 score trained from 0.93760 --> 0.93790
+Worker-7 score trained from 0.93576 --> 0.93302
+Worker-6 score trained from 0.49954 --> 0.92981
+Worker-1 score trained from 0.93592 --> 0.93729
+Worker-4 score trained from 0.93744 --> 0.93714
+Leaderboard: {8: 2, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93790054,)
+Worst workers : (6, 3, 9, 2, 0)
+Worst scores : (0.92981386, 0.8527617, 0.50045776, 0.50045776, 0.50045776)
+Worker-2 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-3 (0.85276) explore worker-8 (0.93790), initial score = -1.00000
+Worker-9 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-0 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-6 (0.92981) explore worker-8 (0.93790), initial score = -1.00000
+ETA = 84768 seconds
+************************************************** Generation 35 START **************************************************
+Worker-0 score trained from 0.49924 --> 0.50046
+Worker-5 score trained from 0.93439 --> 0.93409
+Worker-9 score trained from 0.49680 --> 0.49954
+Worker-2 score trained from 0.50046 --> 0.77159
+Worker-3 score trained from 0.50046 --> 0.89396
+Worker-8 score trained from 0.93790 --> 0.93729
+Worker-7 score trained from 0.93302 --> 0.93592
+Worker-6 score trained from 0.54715 --> 0.93470
+Worker-1 score trained from 0.93729 --> 0.93546
+Worker-4 score trained from 0.93714 --> 0.93668
+Leaderboard: {8: 3, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9372902,)
+Worst workers : (5, 3, 2, 0, 9)
+Worst scores : (0.934086, 0.8939579, 0.7715899, 0.50045776, 0.49954227)
+Worker-0 (0.50046) explore worker-8 (0.93729), initial score = -1.00000
+Worker-2 (0.77159) explore worker-8 (0.93729), initial score = -1.00000
+Worker-9 (0.49954) explore worker-8 (0.93729), initial score = -1.00000
+Worker-5 (0.93409) explore worker-8 (0.93729), initial score = -1.00000
+Worker-3 (0.89396) explore worker-8 (0.93729), initial score = -1.00000
+ETA = 83233 seconds
+************************************************** Generation 36 START **************************************************
+Worker-9 score trained from 0.50412 --> 0.50046
+Worker-0 score trained from 0.49985 --> 0.50076
+Worker-2 score trained from 0.50061 --> 0.50046
+Worker-3 score trained from 0.49085 --> 0.89335
+Worker-5 score trained from 0.49527 --> 0.78761
+Worker-8 score trained from 0.93729 --> 0.93622
+Worker-7 score trained from 0.93592 --> 0.93271
+Worker-4 score trained from 0.93668 --> 0.93668
+Worker-6 score trained from 0.93470 --> 0.93531
+Worker-1 score trained from 0.93546 --> 0.93500
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 1}
+Best workers : (4,)
+Best scores : (0.9366799,)
+Worst workers : (3, 5, 0, 9, 2)
+Worst scores : (0.89334756, 0.7876106, 0.5007629, 0.50045776, 0.50045776)
+Worker-0 (0.50076) explore worker-4 (0.93668), initial score = -1.00000
+Worker-9 (0.50046) explore worker-4 (0.93668), initial score = -1.00000
+Worker-3 (0.89335) explore worker-4 (0.93668), initial score = -1.00000
+Worker-2 (0.50046) explore worker-4 (0.93668), initial score = -1.00000
+Worker-5 (0.78761) explore worker-4 (0.93668), initial score = -1.00000
+ETA = 81718 seconds
+************************************************** Generation 37 START **************************************************
+Worker-8 score trained from 0.93622 --> 0.93760
+Worker-3 score trained from 0.50244 --> 0.50061
+Worker-7 score trained from 0.93271 --> 0.93485
+Worker-2 score trained from 0.49481 --> 0.50000
+Worker-9 score trained from 0.49634 --> 0.60269
+Worker-0 score trained from 0.49313 --> 0.93500
+Worker-1 score trained from 0.93500 --> 0.92112
+Worker-6 score trained from 0.93531 --> 0.93637
+Worker-4 score trained from 0.93668 --> 0.93851
+Worker-5 score trained from 0.47147 --> 0.89564
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 2}
+Best workers : (4,)
+Best scores : (0.93851084,)
+Worst workers : (1, 5, 9, 3, 2)
+Worst scores : (0.9211169, 0.89563626, 0.6026854, 0.5006103, 0.5)
+Worker-9 (0.60269) explore worker-4 (0.93851), initial score = -1.00000
+Worker-3 (0.50061) explore worker-4 (0.93851), initial score = -1.00000
+Worker-2 (0.50000) explore worker-4 (0.93851), initial score = -1.00000
+Worker-5 (0.89564) explore worker-4 (0.93851), initial score = -1.00000
+Worker-1 (0.92112) explore worker-4 (0.93851), initial score = -1.00000
+ETA = 80378 seconds
+************************************************** Generation 38 START **************************************************
+Worker-8 score trained from 0.93760 --> 0.93790
+Worker-5 score trained from 0.50259 --> 0.50046
+Worker-7 score trained from 0.93485 --> 0.93012
+Worker-0 score trained from 0.93500 --> 0.93805
+Worker-1 score trained from 0.49954 --> 0.93424
+Worker-9 score trained from 0.50046 --> 0.90342
+Worker-6 score trained from 0.93637 --> 0.93515
+Worker-2 score trained from 0.49954 --> 0.90052
+Worker-4 score trained from 0.93851 --> 0.93760
+Worker-3 score trained from 0.50031 --> 0.86588
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9380531,)
+Worst workers : (7, 9, 2, 3, 5)
+Worst scores : (0.93011904, 0.90341777, 0.9005188, 0.8658834, 0.50045776)
+Worker-5 (0.50046) explore worker-0 (0.93805), initial score = -1.00000
+Worker-9 (0.90342) explore worker-0 (0.93805), initial score = -1.00000
+Worker-7 (0.93012) explore worker-0 (0.93805), initial score = -1.00000
+Worker-2 (0.90052) explore worker-0 (0.93805), initial score = -1.00000
+Worker-3 (0.86588) explore worker-0 (0.93805), initial score = -1.00000
+ETA = 79406 seconds
+************************************************** Generation 39 START **************************************************
+Worker-2 score trained from 0.50748 --> 0.50046
+Worker-9 score trained from 0.49542 --> 0.80470
+Worker-8 score trained from 0.93790 --> 0.93576
+Worker-0 score trained from 0.93805 --> 0.93424
+Worker-5 score trained from 0.50046 --> 0.82423
+Worker-3 score trained from 0.50046 --> 0.80302
+Worker-1 score trained from 0.93424 --> 0.93531
+Worker-7 score trained from 0.48840 --> 0.71315
+Worker-6 score trained from 0.93515 --> 0.93683
+Worker-4 score trained from 0.93760 --> 0.93622
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 1, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.9368325,)
+Worst workers : (5, 9, 3, 7, 2)
+Worst scores : (0.8242295, 0.8046994, 0.8030211, 0.7131523, 0.50045776)
+Worker-9 (0.80470) explore worker-6 (0.93683), initial score = -1.00000
+Worker-2 (0.50046) explore worker-6 (0.93683), initial score = -1.00000
+Worker-5 (0.82423) explore worker-6 (0.93683), initial score = -1.00000
+Worker-7 (0.71315) explore worker-6 (0.93683), initial score = -1.00000
+Worker-3 (0.80302) explore worker-6 (0.93683), initial score = -1.00000
+ETA = 78145 seconds
+************************************************** Generation 40 START **************************************************
+Worker-3 score trained from 0.44416 --> 0.87611
+Worker-9 score trained from 0.49985 --> 0.89808
+Worker-8 score trained from 0.93576 --> 0.93531
+Worker-2 score trained from 0.50046 --> 0.91013
+Worker-0 score trained from 0.93424 --> 0.93851
+Worker-7 score trained from 0.49771 --> 0.80714
+Worker-5 score trained from 0.51953 --> 0.91135
+Worker-1 score trained from 0.93531 --> 0.93363
+Worker-6 score trained from 0.93683 --> 0.93485
+Worker-4 score trained from 0.93622 --> 0.93531
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.93851084,)
+Worst workers : (5, 2, 9, 3, 7)
+Worst scores : (0.91135186, 0.9101312, 0.8980775, 0.8761062, 0.80714065)
+Worker-9 (0.89808) explore worker-0 (0.93851), initial score = -1.00000
+Worker-3 (0.87611) explore worker-0 (0.93851), initial score = -1.00000
+Worker-2 (0.91013) explore worker-0 (0.93851), initial score = -1.00000
+Worker-7 (0.80714) explore worker-0 (0.93851), initial score = -1.00000
+Worker-5 (0.91135) explore worker-0 (0.93851), initial score = -1.00000
+ETA = 77085 seconds
+************************************************** Generation 41 START **************************************************
+Worker-9 score trained from 0.49786 --> 0.49954
+Worker-7 score trained from 0.49344 --> 0.84376
+Worker-8 score trained from 0.93531 --> 0.93775
+Worker-5 score trained from 0.49954 --> 0.93241
+Worker-2 score trained from 0.49161 --> 0.84452
+Worker-0 score trained from 0.93851 --> 0.93805
+Worker-1 score trained from 0.93363 --> 0.93592
+Worker-6 score trained from 0.93485 --> 0.93714
+Worker-3 score trained from 0.49969 --> 0.90159
+Worker-4 score trained from 0.93531 --> 0.93546
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 2, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9380531,)
+Worst workers : (5, 3, 2, 7, 9)
+Worst scores : (0.9324077, 0.90158683, 0.8445224, 0.84375954, 0.49954227)
+Worker-9 (0.49954) explore worker-0 (0.93805), initial score = -1.00000
+Worker-7 (0.84376) explore worker-0 (0.93805), initial score = -1.00000
+Worker-2 (0.84452) explore worker-0 (0.93805), initial score = -1.00000
+Worker-5 (0.93241) explore worker-0 (0.93805), initial score = -1.00000
+Worker-3 (0.90159) explore worker-0 (0.93805), initial score = -1.00000
+ETA = 76029 seconds
+************************************************** Generation 42 START **************************************************
+Worker-7 score trained from 0.49985 --> 0.50046
+Worker-2 score trained from 0.49771 --> 0.50046
+Worker-8 score trained from 0.93775 --> 0.93531
+Worker-9 score trained from 0.49939 --> 0.92325
+Worker-5 score trained from 0.50229 --> 0.70568
+Worker-0 score trained from 0.93805 --> 0.93271
+Worker-1 score trained from 0.93592 --> 0.93180
+Worker-6 score trained from 0.93714 --> 0.93668
+Worker-3 score trained from 0.53875 --> 0.90052
+Worker-4 score trained from 0.93546 --> 0.93714
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 1}
+Best workers : (4,)
+Best scores : (0.9371376,)
+Worst workers : (9, 3, 5, 7, 2)
+Worst scores : (0.923253, 0.9005188, 0.7056759, 0.50045776, 0.50045776)
+Worker-2 (0.50046) explore worker-4 (0.93714), initial score = -1.00000
+Worker-7 (0.50046) explore worker-4 (0.93714), initial score = -1.00000
+Worker-5 (0.70568) explore worker-4 (0.93714), initial score = -1.00000
+Worker-9 (0.92325) explore worker-4 (0.93714), initial score = -1.00000
+Worker-3 (0.90052) explore worker-4 (0.93714), initial score = -1.00000
+ETA = 74959 seconds
+************************************************** Generation 43 START **************************************************
+Worker-8 score trained from 0.93531 --> 0.93805
+Worker-0 score trained from 0.93271 --> 0.93760
+Worker-7 score trained from 0.50046 --> 0.55233
+Worker-1 score trained from 0.93180 --> 0.93729
+Worker-9 score trained from 0.50504 --> 0.62023
+Worker-4 score trained from 0.93714 --> 0.93576
+Worker-6 score trained from 0.93668 --> 0.93622
+Worker-3 score trained from 0.50519 --> 0.90250
+Worker-2 score trained from 0.50046 --> 0.89579
+Worker-5 score trained from 0.49954 --> 0.88785
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9380531,)
+Worst workers : (3, 2, 5, 9, 7)
+Worst scores : (0.9025023, 0.89578885, 0.88785475, 0.6202319, 0.5523344)
+Worker-7 (0.55233) explore worker-8 (0.93805), initial score = -1.00000
+Worker-2 (0.89579) explore worker-8 (0.93805), initial score = -1.00000
+Worker-9 (0.62023) explore worker-8 (0.93805), initial score = -1.00000
+Worker-3 (0.90250) explore worker-8 (0.93805), initial score = -1.00000
+Worker-5 (0.88785) explore worker-8 (0.93805), initial score = -1.00000
+ETA = 74099 seconds
+************************************************** Generation 44 START **************************************************
+Worker-7 score trained from 0.50046 --> 0.90098
+Worker-9 score trained from 0.49802 --> 0.50046
+Worker-5 score trained from 0.50046 --> 0.85658
+Worker-2 score trained from 0.50061 --> 0.89167
+Worker-3 score trained from 0.50565 --> 0.93164
+Worker-8 score trained from 0.93805 --> 0.93607
+Worker-0 score trained from 0.93760 --> 0.93424
+Worker-1 score trained from 0.93729 --> 0.93317
+Worker-6 score trained from 0.93622 --> 0.93790
+Worker-4 score trained from 0.93576 --> 0.93714
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 1, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.93790054,)
+Worst workers : (3, 7, 2, 5, 9)
+Worst scores : (0.9316448, 0.9009765, 0.8916692, 0.85657614, 0.50045776)
+Worker-7 (0.90098) explore worker-6 (0.93790), initial score = -1.00000
+Worker-5 (0.85658) explore worker-6 (0.93790), initial score = -1.00000
+Worker-2 (0.89167) explore worker-6 (0.93790), initial score = -1.00000
+Worker-9 (0.50046) explore worker-6 (0.93790), initial score = -1.00000
+Worker-3 (0.93164) explore worker-6 (0.93790), initial score = -1.00000
+ETA = 73073 seconds
+************************************************** Generation 45 START **************************************************
+Worker-5 score trained from 0.49924 --> 0.50046
+Worker-8 score trained from 0.93607 --> 0.93760
+Worker-3 score trained from 0.48871 --> 0.89228
+Worker-0 score trained from 0.93424 --> 0.93378
+Worker-1 score trained from 0.93317 --> 0.93653
+Worker-2 score trained from 0.49634 --> 0.92020
+Worker-6 score trained from 0.93790 --> 0.93775
+Worker-9 score trained from 0.50442 --> 0.93119
+Worker-4 score trained from 0.93714 --> 0.93576
+Worker-7 score trained from 0.50046 --> 0.85841
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 2, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.93774796,)
+Worst workers : (9, 2, 3, 7, 5)
+Worst scores : (0.93118703, 0.9202014, 0.8922795, 0.8584071, 0.50045776)
+Worker-3 (0.89228) explore worker-6 (0.93775), initial score = -1.00000
+Worker-5 (0.50046) explore worker-6 (0.93775), initial score = -1.00000
+Worker-7 (0.85841) explore worker-6 (0.93775), initial score = -1.00000
+Worker-9 (0.93119) explore worker-6 (0.93775), initial score = -1.00000
+Worker-2 (0.92020) explore worker-6 (0.93775), initial score = -1.00000
+ETA = 72186 seconds
+************************************************** Generation 46 START **************************************************
+Worker-8 score trained from 0.93760 --> 0.93637
+Worker-5 score trained from 0.50320 --> 0.49954
+Worker-7 score trained from 0.49939 --> 0.79127
+Worker-3 score trained from 0.50015 --> 0.72978
+Worker-0 score trained from 0.93378 --> 0.93775
+Worker-2 score trained from 0.49954 --> 0.91929
+Worker-1 score trained from 0.93653 --> 0.93119
+Worker-9 score trained from 0.49542 --> 0.86039
+Worker-6 score trained from 0.93775 --> 0.93546
+Worker-4 score trained from 0.93576 --> 0.93714
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.93774796,)
+Worst workers : (2, 9, 7, 3, 5)
+Worst scores : (0.91928595, 0.8603906, 0.7912725, 0.72978336, 0.49954227)
+Worker-5 (0.49954) explore worker-0 (0.93775), initial score = -1.00000
+Worker-3 (0.72978) explore worker-0 (0.93775), initial score = -1.00000
+Worker-7 (0.79127) explore worker-0 (0.93775), initial score = -1.00000
+Worker-2 (0.91929) explore worker-0 (0.93775), initial score = -1.00000
+Worker-9 (0.86039) explore worker-0 (0.93775), initial score = -1.00000
+ETA = 71359 seconds
+************************************************** Generation 47 START **************************************************
+Worker-5 score trained from 0.50061 --> 0.49954
+Worker-9 score trained from 0.50458 --> 0.50046
+Worker-7 score trained from 0.49268 --> 0.50046
+Worker-8 score trained from 0.93637 --> 0.93714
+Worker-2 score trained from 0.49954 --> 0.81965
+Worker-0 score trained from 0.93775 --> 0.93805
+Worker-1 score trained from 0.93119 --> 0.93607
+Worker-6 score trained from 0.93546 --> 0.93576
+Worker-4 score trained from 0.93714 --> 0.93729
+Worker-3 score trained from 0.49954 --> 0.89640
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 2, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9380531,)
+Worst workers : (3, 2, 9, 7, 5)
+Worst scores : (0.89639914, 0.81965214, 0.50045776, 0.50045776, 0.49954227)
+Worker-7 (0.50046) explore worker-0 (0.93805), initial score = -1.00000
+Worker-5 (0.49954) explore worker-0 (0.93805), initial score = -1.00000
+Worker-2 (0.81965) explore worker-0 (0.93805), initial score = -1.00000
+Worker-9 (0.50046) explore worker-0 (0.93805), initial score = -1.00000
+Worker-3 (0.89640) explore worker-0 (0.93805), initial score = -1.00000
+ETA = 70457 seconds
+************************************************** Generation 48 START **************************************************
+Worker-3 score trained from 0.43363 --> 0.89915
+Worker-8 score trained from 0.93714 --> 0.93637
+Worker-9 score trained from 0.50046 --> 0.92936
+Worker-5 score trained from 0.50046 --> 0.89960
+Worker-0 score trained from 0.93805 --> 0.93576
+Worker-7 score trained from 0.49954 --> 0.85185
+Worker-2 score trained from 0.50397 --> 0.61733
+Worker-1 score trained from 0.93607 --> 0.93699
+Worker-6 score trained from 0.93576 --> 0.93592
+Worker-4 score trained from 0.93729 --> 0.93454
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 1, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (1,)
+Best scores : (0.9369851,)
+Worst workers : (9, 5, 3, 7, 2)
+Worst scores : (0.9293561, 0.8996033, 0.89914554, 0.8518462, 0.61733294)
+Worker-2 (0.61733) explore worker-1 (0.93699), initial score = -1.00000
+Worker-5 (0.89960) explore worker-1 (0.93699), initial score = -1.00000
+Worker-7 (0.85185) explore worker-1 (0.93699), initial score = -1.00000
+Worker-3 (0.89915) explore worker-1 (0.93699), initial score = -1.00000
+Worker-9 (0.92936) explore worker-1 (0.93699), initial score = -1.00000
+ETA = 69638 seconds
+************************************************** Generation 49 START **************************************************
+Worker-5 score trained from 0.49954 --> 0.89808
+Worker-8 score trained from 0.93637 --> 0.93760
+Worker-0 score trained from 0.93576 --> 0.93515
+Worker-3 score trained from 0.50046 --> 0.79371
+Worker-2 score trained from 0.49115 --> 0.88862
+Worker-4 score trained from 0.93454 --> 0.93592
+Worker-1 score trained from 0.93699 --> 0.93790
+Worker-6 score trained from 0.93592 --> 0.93683
+Worker-9 score trained from 0.51388 --> 0.77495
+Worker-7 score trained from 0.50137 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 2, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (1,)
+Best scores : (0.93790054,)
+Worst workers : (5, 2, 3, 9, 7)
+Worst scores : (0.8980775, 0.88861763, 0.79371375, 0.7749466, 0.50045776)
+Worker-2 (0.88862) explore worker-1 (0.93790), initial score = -1.00000
+Worker-5 (0.89808) explore worker-1 (0.93790), initial score = -1.00000
+Worker-7 (0.50046) explore worker-1 (0.93790), initial score = -1.00000
+Worker-3 (0.79371) explore worker-1 (0.93790), initial score = -1.00000
+Worker-9 (0.77495) explore worker-1 (0.93790), initial score = -1.00000
+ETA = 68926 seconds
+************************************************** Generation 50 START **************************************************
+Worker-2 score trained from 0.49985 --> 0.50046
+Worker-5 score trained from 0.49664 --> 0.50046
+Worker-7 score trained from 0.49496 --> 0.50320
+Worker-8 score trained from 0.93760 --> 0.93012
+Worker-0 score trained from 0.93515 --> 0.93683
+Worker-1 score trained from 0.93790 --> 0.93699
+Worker-9 score trained from 0.50061 --> 0.50046
+Worker-6 score trained from 0.93683 --> 0.93699
+Worker-4 score trained from 0.93592 --> 0.93637
+Worker-3 score trained from 0.37199 --> 0.88816
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 1, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.9369851,)
+Worst workers : (3, 7, 9, 5, 2)
+Worst scores : (0.88815993, 0.50320417, 0.50045776, 0.50045776, 0.50045776)
+Worker-7 (0.50320) explore worker-6 (0.93699), initial score = -1.00000
+Worker-2 (0.50046) explore worker-6 (0.93699), initial score = -1.00000
+Worker-5 (0.50046) explore worker-6 (0.93699), initial score = -1.00000
+Worker-9 (0.50046) explore worker-6 (0.93699), initial score = -1.00000
+Worker-3 (0.88816) explore worker-6 (0.93699), initial score = -1.00000
+ETA = 68447 seconds
+************************************************** Generation 51 START **************************************************
+Worker-5 score trained from 0.46994 --> 0.88969
+Worker-2 score trained from 0.49771 --> 0.50046
+Worker-7 score trained from 0.50366 --> 0.50046
+Worker-8 score trained from 0.93012 --> 0.93744
+Worker-0 score trained from 0.93683 --> 0.93561
+Worker-1 score trained from 0.93699 --> 0.93485
+Worker-6 score trained from 0.93699 --> 0.93729
+Worker-3 score trained from 0.50046 --> 0.92051
+Worker-4 score trained from 0.93637 --> 0.93439
+Worker-9 score trained from 0.50824 --> 0.82728
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9374428,)
+Worst workers : (3, 5, 9, 7, 2)
+Worst scores : (0.92050654, 0.8896857, 0.82728106, 0.50045776, 0.50045776)
+Worker-2 (0.50046) explore worker-8 (0.93744), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93744), initial score = -1.00000
+Worker-5 (0.88969) explore worker-8 (0.93744), initial score = -1.00000
+Worker-3 (0.92051) explore worker-8 (0.93744), initial score = -1.00000
+Worker-9 (0.82728) explore worker-8 (0.93744), initial score = -1.00000
+ETA = 67758 seconds
+************************************************** Generation 52 START **************************************************
+Worker-2 score trained from 0.49985 --> 0.50046
+Worker-9 score trained from 0.49954 --> 0.80897
+Worker-3 score trained from 0.49695 --> 0.49954
+Worker-7 score trained from 0.50458 --> 0.50046
+Worker-5 score trained from 0.49832 --> 0.79112
+Worker-8 score trained from 0.93744 --> 0.93775
+Worker-0 score trained from 0.93561 --> 0.93424
+Worker-1 score trained from 0.93485 --> 0.93424
+Worker-6 score trained from 0.93729 --> 0.93714
+Worker-4 score trained from 0.93439 --> 0.93699
+Leaderboard: {8: 2, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93774796,)
+Worst workers : (9, 5, 7, 2, 3)
+Worst scores : (0.80897164, 0.79111993, 0.50045776, 0.50045776, 0.49954227)
+Worker-5 (0.79112) explore worker-8 (0.93775), initial score = -1.00000
+Worker-3 (0.49954) explore worker-8 (0.93775), initial score = -1.00000
+Worker-2 (0.50046) explore worker-8 (0.93775), initial score = -1.00000
+Worker-9 (0.80897) explore worker-8 (0.93775), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93775), initial score = -1.00000
+ETA = 66952 seconds
+************************************************** Generation 53 START **************************************************
+Worker-7 score trained from 0.50046 --> 0.73894
+Worker-5 score trained from 0.49847 --> 0.49954
+Worker-3 score trained from 0.49954 --> 0.85398
+Worker-9 score trained from 0.49649 --> 0.50046
+Worker-2 score trained from 0.49771 --> 0.50046
+Worker-8 score trained from 0.93775 --> 0.93699
+Worker-0 score trained from 0.93424 --> 0.93744
+Worker-1 score trained from 0.93424 --> 0.93653
+Worker-6 score trained from 0.93714 --> 0.92707
+Worker-4 score trained from 0.93699 --> 0.93775
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 1}
+Best workers : (4,)
+Best scores : (0.93774796,)
+Worst workers : (3, 7, 9, 2, 5)
+Worst scores : (0.8539823, 0.73893803, 0.50045776, 0.50045776, 0.49954227)
+Worker-7 (0.73894) explore worker-4 (0.93775), initial score = -1.00000
+Worker-3 (0.85398) explore worker-4 (0.93775), initial score = -1.00000
+Worker-2 (0.50046) explore worker-4 (0.93775), initial score = -1.00000
+Worker-5 (0.49954) explore worker-4 (0.93775), initial score = -1.00000
+Worker-9 (0.50046) explore worker-4 (0.93775), initial score = -1.00000
+ETA = 66217 seconds
+************************************************** Generation 54 START **************************************************
+Worker-8 score trained from 0.93699 --> 0.93699
+Worker-0 score trained from 0.93744 --> 0.93653
+Worker-7 score trained from 0.50076 --> 0.88419
+Worker-1 score trained from 0.93653 --> 0.93653
+Worker-6 score trained from 0.92707 --> 0.93668
+Worker-4 score trained from 0.93775 --> 0.93714
+Worker-5 score trained from 0.50046 --> 0.90861
+Worker-2 score trained from 0.54760 --> 0.75084
+Worker-3 score trained from 0.50092 --> 0.59124
+Worker-9 score trained from 0.50046 --> 0.92676
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 2}
+Best workers : (4,)
+Best scores : (0.9371376,)
+Worst workers : (9, 5, 7, 2, 3)
+Worst scores : (0.9267623, 0.90860546, 0.8841929, 0.7508392, 0.591242)
+Worker-7 (0.88419) explore worker-4 (0.93714), initial score = -1.00000
+Worker-5 (0.90861) explore worker-4 (0.93714), initial score = -1.00000
+Worker-2 (0.75084) explore worker-4 (0.93714), initial score = -1.00000
+Worker-3 (0.59124) explore worker-4 (0.93714), initial score = -1.00000
+Worker-9 (0.92676) explore worker-4 (0.93714), initial score = -1.00000
+ETA = 66002 seconds
+************************************************** Generation 55 START **************************************************
+Worker-8 score trained from 0.93699 --> 0.93668
+Worker-0 score trained from 0.93653 --> 0.93256
+Worker-1 score trained from 0.93653 --> 0.93348
+Worker-6 score trained from 0.93668 --> 0.93546
+Worker-4 score trained from 0.93714 --> 0.93821
+Worker-5 score trained from 0.49954 --> 0.93805
+Worker-2 score trained from 0.49817 --> 0.50046
+Worker-3 score trained from 0.50229 --> 0.50763
+Worker-9 score trained from 0.50046 --> 0.64876
+Worker-7 score trained from 0.49542 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 3}
+Best workers : (4,)
+Best scores : (0.93820566,)
+Worst workers : (0, 9, 3, 7, 2)
+Worst scores : (0.93256027, 0.64876413, 0.5076289, 0.50045776, 0.50045776)
+Worker-0 (0.93256) explore worker-4 (0.93821), initial score = -1.00000
+Worker-2 (0.50046) explore worker-4 (0.93821), initial score = -1.00000
+Worker-3 (0.50763) explore worker-4 (0.93821), initial score = -1.00000
+Worker-7 (0.50046) explore worker-4 (0.93821), initial score = -1.00000
+Worker-9 (0.64876) explore worker-4 (0.93821), initial score = -1.00000
+ETA = 65585 seconds
+************************************************** Generation 56 START **************************************************
+Worker-8 score trained from 0.93668 --> 0.93607
+Worker-1 score trained from 0.93348 --> 0.93607
+Worker-9 score trained from 0.50671 --> 0.50549
+Worker-4 score trained from 0.93821 --> 0.93790
+Worker-2 score trained from 0.50046 --> 0.64373
+Worker-6 score trained from 0.93546 --> 0.93546
+Worker-5 score trained from 0.93805 --> 0.93729
+Worker-3 score trained from 0.50061 --> 0.62374
+Worker-7 score trained from 0.49512 --> 0.50183
+Worker-0 score trained from 0.50000 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 4}
+Best workers : (4,)
+Best scores : (0.93790054,)
+Worst workers : (2, 3, 9, 7, 0)
+Worst scores : (0.64372903, 0.6237412, 0.5054928, 0.50183094, 0.50045776)
+Worker-2 (0.64373) explore worker-4 (0.93790), initial score = -1.00000
+Worker-0 (0.50046) explore worker-4 (0.93790), initial score = -1.00000
+Worker-9 (0.50549) explore worker-4 (0.93790), initial score = -1.00000
+Worker-3 (0.62374) explore worker-4 (0.93790), initial score = -1.00000
+Worker-7 (0.50183) explore worker-4 (0.93790), initial score = -1.00000
+ETA = 65234 seconds
+************************************************** Generation 57 START **************************************************
+Worker-8 score trained from 0.93607 --> 0.93668
+Worker-3 score trained from 0.50046 --> 0.74352
+Worker-0 score trained from 0.51404 --> 0.74550
+Worker-9 score trained from 0.49771 --> 0.69744
+Worker-2 score trained from 0.49802 --> 0.79570
+Worker-1 score trained from 0.93607 --> 0.93500
+Worker-6 score trained from 0.93546 --> 0.93622
+Worker-5 score trained from 0.93729 --> 0.93699
+Worker-4 score trained from 0.93790 --> 0.93821
+Worker-7 score trained from 0.49908 --> 0.54684
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 5}
+Best workers : (4,)
+Best scores : (0.93820566,)
+Worst workers : (2, 0, 3, 9, 7)
+Worst scores : (0.7956973, 0.74549896, 0.74351543, 0.6974367, 0.5468416)
+Worker-3 (0.74352) explore worker-4 (0.93821), initial score = -1.00000
+Worker-9 (0.69744) explore worker-4 (0.93821), initial score = -1.00000
+Worker-2 (0.79570) explore worker-4 (0.93821), initial score = -1.00000
+Worker-0 (0.74550) explore worker-4 (0.93821), initial score = -1.00000
+Worker-7 (0.54684) explore worker-4 (0.93821), initial score = -1.00000
+ETA = 64989 seconds
+************************************************** Generation 58 START **************************************************
+Worker-9 score trained from 0.50046 --> 0.62603
+Worker-8 score trained from 0.93668 --> 0.93500
+Worker-3 score trained from 0.50122 --> 0.89289
+Worker-1 score trained from 0.93500 --> 0.93485
+Worker-5 score trained from 0.93699 --> 0.93760
+Worker-6 score trained from 0.93622 --> 0.93531
+Worker-0 score trained from 0.49969 --> 0.49710
+Worker-4 score trained from 0.93821 --> 0.93744
+Worker-2 score trained from 0.49954 --> 0.67913
+Worker-7 score trained from 0.50046 --> 0.90754
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.93759537,)
+Worst workers : (7, 3, 2, 9, 0)
+Worst scores : (0.9075374, 0.89288986, 0.6791273, 0.6260299, 0.497101)
+Worker-9 (0.62603) explore worker-5 (0.93760), initial score = -1.00000
+Worker-3 (0.89289) explore worker-5 (0.93760), initial score = -1.00000
+Worker-7 (0.90754) explore worker-5 (0.93760), initial score = -1.00000
+Worker-0 (0.49710) explore worker-5 (0.93760), initial score = -1.00000
+Worker-2 (0.67913) explore worker-5 (0.93760), initial score = -1.00000
+ETA = 64503 seconds
+************************************************** Generation 59 START **************************************************
+Worker-8 score trained from 0.93500 --> 0.93760
+Worker-2 score trained from 0.50229 --> 0.50046
+Worker-3 score trained from 0.50031 --> 0.49954
+Worker-0 score trained from 0.49405 --> 0.49954
+Worker-1 score trained from 0.93485 --> 0.93393
+Worker-6 score trained from 0.93531 --> 0.93485
+Worker-5 score trained from 0.93760 --> 0.93699
+Worker-4 score trained from 0.93744 --> 0.93683
+Worker-9 score trained from 0.49969 --> 0.50046
+Worker-7 score trained from 0.50046 --> 0.70034
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93759537,)
+Worst workers : (7, 9, 2, 3, 0)
+Worst scores : (0.7003357, 0.50045776, 0.50045776, 0.49954227, 0.49954227)
+Worker-3 (0.49954) explore worker-8 (0.93760), initial score = -1.00000
+Worker-0 (0.49954) explore worker-8 (0.93760), initial score = -1.00000
+Worker-2 (0.50046) explore worker-8 (0.93760), initial score = -1.00000
+Worker-9 (0.50046) explore worker-8 (0.93760), initial score = -1.00000
+Worker-7 (0.70034) explore worker-8 (0.93760), initial score = -1.00000
+ETA = 64922 seconds
+************************************************** Generation 60 START **************************************************
+Worker-2 score trained from 0.50458 --> 0.50046
+Worker-3 score trained from 0.50046 --> 0.93241
+Worker-7 score trained from 0.52136 --> 0.68050
+Worker-0 score trained from 0.50305 --> 0.86298
+Worker-9 score trained from 0.49954 --> 0.77357
+Worker-8 score trained from 0.93760 --> 0.93576
+Worker-1 score trained from 0.93393 --> 0.93409
+Worker-6 score trained from 0.93485 --> 0.93363
+Worker-4 score trained from 0.93683 --> 0.93363
+Worker-5 score trained from 0.93699 --> 0.93897
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.93896854,)
+Worst workers : (3, 0, 9, 7, 2)
+Worst scores : (0.9324077, 0.8629844, 0.7735734, 0.68050045, 0.50045776)
+Worker-0 (0.86298) explore worker-5 (0.93897), initial score = -1.00000
+Worker-3 (0.93241) explore worker-5 (0.93897), initial score = -1.00000
+Worker-2 (0.50046) explore worker-5 (0.93897), initial score = -1.00000
+Worker-9 (0.77357) explore worker-5 (0.93897), initial score = -1.00000
+Worker-7 (0.68050) explore worker-5 (0.93897), initial score = -1.00000
+ETA = 64197 seconds
+************************************************** Generation 61 START **************************************************
+Worker-7 score trained from 0.49466 --> 0.50046
+Worker-0 score trained from 0.50275 --> 0.50046
+Worker-8 score trained from 0.93576 --> 0.93424
+Worker-3 score trained from 0.49969 --> 0.50046
+Worker-6 score trained from 0.93363 --> 0.93683
+Worker-1 score trained from 0.93409 --> 0.93515
+Worker-5 score trained from 0.93897 --> 0.93653
+Worker-4 score trained from 0.93363 --> 0.93668
+Worker-2 score trained from 0.48779 --> 0.74855
+Worker-9 score trained from 0.50000 --> 0.93622
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 1, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.9368325,)
+Worst workers : (8, 2, 7, 3, 0)
+Worst scores : (0.9342386, 0.7485505, 0.50045776, 0.50045776, 0.50045776)
+Worker-7 (0.50046) explore worker-6 (0.93683), initial score = -1.00000
+Worker-0 (0.50046) explore worker-6 (0.93683), initial score = -1.00000
+Worker-3 (0.50046) explore worker-6 (0.93683), initial score = -1.00000
+Worker-8 (0.93424) explore worker-6 (0.93683), initial score = -1.00000
+Worker-2 (0.74855) explore worker-6 (0.93683), initial score = -1.00000
+ETA = 63951 seconds
+************************************************** Generation 62 START **************************************************
+Worker-7 score trained from 0.49573 --> 0.50046
+Worker-0 score trained from 0.51633 --> 0.60528
+Worker-3 score trained from 0.55905 --> 0.77510
+Worker-2 score trained from 0.49237 --> 0.88480
+Worker-6 score trained from 0.93683 --> 0.93393
+Worker-1 score trained from 0.93515 --> 0.93699
+Worker-4 score trained from 0.93668 --> 0.93531
+Worker-5 score trained from 0.93653 --> 0.93607
+Worker-9 score trained from 0.93622 --> 0.93287
+Worker-8 score trained from 0.49954 --> 0.91837
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 1, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (1,)
+Best scores : (0.9369851,)
+Worst workers : (8, 2, 3, 0, 7)
+Worst scores : (0.9183705, 0.8848032, 0.77509916, 0.6052792, 0.50045776)
+Worker-7 (0.50046) explore worker-1 (0.93699), initial score = -1.00000
+Worker-0 (0.60528) explore worker-1 (0.93699), initial score = -1.00000
+Worker-3 (0.77510) explore worker-1 (0.93699), initial score = -1.00000
+Worker-2 (0.88480) explore worker-1 (0.93699), initial score = -1.00000
+Worker-8 (0.91837) explore worker-1 (0.93699), initial score = -1.00000
+ETA = 63843 seconds
+************************************************** Generation 63 START **************************************************
+Worker-0 score trained from 0.49985 --> 0.50046
+Worker-8 score trained from 0.50336 --> 0.50046
+Worker-3 score trained from 0.49954 --> 0.89030
+Worker-7 score trained from 0.49664 --> 0.50046
+Worker-1 score trained from 0.93699 --> 0.93607
+Worker-6 score trained from 0.93393 --> 0.93500
+Worker-5 score trained from 0.93607 --> 0.93882
+Worker-4 score trained from 0.93531 --> 0.93515
+Worker-2 score trained from 0.50137 --> 0.56286
+Worker-9 score trained from 0.93287 --> 0.93470
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.938816,)
+Worst workers : (3, 2, 8, 7, 0)
+Worst scores : (0.890296, 0.5628624, 0.50045776, 0.50045776, 0.50045776)
+Worker-0 (0.50046) explore worker-5 (0.93882), initial score = -1.00000
+Worker-8 (0.50046) explore worker-5 (0.93882), initial score = -1.00000
+Worker-3 (0.89030) explore worker-5 (0.93882), initial score = -1.00000
+Worker-7 (0.50046) explore worker-5 (0.93882), initial score = -1.00000
+Worker-2 (0.56286) explore worker-5 (0.93882), initial score = -1.00000
+ETA = 63565 seconds
+************************************************** Generation 64 START **************************************************
+Worker-3 score trained from 0.52487 --> 0.90128
+Worker-0 score trained from 0.50061 --> 0.89808
+Worker-1 score trained from 0.93607 --> 0.93454
+Worker-8 score trained from 0.49969 --> 0.66829
+Worker-4 score trained from 0.93515 --> 0.93760
+Worker-2 score trained from 0.49786 --> 0.85993
+Worker-6 score trained from 0.93500 --> 0.93531
+Worker-5 score trained from 0.93882 --> 0.93775
+Worker-7 score trained from 0.50046 --> 0.50046
+Worker-9 score trained from 0.93470 --> 0.93378
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 2, 4: 0}
+Best workers : (5,)
+Best scores : (0.93774796,)
+Worst workers : (3, 0, 2, 8, 7)
+Worst scores : (0.90128165, 0.8980775, 0.85993284, 0.6682942, 0.50045776)
+Worker-0 (0.89808) explore worker-5 (0.93775), initial score = -1.00000
+Worker-2 (0.85993) explore worker-5 (0.93775), initial score = -1.00000
+Worker-3 (0.90128) explore worker-5 (0.93775), initial score = -1.00000
+Worker-8 (0.66829) explore worker-5 (0.93775), initial score = -1.00000
+Worker-7 (0.50046) explore worker-5 (0.93775), initial score = -1.00000
+ETA = 63223 seconds
+************************************************** Generation 65 START **************************************************
+Worker-0 score trained from 0.50244 --> 0.53555
+Worker-7 score trained from 0.50198 --> 0.50046
+Worker-3 score trained from 0.49954 --> 0.87916
+Worker-2 score trained from 0.50046 --> 0.78380
+Worker-1 score trained from 0.93454 --> 0.93561
+Worker-6 score trained from 0.93531 --> 0.93561
+Worker-8 score trained from 0.49924 --> 0.90113
+Worker-5 score trained from 0.93775 --> 0.93576
+Worker-4 score trained from 0.93760 --> 0.93073
+Worker-9 score trained from 0.93378 --> 0.93607
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 1, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.93606955,)
+Worst workers : (8, 3, 2, 0, 7)
+Worst scores : (0.90112907, 0.8791578, 0.78379613, 0.53555083, 0.50045776)
+Worker-7 (0.50046) explore worker-9 (0.93607), initial score = -1.00000
+Worker-3 (0.87916) explore worker-9 (0.93607), initial score = -1.00000
+Worker-0 (0.53555) explore worker-9 (0.93607), initial score = -1.00000
+Worker-2 (0.78380) explore worker-9 (0.93607), initial score = -1.00000
+Worker-8 (0.90113) explore worker-9 (0.93607), initial score = -1.00000
+ETA = 62883 seconds
+************************************************** Generation 66 START **************************************************
+Worker-1 score trained from 0.93561 --> 0.93363
+Worker-3 score trained from 0.50046 --> 0.74107
+Worker-5 score trained from 0.93576 --> 0.93332
+Worker-4 score trained from 0.93073 --> 0.93637
+Worker-6 score trained from 0.93561 --> 0.93515
+Worker-9 score trained from 0.93607 --> 0.93164
+Worker-8 score trained from 0.50259 --> 0.50046
+Worker-7 score trained from 0.50244 --> 0.50046
+Worker-0 score trained from 0.49374 --> 0.78166
+Worker-2 score trained from 0.49329 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 1}
+Best workers : (4,)
+Best scores : (0.9363747,)
+Worst workers : (0, 3, 8, 7, 2)
+Worst scores : (0.7816601, 0.74107414, 0.50045776, 0.50045776, 0.50045776)
+Worker-3 (0.74107) explore worker-4 (0.93637), initial score = -1.00000
+Worker-2 (0.50046) explore worker-4 (0.93637), initial score = -1.00000
+Worker-8 (0.50046) explore worker-4 (0.93637), initial score = -1.00000
+Worker-7 (0.50046) explore worker-4 (0.93637), initial score = -1.00000
+Worker-0 (0.78166) explore worker-4 (0.93637), initial score = -1.00000
+ETA = 63857 seconds
+************************************************** Generation 67 START **************************************************
+Worker-3 score trained from 0.39869 --> 0.72200
+Worker-7 score trained from 0.49969 --> 0.50092
+Worker-8 score trained from 0.50092 --> 0.52304
+Worker-1 score trained from 0.93363 --> 0.93546
+Worker-0 score trained from 0.61840 --> 0.90510
+Worker-6 score trained from 0.93515 --> 0.93561
+Worker-5 score trained from 0.93332 --> 0.93515
+Worker-4 score trained from 0.93637 --> 0.93531
+Worker-2 score trained from 0.50122 --> 0.49771
+Worker-9 score trained from 0.93164 --> 0.92585
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 1, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.93561184,)
+Worst workers : (0, 3, 8, 7, 2)
+Worst scores : (0.9050961, 0.72200185, 0.52303934, 0.50091547, 0.49771133)
+Worker-3 (0.72200) explore worker-6 (0.93561), initial score = -1.00000
+Worker-7 (0.50092) explore worker-6 (0.93561), initial score = -1.00000
+Worker-8 (0.52304) explore worker-6 (0.93561), initial score = -1.00000
+Worker-2 (0.49771) explore worker-6 (0.93561), initial score = -1.00000
+Worker-0 (0.90510) explore worker-6 (0.93561), initial score = -1.00000
+ETA = 63636 seconds
+************************************************** Generation 68 START **************************************************
+Worker-8 score trained from 0.49954 --> 0.50351
+Worker-7 score trained from 0.49603 --> 0.50046
+Worker-0 score trained from 0.50046 --> 0.93287
+Worker-1 score trained from 0.93546 --> 0.93607
+Worker-6 score trained from 0.93561 --> 0.93561
+Worker-4 score trained from 0.93531 --> 0.93576
+Worker-5 score trained from 0.93515 --> 0.93668
+Worker-3 score trained from 0.50915 --> 0.76198
+Worker-2 score trained from 0.50046 --> 0.92264
+Worker-9 score trained from 0.92585 --> 0.93317
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.9366799,)
+Worst workers : (0, 2, 3, 8, 7)
+Worst scores : (0.93286544, 0.92264265, 0.76197743, 0.5035093, 0.50045776)
+Worker-8 (0.50351) explore worker-5 (0.93668), initial score = -1.00000
+Worker-7 (0.50046) explore worker-5 (0.93668), initial score = -1.00000
+Worker-0 (0.93287) explore worker-5 (0.93668), initial score = -1.00000
+Worker-2 (0.92264) explore worker-5 (0.93668), initial score = -1.00000
+Worker-3 (0.76198) explore worker-5 (0.93668), initial score = -1.00000
+ETA = 63422 seconds
+************************************************** Generation 69 START **************************************************
+Worker-3 score trained from 0.45377 --> 0.80973
+Worker-1 score trained from 0.93607 --> 0.93485
+Worker-0 score trained from 0.51282 --> 0.90311
+Worker-6 score trained from 0.93561 --> 0.93470
+Worker-5 score trained from 0.93668 --> 0.93424
+Worker-4 score trained from 0.93576 --> 0.93424
+Worker-2 score trained from 0.50107 --> 0.79051
+Worker-8 score trained from 0.50061 --> 0.50046
+Worker-9 score trained from 0.93317 --> 0.93714
+Worker-7 score trained from 0.49664 --> 0.75374
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 1, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.9371376,)
+Worst workers : (0, 3, 2, 7, 8)
+Worst scores : (0.9031126, 0.8097345, 0.79050964, 0.75373816, 0.50045776)
+Worker-2 (0.79051) explore worker-9 (0.93714), initial score = -1.00000
+Worker-0 (0.90311) explore worker-9 (0.93714), initial score = -1.00000
+Worker-3 (0.80973) explore worker-9 (0.93714), initial score = -1.00000
+Worker-7 (0.75374) explore worker-9 (0.93714), initial score = -1.00000
+Worker-8 (0.50046) explore worker-9 (0.93714), initial score = -1.00000
+ETA = 63188 seconds
+************************************************** Generation 70 START **************************************************
+Worker-8 score trained from 0.49954 --> 0.90006
+Worker-2 score trained from 0.50046 --> 0.67089
+Worker-1 score trained from 0.93485 --> 0.93424
+Worker-4 score trained from 0.93424 --> 0.93470
+Worker-5 score trained from 0.93424 --> 0.93821
+Worker-6 score trained from 0.93470 --> 0.93485
+Worker-0 score trained from 0.49252 --> 0.84315
+Worker-7 score trained from 0.49985 --> 0.50046
+Worker-3 score trained from 0.50442 --> 0.49954
+Worker-9 score trained from 0.93714 --> 0.93729
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.93820566,)
+Worst workers : (8, 0, 2, 7, 3)
+Worst scores : (0.900061, 0.84314924, 0.670888, 0.50045776, 0.49954227)
+Worker-8 (0.90006) explore worker-5 (0.93821), initial score = -1.00000
+Worker-2 (0.67089) explore worker-5 (0.93821), initial score = -1.00000
+Worker-0 (0.84315) explore worker-5 (0.93821), initial score = -1.00000
+Worker-3 (0.49954) explore worker-5 (0.93821), initial score = -1.00000
+Worker-7 (0.50046) explore worker-5 (0.93821), initial score = -1.00000
+ETA = 62927 seconds
+************************************************** Generation 71 START **************************************************
+Worker-2 score trained from 0.50046 --> 0.89625
+Worker-0 score trained from 0.50915 --> 0.92142
+Worker-7 score trained from 0.49908 --> 0.49954
+Worker-1 score trained from 0.93424 --> 0.93546
+Worker-8 score trained from 0.49985 --> 0.50046
+Worker-6 score trained from 0.93485 --> 0.93439
+Worker-5 score trained from 0.93821 --> 0.93775
+Worker-4 score trained from 0.93470 --> 0.93592
+Worker-3 score trained from 0.52319 --> 0.90815
+Worker-9 score trained from 0.93729 --> 0.93515
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 2, 4: 0}
+Best workers : (5,)
+Best scores : (0.93774796,)
+Worst workers : (0, 3, 2, 8, 7)
+Worst scores : (0.921422, 0.9081477, 0.89624655, 0.50045776, 0.49954227)
+Worker-2 (0.89625) explore worker-5 (0.93775), initial score = -1.00000
+Worker-0 (0.92142) explore worker-5 (0.93775), initial score = -1.00000
+Worker-7 (0.49954) explore worker-5 (0.93775), initial score = -1.00000
+Worker-3 (0.90815) explore worker-5 (0.93775), initial score = -1.00000
+Worker-8 (0.50046) explore worker-5 (0.93775), initial score = -1.00000
+ETA = 62670 seconds
+************************************************** Generation 72 START **************************************************
+Worker-8 score trained from 0.50946 --> 0.92508
+Worker-7 score trained from 0.49985 --> 0.50046
+Worker-3 score trained from 0.50046 --> 0.63396
+Worker-0 score trained from 0.53830 --> 0.86298
+Worker-6 score trained from 0.93439 --> 0.93500
+Worker-1 score trained from 0.93546 --> 0.93668
+Worker-5 score trained from 0.93775 --> 0.93897
+Worker-4 score trained from 0.93592 --> 0.93714
+Worker-2 score trained from 0.52945 --> 0.85688
+Worker-9 score trained from 0.93515 --> 0.93699
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 3, 4: 0}
+Best workers : (5,)
+Best scores : (0.93896854,)
+Worst workers : (8, 0, 2, 3, 7)
+Worst scores : (0.92508394, 0.8629844, 0.8568813, 0.633964, 0.50045776)
+Worker-8 (0.92508) explore worker-5 (0.93897), initial score = -1.00000
+Worker-3 (0.63396) explore worker-5 (0.93897), initial score = -1.00000
+Worker-7 (0.50046) explore worker-5 (0.93897), initial score = -1.00000
+Worker-0 (0.86298) explore worker-5 (0.93897), initial score = -1.00000
+Worker-2 (0.85688) explore worker-5 (0.93897), initial score = -1.00000
+ETA = 62351 seconds
+************************************************** Generation 73 START **************************************************
+Worker-7 score trained from 0.50275 --> 0.50046
+Worker-2 score trained from 0.49954 --> 0.92310
+Worker-0 score trained from 0.50061 --> 0.93515
+Worker-3 score trained from 0.50381 --> 0.50046
+Worker-1 score trained from 0.93668 --> 0.93302
+Worker-8 score trained from 0.50046 --> 0.93164
+Worker-6 score trained from 0.93500 --> 0.93637
+Worker-5 score trained from 0.93897 --> 0.93683
+Worker-4 score trained from 0.93714 --> 0.93622
+Worker-9 score trained from 0.93699 --> 0.93653
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 4, 4: 0}
+Best workers : (5,)
+Best scores : (0.9368325,)
+Worst workers : (1, 8, 2, 7, 3)
+Worst scores : (0.933018, 0.9316448, 0.9231004, 0.50045776, 0.50045776)
+Worker-1 (0.93302) explore worker-5 (0.93683), initial score = -1.00000
+Worker-3 (0.50046) explore worker-5 (0.93683), initial score = -1.00000
+Worker-8 (0.93164) explore worker-5 (0.93683), initial score = -1.00000
+Worker-7 (0.50046) explore worker-5 (0.93683), initial score = -1.00000
+Worker-2 (0.92310) explore worker-5 (0.93683), initial score = -1.00000
+ETA = 62082 seconds
+************************************************** Generation 74 START **************************************************
+Worker-8 score trained from 0.49619 --> 0.49954
+Worker-7 score trained from 0.55310 --> 0.89426
+Worker-0 score trained from 0.93515 --> 0.93546
+Worker-2 score trained from 0.49725 --> 0.78608
+Worker-1 score trained from 0.50397 --> 0.50046
+Worker-6 score trained from 0.93637 --> 0.92966
+Worker-4 score trained from 0.93622 --> 0.93424
+Worker-5 score trained from 0.93683 --> 0.93592
+Worker-3 score trained from 0.50259 --> 0.50046
+Worker-9 score trained from 0.93653 --> 0.93302
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 5, 4: 0}
+Best workers : (5,)
+Best scores : (0.935917,)
+Worst workers : (7, 2, 3, 1, 8)
+Worst scores : (0.894263, 0.78608483, 0.50045776, 0.50045776, 0.49954227)
+Worker-8 (0.49954) explore worker-5 (0.93592), initial score = -1.00000
+Worker-7 (0.89426) explore worker-5 (0.93592), initial score = -1.00000
+Worker-2 (0.78608) explore worker-5 (0.93592), initial score = -1.00000
+Worker-1 (0.50046) explore worker-5 (0.93592), initial score = -1.00000
+Worker-3 (0.50046) explore worker-5 (0.93592), initial score = -1.00000
+ETA = 61838 seconds
+************************************************** Generation 75 START **************************************************
+Worker-7 score trained from 0.50046 --> 0.75984
+Worker-2 score trained from 0.50076 --> 0.50046
+Worker-0 score trained from 0.93546 --> 0.93912
+Worker-8 score trained from 0.50046 --> 0.93699
+Worker-3 score trained from 0.50046 --> 0.81691
+Worker-6 score trained from 0.92966 --> 0.93271
+Worker-5 score trained from 0.93592 --> 0.93378
+Worker-4 score trained from 0.93424 --> 0.93744
+Worker-1 score trained from 0.48413 --> 0.93546
+Worker-9 score trained from 0.93302 --> 0.93546
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9391211,)
+Worst workers : (5, 6, 3, 7, 2)
+Worst scores : (0.9337809, 0.93271285, 0.8169057, 0.7598413, 0.50045776)
+Worker-2 (0.50046) explore worker-0 (0.93912), initial score = -1.00000
+Worker-3 (0.81691) explore worker-0 (0.93912), initial score = -1.00000
+Worker-7 (0.75984) explore worker-0 (0.93912), initial score = -1.00000
+Worker-6 (0.93271) explore worker-0 (0.93912), initial score = -1.00000
+Worker-5 (0.93378) explore worker-0 (0.93912), initial score = -1.00000
+ETA = 61554 seconds
+************************************************** Generation 76 START **************************************************
+Worker-6 score trained from 0.50000 --> 0.50046
+Worker-3 score trained from 0.49435 --> 0.50046
+Worker-0 score trained from 0.93912 --> 0.93699
+Worker-8 score trained from 0.93699 --> 0.93668
+Worker-2 score trained from 0.49481 --> 0.50046
+Worker-5 score trained from 0.50092 --> 0.67211
+Worker-4 score trained from 0.93744 --> 0.93515
+Worker-1 score trained from 0.93546 --> 0.93653
+Worker-7 score trained from 0.49985 --> 0.49954
+Worker-9 score trained from 0.93546 --> 0.93576
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 2, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9369851,)
+Worst workers : (5, 6, 3, 2, 7)
+Worst scores : (0.67210865, 0.50045776, 0.50045776, 0.50045776, 0.49954227)
+Worker-6 (0.50046) explore worker-0 (0.93699), initial score = -1.00000
+Worker-7 (0.49954) explore worker-0 (0.93699), initial score = -1.00000
+Worker-3 (0.50046) explore worker-0 (0.93699), initial score = -1.00000
+Worker-5 (0.67211) explore worker-0 (0.93699), initial score = -1.00000
+Worker-2 (0.50046) explore worker-0 (0.93699), initial score = -1.00000
+ETA = 61302 seconds
+************************************************** Generation 77 START **************************************************
+Worker-7 score trained from 0.50504 --> 0.49954
+Worker-3 score trained from 0.50305 --> 0.49954
+Worker-0 score trained from 0.93699 --> 0.93897
+Worker-2 score trained from 0.50504 --> 0.50046
+Worker-6 score trained from 0.49985 --> 0.50046
+Worker-8 score trained from 0.93668 --> 0.92035
+Worker-5 score trained from 0.49985 --> 0.68599
+Worker-4 score trained from 0.93515 --> 0.93409
+Worker-1 score trained from 0.93653 --> 0.92997
+Worker-9 score trained from 0.93576 --> 0.93485
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 3, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.93896854,)
+Worst workers : (5, 6, 2, 7, 3)
+Worst scores : (0.6859933, 0.50045776, 0.50045776, 0.49954227, 0.49954227)
+Worker-3 (0.49954) explore worker-0 (0.93897), initial score = -1.00000
+Worker-7 (0.49954) explore worker-0 (0.93897), initial score = -1.00000
+Worker-2 (0.50046) explore worker-0 (0.93897), initial score = -1.00000
+Worker-6 (0.50046) explore worker-0 (0.93897), initial score = -1.00000
+Worker-5 (0.68599) explore worker-0 (0.93897), initial score = -1.00000
+ETA = 61070 seconds
+************************************************** Generation 78 START **************************************************
+Worker-2 score trained from 0.50107 --> 0.81401
+Worker-6 score trained from 0.49969 --> 0.50046
+Worker-3 score trained from 0.50229 --> 0.50046
+Worker-0 score trained from 0.93897 --> 0.93927
+Worker-8 score trained from 0.92035 --> 0.93576
+Worker-5 score trained from 0.49466 --> 0.50046
+Worker-4 score trained from 0.93409 --> 0.93576
+Worker-1 score trained from 0.92997 --> 0.93378
+Worker-7 score trained from 0.49680 --> 0.50046
+Worker-9 score trained from 0.93485 --> 0.93409
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 4, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9392737,)
+Worst workers : (2, 7, 6, 5, 3)
+Worst scores : (0.8140067, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-2 (0.81401) explore worker-0 (0.93927), initial score = -1.00000
+Worker-3 (0.50046) explore worker-0 (0.93927), initial score = -1.00000
+Worker-5 (0.50046) explore worker-0 (0.93927), initial score = -1.00000
+Worker-6 (0.50046) explore worker-0 (0.93927), initial score = -1.00000
+Worker-7 (0.50046) explore worker-0 (0.93927), initial score = -1.00000
+ETA = 60818 seconds
+************************************************** Generation 79 START **************************************************
+Worker-3 score trained from 0.49985 --> 0.50046
+Worker-6 score trained from 0.50046 --> 0.50046
+Worker-7 score trained from 0.50076 --> 0.50046
+Worker-2 score trained from 0.50275 --> 0.50046
+Worker-0 score trained from 0.93927 --> 0.93805
+Worker-5 score trained from 0.50076 --> 0.50046
+Worker-8 score trained from 0.93576 --> 0.93592
+Worker-4 score trained from 0.93576 --> 0.93668
+Worker-1 score trained from 0.93378 --> 0.93226
+Worker-9 score trained from 0.93409 --> 0.93653
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 5, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9380531,)
+Worst workers : (7, 6, 5, 3, 2)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-3 (0.50046) explore worker-0 (0.93805), initial score = -1.00000
+Worker-6 (0.50046) explore worker-0 (0.93805), initial score = -1.00000
+Worker-7 (0.50046) explore worker-0 (0.93805), initial score = -1.00000
+Worker-5 (0.50046) explore worker-0 (0.93805), initial score = -1.00000
+Worker-2 (0.50046) explore worker-0 (0.93805), initial score = -1.00000
+ETA = 60508 seconds
+************************************************** Generation 80 START **************************************************
+Worker-3 score trained from 0.50427 --> 0.50046
+Worker-6 score trained from 0.49405 --> 0.50046
+Worker-7 score trained from 0.50488 --> 0.50046
+Worker-0 score trained from 0.93805 --> 0.93546
+Worker-8 score trained from 0.93592 --> 0.93561
+Worker-2 score trained from 0.50183 --> 0.50046
+Worker-4 score trained from 0.93668 --> 0.93576
+Worker-1 score trained from 0.93226 --> 0.93393
+Worker-5 score trained from 0.62664 --> 0.92447
+Worker-9 score trained from 0.93653 --> 0.93302
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 1}
+Best workers : (4,)
+Best scores : (0.93576443,)
+Worst workers : (5, 7, 6, 3, 2)
+Worst scores : (0.9244736, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-3 (0.50046) explore worker-4 (0.93576), initial score = -1.00000
+Worker-6 (0.50046) explore worker-4 (0.93576), initial score = -1.00000
+Worker-7 (0.50046) explore worker-4 (0.93576), initial score = -1.00000
+Worker-5 (0.92447) explore worker-4 (0.93576), initial score = -1.00000
+Worker-2 (0.50046) explore worker-4 (0.93576), initial score = -1.00000
+ETA = 60247 seconds
+************************************************** Generation 81 START **************************************************
+Worker-3 score trained from 0.49466 --> 0.50000
+Worker-8 score trained from 0.93561 --> 0.93607
+Worker-6 score trained from 0.49954 --> 0.74977
+Worker-0 score trained from 0.93546 --> 0.93348
+Worker-5 score trained from 0.49954 --> 0.93637
+Worker-4 score trained from 0.93576 --> 0.93485
+Worker-1 score trained from 0.93393 --> 0.93287
+Worker-2 score trained from 0.49985 --> 0.50046
+Worker-7 score trained from 0.51831 --> 0.78166
+Worker-9 score trained from 0.93302 --> 0.93317
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.9363747,)
+Worst workers : (1, 7, 6, 2, 3)
+Worst scores : (0.93286544, 0.7816601, 0.7497711, 0.50045776, 0.5)
+Worker-3 (0.50000) explore worker-5 (0.93637), initial score = -1.00000
+Worker-6 (0.74977) explore worker-5 (0.93637), initial score = -1.00000
+Worker-7 (0.78166) explore worker-5 (0.93637), initial score = -1.00000
+Worker-1 (0.93287) explore worker-5 (0.93637), initial score = -1.00000
+Worker-2 (0.50046) explore worker-5 (0.93637), initial score = -1.00000
+ETA = 60034 seconds
+************************************************** Generation 82 START **************************************************
+Worker-0 score trained from 0.93348 --> 0.93393
+Worker-7 score trained from 0.50015 --> 0.50046
+Worker-8 score trained from 0.93607 --> 0.90449
+Worker-3 score trained from 0.50214 --> 0.50046
+Worker-4 score trained from 0.93485 --> 0.93561
+Worker-6 score trained from 0.50031 --> 0.49954
+Worker-5 score trained from 0.93637 --> 0.93790
+Worker-2 score trained from 0.49359 --> 0.50046
+Worker-1 score trained from 0.49954 --> 0.90876
+Worker-9 score trained from 0.93317 --> 0.93348
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 2, 4: 0}
+Best workers : (5,)
+Best scores : (0.93790054,)
+Worst workers : (8, 7, 3, 2, 6)
+Worst scores : (0.9044858, 0.50045776, 0.50045776, 0.50045776, 0.49954227)
+Worker-3 (0.50046) explore worker-5 (0.93790), initial score = -1.00000
+Worker-7 (0.50046) explore worker-5 (0.93790), initial score = -1.00000
+Worker-8 (0.90449) explore worker-5 (0.93790), initial score = -1.00000
+Worker-6 (0.49954) explore worker-5 (0.93790), initial score = -1.00000
+Worker-2 (0.50046) explore worker-5 (0.93790), initial score = -1.00000
+ETA = 59779 seconds
+************************************************** Generation 83 START **************************************************
+Worker-3 score trained from 0.49832 --> 0.50046
+Worker-2 score trained from 0.50000 --> 0.67455
+Worker-0 score trained from 0.93393 --> 0.93668
+Worker-6 score trained from 0.49908 --> 0.50046
+Worker-5 score trained from 0.93790 --> 0.92890
+Worker-4 score trained from 0.93561 --> 0.93775
+Worker-1 score trained from 0.90876 --> 0.91135
+Worker-7 score trained from 0.50214 --> 0.81538
+Worker-8 score trained from 0.49435 --> 0.50366
+Worker-9 score trained from 0.93348 --> 0.93439
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 1}
+Best workers : (4,)
+Best scores : (0.93774796,)
+Worst workers : (7, 2, 8, 6, 3)
+Worst scores : (0.8153799, 0.6745499, 0.5036619, 0.50045776, 0.50045776)
+Worker-2 (0.67455) explore worker-4 (0.93775), initial score = -1.00000
+Worker-3 (0.50046) explore worker-4 (0.93775), initial score = -1.00000
+Worker-6 (0.50046) explore worker-4 (0.93775), initial score = -1.00000
+Worker-7 (0.81538) explore worker-4 (0.93775), initial score = -1.00000
+Worker-8 (0.50366) explore worker-4 (0.93775), initial score = -1.00000
+ETA = 59555 seconds
+************************************************** Generation 84 START **************************************************
+Worker-7 score trained from 0.50046 --> 0.50000
+Worker-0 score trained from 0.93668 --> 0.93531
+Worker-2 score trained from 0.49954 --> 0.62313
+Worker-4 score trained from 0.93775 --> 0.93485
+Worker-5 score trained from 0.92890 --> 0.93637
+Worker-3 score trained from 0.49985 --> 0.50046
+Worker-1 score trained from 0.91135 --> 0.90464
+Worker-6 score trained from 0.50061 --> 0.93027
+Worker-8 score trained from 0.50046 --> 0.59460
+Worker-9 score trained from 0.93439 --> 0.93546
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.9363747,)
+Worst workers : (1, 2, 8, 3, 7)
+Worst scores : (0.9046384, 0.6231309, 0.5945987, 0.50045776, 0.5)
+Worker-7 (0.50000) explore worker-5 (0.93637), initial score = -1.00000
+Worker-2 (0.62313) explore worker-5 (0.93637), initial score = -1.00000
+Worker-8 (0.59460) explore worker-5 (0.93637), initial score = -1.00000
+Worker-1 (0.90464) explore worker-5 (0.93637), initial score = -1.00000
+Worker-3 (0.50046) explore worker-5 (0.93637), initial score = -1.00000
+ETA = 59338 seconds
+************************************************** Generation 85 START **************************************************
+Worker-1 score trained from 0.49985 --> 0.49954
+Worker-0 score trained from 0.93531 --> 0.93821
+Worker-2 score trained from 0.50534 --> 0.73161
+Worker-4 score trained from 0.93485 --> 0.93424
+Worker-5 score trained from 0.93637 --> 0.93744
+Worker-7 score trained from 0.49985 --> 0.50046
+Worker-8 score trained from 0.49985 --> 0.49939
+Worker-6 score trained from 0.93027 --> 0.93256
+Worker-9 score trained from 0.93546 --> 0.93546
+Worker-3 score trained from 0.49954 --> 0.91776
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.93820566,)
+Worst workers : (3, 2, 7, 1, 8)
+Worst scores : (0.91776013, 0.7316143, 0.50045776, 0.49954227, 0.49938968)
+Worker-1 (0.49954) explore worker-0 (0.93821), initial score = -1.00000
+Worker-7 (0.50046) explore worker-0 (0.93821), initial score = -1.00000
+Worker-2 (0.73161) explore worker-0 (0.93821), initial score = -1.00000
+Worker-8 (0.49939) explore worker-0 (0.93821), initial score = -1.00000
+Worker-3 (0.91776) explore worker-0 (0.93821), initial score = -1.00000
+ETA = 60145 seconds
+************************************************** Generation 86 START **************************************************
+Worker-1 score trained from 0.49985 --> 0.50046
+Worker-2 score trained from 0.50565 --> 0.50046
+Worker-3 score trained from 0.43027 --> 0.93088
+Worker-0 score trained from 0.93821 --> 0.93775
+Worker-8 score trained from 0.49954 --> 0.90204
+Worker-5 score trained from 0.93744 --> 0.93729
+Worker-4 score trained from 0.93424 --> 0.93287
+Worker-6 score trained from 0.93256 --> 0.93500
+Worker-7 score trained from 0.50092 --> 0.50046
+Worker-9 score trained from 0.93546 --> 0.93470
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 2, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.93774796,)
+Worst workers : (3, 8, 7, 2, 1)
+Worst scores : (0.9308819, 0.90204453, 0.50045776, 0.50045776, 0.50045776)
+Worker-1 (0.50046) explore worker-0 (0.93775), initial score = -1.00000
+Worker-2 (0.50046) explore worker-0 (0.93775), initial score = -1.00000
+Worker-3 (0.93088) explore worker-0 (0.93775), initial score = -1.00000
+Worker-8 (0.90204) explore worker-0 (0.93775), initial score = -1.00000
+Worker-7 (0.50046) explore worker-0 (0.93775), initial score = -1.00000
+ETA = 59799 seconds
+************************************************** Generation 87 START **************************************************
+Worker-8 score trained from 0.50046 --> 0.49939
+Worker-3 score trained from 0.50046 --> 0.50046
+Worker-1 score trained from 0.49847 --> 0.50046
+Worker-0 score trained from 0.93775 --> 0.93653
+Worker-7 score trained from 0.50275 --> 0.50046
+Worker-2 score trained from 0.51861 --> 0.93393
+Worker-5 score trained from 0.93729 --> 0.93790
+Worker-4 score trained from 0.93287 --> 0.93714
+Worker-6 score trained from 0.93500 --> 0.93454
+Worker-9 score trained from 0.93470 --> 0.93348
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.93790054,)
+Worst workers : (9, 7, 3, 1, 8)
+Worst scores : (0.93347573, 0.50045776, 0.50045776, 0.50045776, 0.49938968)
+Worker-3 (0.50046) explore worker-5 (0.93790), initial score = -1.00000
+Worker-1 (0.50046) explore worker-5 (0.93790), initial score = -1.00000
+Worker-8 (0.49939) explore worker-5 (0.93790), initial score = -1.00000
+Worker-7 (0.50046) explore worker-5 (0.93790), initial score = -1.00000
+Worker-9 (0.93348) explore worker-5 (0.93790), initial score = -1.00000
+ETA = 59516 seconds
+************************************************** Generation 88 START **************************************************
+Worker-9 score trained from 0.50381 --> 0.50046
+Worker-1 score trained from 0.49435 --> 0.49954
+Worker-7 score trained from 0.49863 --> 0.50046
+Worker-0 score trained from 0.93653 --> 0.93668
+Worker-3 score trained from 0.49496 --> 0.50046
+Worker-2 score trained from 0.93393 --> 0.93363
+Worker-4 score trained from 0.93714 --> 0.93500
+Worker-5 score trained from 0.93790 --> 0.92234
+Worker-6 score trained from 0.93454 --> 0.93180
+Worker-8 score trained from 0.50259 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9366799,)
+Worst workers : (9, 8, 7, 3, 1)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.50045776, 0.49954227)
+Worker-9 (0.50046) explore worker-0 (0.93668), initial score = -1.00000
+Worker-7 (0.50046) explore worker-0 (0.93668), initial score = -1.00000
+Worker-3 (0.50046) explore worker-0 (0.93668), initial score = -1.00000
+Worker-1 (0.49954) explore worker-0 (0.93668), initial score = -1.00000
+Worker-8 (0.50046) explore worker-0 (0.93668), initial score = -1.00000
+ETA = 59145 seconds
+************************************************** Generation 89 START **************************************************
+Worker-1 score trained from 0.49985 --> 0.50046
+Worker-3 score trained from 0.50107 --> 0.50046
+Worker-9 score trained from 0.49847 --> 0.50046
+Worker-0 score trained from 0.93668 --> 0.93409
+Worker-8 score trained from 0.50442 --> 0.50046
+Worker-2 score trained from 0.93363 --> 0.93760
+Worker-5 score trained from 0.92234 --> 0.93866
+Worker-4 score trained from 0.93500 --> 0.93576
+Worker-7 score trained from 0.49954 --> 0.93180
+Worker-6 score trained from 0.93180 --> 0.92615
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.9386634,)
+Worst workers : (6, 9, 8, 3, 1)
+Worst scores : (0.926152, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-3 (0.50046) explore worker-5 (0.93866), initial score = -1.00000
+Worker-1 (0.50046) explore worker-5 (0.93866), initial score = -1.00000
+Worker-9 (0.50046) explore worker-5 (0.93866), initial score = -1.00000
+Worker-8 (0.50046) explore worker-5 (0.93866), initial score = -1.00000
+Worker-6 (0.92615) explore worker-5 (0.93866), initial score = -1.00000
+ETA = 58743 seconds
+************************************************** Generation 90 START **************************************************
+Worker-0 score trained from 0.93409 --> 0.93882
+Worker-8 score trained from 0.49847 --> 0.78654
+Worker-9 score trained from 0.49619 --> 0.61153
+Worker-2 score trained from 0.93760 --> 0.93744
+Worker-3 score trained from 0.46201 --> 0.74977
+Worker-6 score trained from 0.50748 --> 0.50046
+Worker-4 score trained from 0.93576 --> 0.93561
+Worker-5 score trained from 0.93866 --> 0.93714
+Worker-7 score trained from 0.93180 --> 0.93317
+Worker-1 score trained from 0.34376 --> 0.93210
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.938816,)
+Worst workers : (1, 8, 3, 9, 6)
+Worst scores : (0.93210256, 0.7865426, 0.7497711, 0.61153495, 0.50045776)
+Worker-8 (0.78654) explore worker-0 (0.93882), initial score = -1.00000
+Worker-6 (0.50046) explore worker-0 (0.93882), initial score = -1.00000
+Worker-3 (0.74977) explore worker-0 (0.93882), initial score = -1.00000
+Worker-9 (0.61153) explore worker-0 (0.93882), initial score = -1.00000
+Worker-1 (0.93210) explore worker-0 (0.93882), initial score = -1.00000
+ETA = 58406 seconds
+************************************************** Generation 91 START **************************************************
+Worker-3 score trained from 0.50031 --> 0.50046
+Worker-1 score trained from 0.50061 --> 0.50046
+Worker-0 score trained from 0.93882 --> 0.93622
+Worker-6 score trained from 0.50305 --> 0.50046
+Worker-8 score trained from 0.50107 --> 0.50137
+Worker-2 score trained from 0.93744 --> 0.93775
+Worker-4 score trained from 0.93561 --> 0.93561
+Worker-5 score trained from 0.93714 --> 0.93775
+Worker-9 score trained from 0.48322 --> 0.67852
+Worker-7 score trained from 0.93317 --> 0.93439
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 1, 4: 0}
+Best workers : (5,)
+Best scores : (0.93774796,)
+Worst workers : (9, 8, 6, 3, 1)
+Worst scores : (0.6785169, 0.50137323, 0.50045776, 0.50045776, 0.50045776)
+Worker-1 (0.50046) explore worker-5 (0.93775), initial score = -1.00000
+Worker-6 (0.50046) explore worker-5 (0.93775), initial score = -1.00000
+Worker-8 (0.50137) explore worker-5 (0.93775), initial score = -1.00000
+Worker-3 (0.50046) explore worker-5 (0.93775), initial score = -1.00000
+Worker-9 (0.67852) explore worker-5 (0.93775), initial score = -1.00000
+ETA = 58025 seconds
+************************************************** Generation 92 START **************************************************
+Worker-0 score trained from 0.93622 --> 0.93668
+Worker-6 score trained from 0.50198 --> 0.49954
+Worker-1 score trained from 0.49695 --> 0.68203
+Worker-2 score trained from 0.93775 --> 0.93729
+Worker-4 score trained from 0.93561 --> 0.93485
+Worker-8 score trained from 0.50427 --> 0.50046
+Worker-5 score trained from 0.93775 --> 0.93637
+Worker-7 score trained from 0.93439 --> 0.93805
+Worker-9 score trained from 0.62405 --> 0.90082
+Worker-3 score trained from 0.50046 --> 0.88038
+Leaderboard: {8: 0, 3: 0, 7: 1, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (7,)
+Best scores : (0.9380531,)
+Worst workers : (9, 3, 1, 8, 6)
+Worst scores : (0.90082395, 0.88037837, 0.68202627, 0.50045776, 0.49954227)
+Worker-8 (0.50046) explore worker-7 (0.93805), initial score = -1.00000
+Worker-1 (0.68203) explore worker-7 (0.93805), initial score = -1.00000
+Worker-9 (0.90082) explore worker-7 (0.93805), initial score = -1.00000
+Worker-6 (0.49954) explore worker-7 (0.93805), initial score = -1.00000
+Worker-3 (0.88038) explore worker-7 (0.93805), initial score = -1.00000
+ETA = 57736 seconds
+************************************************** Generation 93 START **************************************************
+Worker-9 score trained from 0.49985 --> 0.50290
+Worker-0 score trained from 0.93668 --> 0.93500
+Worker-2 score trained from 0.93729 --> 0.93821
+Worker-3 score trained from 0.49969 --> 0.49954
+Worker-5 score trained from 0.93637 --> 0.93653
+Worker-6 score trained from 0.49985 --> 0.50046
+Worker-4 score trained from 0.93485 --> 0.93668
+Worker-7 score trained from 0.93805 --> 0.93637
+Worker-1 score trained from 0.50046 --> 0.67592
+Worker-8 score trained from 0.51968 --> 0.85276
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 1, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (2,)
+Best scores : (0.93820566,)
+Worst workers : (8, 1, 9, 6, 3)
+Worst scores : (0.8527617, 0.6759231, 0.502899, 0.50045776, 0.49954227)
+Worker-9 (0.50290) explore worker-2 (0.93821), initial score = -1.00000
+Worker-6 (0.50046) explore worker-2 (0.93821), initial score = -1.00000
+Worker-3 (0.49954) explore worker-2 (0.93821), initial score = -1.00000
+Worker-1 (0.67592) explore worker-2 (0.93821), initial score = -1.00000
+Worker-8 (0.85276) explore worker-2 (0.93821), initial score = -1.00000
+ETA = 57497 seconds
+************************************************** Generation 94 START **************************************************
+Worker-6 score trained from 0.49634 --> 0.50046
+Worker-9 score trained from 0.50000 --> 0.93546
+Worker-0 score trained from 0.93500 --> 0.93531
+Worker-3 score trained from 0.49969 --> 0.50046
+Worker-8 score trained from 0.50046 --> 0.49954
+Worker-5 score trained from 0.93653 --> 0.93348
+Worker-7 score trained from 0.93637 --> 0.93683
+Worker-4 score trained from 0.93668 --> 0.93515
+Worker-1 score trained from 0.50046 --> 0.90021
+Worker-2 score trained from 0.93821 --> 0.93531
+Leaderboard: {8: 0, 3: 0, 7: 1, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (7,)
+Best scores : (0.9368325,)
+Worst workers : (5, 1, 6, 3, 8)
+Worst scores : (0.93347573, 0.9002136, 0.50045776, 0.50045776, 0.49954227)
+Worker-6 (0.50046) explore worker-7 (0.93683), initial score = -1.00000
+Worker-8 (0.49954) explore worker-7 (0.93683), initial score = -1.00000
+Worker-3 (0.50046) explore worker-7 (0.93683), initial score = -1.00000
+Worker-5 (0.93348) explore worker-7 (0.93683), initial score = -1.00000
+Worker-1 (0.90021) explore worker-7 (0.93683), initial score = -1.00000
+ETA = 57024 seconds
+************************************************** Generation 95 START **************************************************
+Worker-6 score trained from 0.50061 --> 0.49954
+Worker-3 score trained from 0.50122 --> 0.50046
+Worker-0 score trained from 0.93531 --> 0.93607
+Worker-9 score trained from 0.93546 --> 0.93653
+Worker-1 score trained from 0.49725 --> 0.50046
+Worker-2 score trained from 0.93531 --> 0.93805
+Worker-4 score trained from 0.93515 --> 0.93546
+Worker-8 score trained from 0.50046 --> 0.49954
+Worker-7 score trained from 0.93683 --> 0.93470
+Worker-5 score trained from 0.50031 --> 0.85917
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 1, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (2,)
+Best scores : (0.9380531,)
+Worst workers : (5, 3, 1, 8, 6)
+Worst scores : (0.85916996, 0.50045776, 0.50045776, 0.49954227, 0.49954227)
+Worker-3 (0.50046) explore worker-2 (0.93805), initial score = -1.00000
+Worker-6 (0.49954) explore worker-2 (0.93805), initial score = -1.00000
+Worker-8 (0.49954) explore worker-2 (0.93805), initial score = -1.00000
+Worker-1 (0.50046) explore worker-2 (0.93805), initial score = -1.00000
+Worker-5 (0.85917) explore worker-2 (0.93805), initial score = -1.00000
+ETA = 57066 seconds
+************************************************** Generation 96 START **************************************************
+Worker-0 score trained from 0.93607 --> 0.93744
+Worker-9 score trained from 0.93653 --> 0.93760
+Worker-2 score trained from 0.93805 --> 0.93729
+Worker-5 score trained from 0.50229 --> 0.50046
+Worker-4 score trained from 0.93546 --> 0.93515
+Worker-1 score trained from 0.49985 --> 0.50046
+Worker-7 score trained from 0.93470 --> 0.93317
+Worker-8 score trained from 0.49847 --> 0.62084
+Worker-3 score trained from 0.50183 --> 0.50046
+Worker-6 score trained from 0.49847 --> 0.89487
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 1, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.93759537,)
+Worst workers : (6, 8, 5, 3, 1)
+Worst scores : (0.8948734, 0.6208422, 0.50045776, 0.50045776, 0.50045776)
+Worker-5 (0.50046) explore worker-9 (0.93760), initial score = -1.00000
+Worker-1 (0.50046) explore worker-9 (0.93760), initial score = -1.00000
+Worker-3 (0.50046) explore worker-9 (0.93760), initial score = -1.00000
+Worker-8 (0.62084) explore worker-9 (0.93760), initial score = -1.00000
+Worker-6 (0.89487) explore worker-9 (0.93760), initial score = -1.00000
+ETA = 56900 seconds
+************************************************** Generation 97 START **************************************************
+Worker-1 score trained from 0.49939 --> 0.50046
+Worker-6 score trained from 0.49985 --> 0.50046
+Worker-5 score trained from 0.49420 --> 0.50046
+Worker-8 score trained from 0.49542 --> 0.50046
+Worker-3 score trained from 0.50046 --> 0.85047
+Worker-0 score trained from 0.93744 --> 0.93561
+Worker-9 score trained from 0.93760 --> 0.92997
+Worker-2 score trained from 0.93729 --> 0.93668
+Worker-4 score trained from 0.93515 --> 0.93439
+Worker-7 score trained from 0.93317 --> 0.93576
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 1, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (2,)
+Best scores : (0.9366799,)
+Worst workers : (3, 8, 6, 5, 1)
+Worst scores : (0.850473, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-1 (0.50046) explore worker-2 (0.93668), initial score = -1.00000
+Worker-5 (0.50046) explore worker-2 (0.93668), initial score = -1.00000
+Worker-6 (0.50046) explore worker-2 (0.93668), initial score = -1.00000
+Worker-8 (0.50046) explore worker-2 (0.93668), initial score = -1.00000
+Worker-3 (0.85047) explore worker-2 (0.93668), initial score = -1.00000
+ETA = 56505 seconds
+************************************************** Generation 98 START **************************************************
+Worker-3 score trained from 0.50000 --> 0.69011
+Worker-1 score trained from 0.50000 --> 0.50351
+Worker-0 score trained from 0.93561 --> 0.93576
+Worker-8 score trained from 0.49451 --> 0.50046
+Worker-9 score trained from 0.92997 --> 0.92524
+Worker-5 score trained from 0.49786 --> 0.50046
+Worker-4 score trained from 0.93439 --> 0.93714
+Worker-2 score trained from 0.93668 --> 0.93790
+Worker-7 score trained from 0.93576 --> 0.93210
+Worker-6 score trained from 0.49802 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 2, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (2,)
+Best scores : (0.93790054,)
+Worst workers : (3, 1, 8, 6, 5)
+Worst scores : (0.6901129, 0.5035093, 0.50045776, 0.50045776, 0.50045776)
+Worker-3 (0.69011) explore worker-2 (0.93790), initial score = -1.00000
+Worker-8 (0.50046) explore worker-2 (0.93790), initial score = -1.00000
+Worker-1 (0.50351) explore worker-2 (0.93790), initial score = -1.00000
+Worker-5 (0.50046) explore worker-2 (0.93790), initial score = -1.00000
+Worker-6 (0.50046) explore worker-2 (0.93790), initial score = -1.00000
+ETA = 56195 seconds
+************************************************** Generation 99 START **************************************************
+Worker-1 score trained from 0.49832 --> 0.50046
+Worker-3 score trained from 0.49466 --> 0.50046
+Worker-8 score trained from 0.50671 --> 0.50046
+Worker-0 score trained from 0.93576 --> 0.93775
+Worker-9 score trained from 0.92524 --> 0.93836
+Worker-2 score trained from 0.93790 --> 0.93821
+Worker-6 score trained from 0.51480 --> 0.69408
+Worker-4 score trained from 0.93714 --> 0.93409
+Worker-7 score trained from 0.93210 --> 0.93378
+Worker-5 score trained from 0.50046 --> 0.50031
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 1, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.93835825,)
+Worst workers : (6, 8, 3, 1, 5)
+Worst scores : (0.69407994, 0.50045776, 0.50045776, 0.50045776, 0.5003052)
+Worker-1 (0.50046) explore worker-9 (0.93836), initial score = -1.00000
+Worker-8 (0.50046) explore worker-9 (0.93836), initial score = -1.00000
+Worker-3 (0.50046) explore worker-9 (0.93836), initial score = -1.00000
+Worker-6 (0.69408) explore worker-9 (0.93836), initial score = -1.00000
+Worker-5 (0.50031) explore worker-9 (0.93836), initial score = -1.00000
+ETA = 55943 seconds
+************************************************** Generation 100 START **************************************************
+Worker-5 score trained from 0.49725 --> 0.50412
+Worker-3 score trained from 0.50061 --> 0.50046
+Worker-1 score trained from 0.49741 --> 0.50046
+Worker-9 score trained from 0.93836 --> 0.93714
+Worker-0 score trained from 0.93775 --> 0.93668
+Worker-6 score trained from 0.50107 --> 0.50046
+Worker-2 score trained from 0.93821 --> 0.93699
+Worker-4 score trained from 0.93409 --> 0.93653
+Worker-8 score trained from 0.50046 --> 0.89381
+Worker-7 score trained from 0.93378 --> 0.93424
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 2, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.9371376,)
+Worst workers : (8, 5, 6, 3, 1)
+Worst scores : (0.8938053, 0.50411963, 0.50045776, 0.50045776, 0.50045776)
+Worker-1 (0.50046) explore worker-9 (0.93714), initial score = -1.00000
+Worker-5 (0.50412) explore worker-9 (0.93714), initial score = -1.00000
+Worker-3 (0.50046) explore worker-9 (0.93714), initial score = -1.00000
+Worker-8 (0.89381) explore worker-9 (0.93714), initial score = -1.00000
+Worker-6 (0.50046) explore worker-9 (0.93714), initial score = -1.00000
+ETA = 55539 seconds
+************************************************** Generation 101 START **************************************************
+Worker-5 score trained from 0.52304 --> 0.92676
+Worker-6 score trained from 0.50534 --> 0.49954
+Worker-1 score trained from 0.49954 --> 0.82347
+Worker-0 score trained from 0.93668 --> 0.93592
+Worker-9 score trained from 0.93714 --> 0.93744
+Worker-8 score trained from 0.49985 --> 0.50046
+Worker-3 score trained from 0.49893 --> 0.50397
+Worker-2 score trained from 0.93699 --> 0.93744
+Worker-4 score trained from 0.93653 --> 0.92875
+Worker-7 score trained from 0.93424 --> 0.93576
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 3, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.9374428,)
+Worst workers : (5, 1, 3, 8, 6)
+Worst scores : (0.9267623, 0.8234666, 0.50396705, 0.50045776, 0.49954227)
+Worker-8 (0.50046) explore worker-9 (0.93744), initial score = -1.00000
+Worker-6 (0.49954) explore worker-9 (0.93744), initial score = -1.00000
+Worker-5 (0.92676) explore worker-9 (0.93744), initial score = -1.00000
+Worker-1 (0.82347) explore worker-9 (0.93744), initial score = -1.00000
+Worker-3 (0.50397) explore worker-9 (0.93744), initial score = -1.00000
+ETA = 55196 seconds
+************************************************** Generation 102 START **************************************************
+Worker-5 score trained from 0.50366 --> 0.50046
+Worker-8 score trained from 0.50153 --> 0.50046
+Worker-3 score trained from 0.49954 --> 0.90296
+Worker-1 score trained from 0.49985 --> 0.50046
+Worker-0 score trained from 0.93592 --> 0.93439
+Worker-9 score trained from 0.93744 --> 0.93851
+Worker-2 score trained from 0.93744 --> 0.93546
+Worker-4 score trained from 0.92875 --> 0.93760
+Worker-6 score trained from 0.49802 --> 0.78898
+Worker-7 score trained from 0.93576 --> 0.93576
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 4, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.93851084,)
+Worst workers : (3, 6, 8, 5, 1)
+Worst scores : (0.90296, 0.7889838, 0.50045776, 0.50045776, 0.50045776)
+Worker-5 (0.50046) explore worker-9 (0.93851), initial score = -1.00000
+Worker-3 (0.90296) explore worker-9 (0.93851), initial score = -1.00000
+Worker-8 (0.50046) explore worker-9 (0.93851), initial score = -1.00000
+Worker-1 (0.50046) explore worker-9 (0.93851), initial score = -1.00000
+Worker-6 (0.78898) explore worker-9 (0.93851), initial score = -1.00000
+ETA = 54869 seconds
+************************************************** Generation 103 START **************************************************
+Worker-5 score trained from 0.50275 --> 0.50046
+Worker-8 score trained from 0.49527 --> 0.50046
+Worker-6 score trained from 0.49985 --> 0.50046
+Worker-1 score trained from 0.50198 --> 0.50046
+Worker-0 score trained from 0.93439 --> 0.93515
+Worker-9 score trained from 0.93851 --> 0.93958
+Worker-2 score trained from 0.93546 --> 0.93515
+Worker-3 score trained from 0.52014 --> 0.79921
+Worker-4 score trained from 0.93760 --> 0.93180
+Worker-7 score trained from 0.93576 --> 0.93485
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 5, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.9395789,)
+Worst workers : (3, 8, 6, 5, 1)
+Worst scores : (0.7992066, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-5 (0.50046) explore worker-9 (0.93958), initial score = -1.00000
+Worker-6 (0.50046) explore worker-9 (0.93958), initial score = -1.00000
+Worker-8 (0.50046) explore worker-9 (0.93958), initial score = -1.00000
+Worker-1 (0.50046) explore worker-9 (0.93958), initial score = -1.00000
+Worker-3 (0.79921) explore worker-9 (0.93958), initial score = -1.00000
+ETA = 54538 seconds
+************************************************** Generation 104 START **************************************************
+Worker-5 score trained from 0.49878 --> 0.50046
+Worker-1 score trained from 0.49985 --> 0.50046
+Worker-0 score trained from 0.93515 --> 0.93637
+Worker-8 score trained from 0.50046 --> 0.50046
+Worker-9 score trained from 0.93958 --> 0.93836
+Worker-3 score trained from 0.49985 --> 0.50046
+Worker-2 score trained from 0.93515 --> 0.93470
+Worker-6 score trained from 0.48261 --> 0.50351
+Worker-4 score trained from 0.93180 --> 0.92783
+Worker-7 score trained from 0.93485 --> 0.92707
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 6, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.93835825,)
+Worst workers : (6, 8, 5, 3, 1)
+Worst scores : (0.5035093, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-5 (0.50046) explore worker-9 (0.93836), initial score = -1.00000
+Worker-1 (0.50046) explore worker-9 (0.93836), initial score = -1.00000
+Worker-8 (0.50046) explore worker-9 (0.93836), initial score = -1.00000
+Worker-6 (0.50351) explore worker-9 (0.93836), initial score = -1.00000
+Worker-3 (0.50046) explore worker-9 (0.93836), initial score = -1.00000
+ETA = 54209 seconds
+************************************************** Generation 105 START **************************************************
+Worker-5 score trained from 0.49695 --> 0.49954
+Worker-0 score trained from 0.93637 --> 0.93531
+Worker-3 score trained from 0.50015 --> 0.50046
+Worker-6 score trained from 0.49130 --> 0.92127
+Worker-1 score trained from 0.50046 --> 0.50488
+Worker-9 score trained from 0.93836 --> 0.93622
+Worker-2 score trained from 0.93470 --> 0.93622
+Worker-4 score trained from 0.92783 --> 0.93363
+Worker-7 score trained from 0.92707 --> 0.93332
+Worker-8 score trained from 0.49954 --> 0.69912
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 7, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.93622214,)
+Worst workers : (6, 8, 1, 3, 5)
+Worst scores : (0.9212695, 0.69911504, 0.5048825, 0.50045776, 0.49954227)
+Worker-3 (0.50046) explore worker-9 (0.93622), initial score = -1.00000
+Worker-6 (0.92127) explore worker-9 (0.93622), initial score = -1.00000
+Worker-5 (0.49954) explore worker-9 (0.93622), initial score = -1.00000
+Worker-1 (0.50488) explore worker-9 (0.93622), initial score = -1.00000
+Worker-8 (0.69912) explore worker-9 (0.93622), initial score = -1.00000
+ETA = 54063 seconds
+************************************************** Generation 106 START **************************************************
+Worker-8 score trained from 0.49359 --> 0.49954
+Worker-5 score trained from 0.49985 --> 0.50046
+Worker-6 score trained from 0.49542 --> 0.50046
+Worker-9 score trained from 0.93622 --> 0.93729
+Worker-0 score trained from 0.93531 --> 0.93637
+Worker-2 score trained from 0.93622 --> 0.93500
+Worker-4 score trained from 0.93363 --> 0.93287
+Worker-1 score trained from 0.49939 --> 0.91807
+Worker-7 score trained from 0.93332 --> 0.93149
+Worker-3 score trained from 0.49756 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 8, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.9372902,)
+Worst workers : (1, 6, 5, 3, 8)
+Worst scores : (0.9180653, 0.50045776, 0.50045776, 0.50045776, 0.49954227)
+Worker-8 (0.49954) explore worker-9 (0.93729), initial score = -1.00000
+Worker-5 (0.50046) explore worker-9 (0.93729), initial score = -1.00000
+Worker-6 (0.50046) explore worker-9 (0.93729), initial score = -1.00000
+Worker-1 (0.91807) explore worker-9 (0.93729), initial score = -1.00000
+Worker-3 (0.50046) explore worker-9 (0.93729), initial score = -1.00000
+ETA = 53816 seconds
+************************************************** Generation 107 START **************************************************
+Worker-6 score trained from 0.50046 --> 0.50046
+Worker-0 score trained from 0.93637 --> 0.93500
+Worker-3 score trained from 0.50046 --> 0.55249
+Worker-8 score trained from 0.52884 --> 0.85536
+Worker-9 score trained from 0.93729 --> 0.93897
+Worker-5 score trained from 0.50107 --> 0.67104
+Worker-2 score trained from 0.93500 --> 0.93637
+Worker-1 score trained from 0.50290 --> 0.51358
+Worker-7 score trained from 0.93149 --> 0.93241
+Worker-4 score trained from 0.93287 --> 0.93546
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 9, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.93896854,)
+Worst workers : (8, 5, 3, 1, 6)
+Worst scores : (0.8553555, 0.6710406, 0.552487, 0.5135795, 0.50045776)
+Worker-6 (0.50046) explore worker-9 (0.93897), initial score = -1.00000
+Worker-5 (0.67104) explore worker-9 (0.93897), initial score = -1.00000
+Worker-8 (0.85536) explore worker-9 (0.93897), initial score = -1.00000
+Worker-3 (0.55249) explore worker-9 (0.93897), initial score = -1.00000
+Worker-1 (0.51358) explore worker-9 (0.93897), initial score = -1.00000
+ETA = 53436 seconds
+************************************************** Generation 108 START **************************************************
+Worker-5 score trained from 0.49451 --> 0.59353
+Worker-0 score trained from 0.93500 --> 0.93699
+Worker-9 score trained from 0.93897 --> 0.93576
+Worker-2 score trained from 0.93637 --> 0.93546
+Worker-3 score trained from 0.50092 --> 0.50046
+Worker-4 score trained from 0.93546 --> 0.93302
+Worker-8 score trained from 0.52380 --> 0.66265
+Worker-6 score trained from 0.49954 --> 0.93363
+Worker-1 score trained from 0.50915 --> 0.84940
+Worker-7 score trained from 0.93241 --> 0.92829
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9369851,)
+Worst workers : (7, 1, 8, 5, 3)
+Worst scores : (0.92828804, 0.84940493, 0.66264874, 0.59353065, 0.50045776)
+Worker-5 (0.59353) explore worker-0 (0.93699), initial score = -1.00000
+Worker-3 (0.50046) explore worker-0 (0.93699), initial score = -1.00000
+Worker-8 (0.66265) explore worker-0 (0.93699), initial score = -1.00000
+Worker-1 (0.84940) explore worker-0 (0.93699), initial score = -1.00000
+Worker-7 (0.92829) explore worker-0 (0.93699), initial score = -1.00000
+ETA = 53139 seconds
+************************************************** Generation 109 START **************************************************
+Worker-1 score trained from 0.50046 --> 0.50046
+Worker-3 score trained from 0.50046 --> 0.90800
+Worker-5 score trained from 0.50000 --> 0.87962
+Worker-8 score trained from 0.50366 --> 0.50046
+Worker-0 score trained from 0.93699 --> 0.93409
+Worker-9 score trained from 0.93576 --> 0.93790
+Worker-2 score trained from 0.93546 --> 0.93378
+Worker-7 score trained from 0.49847 --> 0.50046
+Worker-4 score trained from 0.93302 --> 0.93378
+Worker-6 score trained from 0.93363 --> 0.93576
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 1, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.93790054,)
+Worst workers : (3, 5, 8, 7, 1)
+Worst scores : (0.9079951, 0.8796155, 0.50045776, 0.50045776, 0.50045776)
+Worker-1 (0.50046) explore worker-9 (0.93790), initial score = -1.00000
+Worker-3 (0.90800) explore worker-9 (0.93790), initial score = -1.00000
+Worker-5 (0.87962) explore worker-9 (0.93790), initial score = -1.00000
+Worker-8 (0.50046) explore worker-9 (0.93790), initial score = -1.00000
+Worker-7 (0.50046) explore worker-9 (0.93790), initial score = -1.00000
+ETA = 52796 seconds
+************************************************** Generation 110 START **************************************************
+Worker-1 score trained from 0.49985 --> 0.50046
+Worker-3 score trained from 0.50000 --> 0.50046
+Worker-8 score trained from 0.50046 --> 0.84315
+Worker-9 score trained from 0.93790 --> 0.93470
+Worker-0 score trained from 0.93409 --> 0.93622
+Worker-2 score trained from 0.93378 --> 0.93271
+Worker-7 score trained from 0.49741 --> 0.49954
+Worker-5 score trained from 0.50153 --> 0.50046
+Worker-4 score trained from 0.93378 --> 0.93714
+Worker-6 score trained from 0.93576 --> 0.93714
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 1, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.9371376,)
+Worst workers : (8, 5, 3, 1, 7)
+Worst scores : (0.84314924, 0.50045776, 0.50045776, 0.50045776, 0.49954227)
+Worker-3 (0.50046) explore worker-6 (0.93714), initial score = -1.00000
+Worker-7 (0.49954) explore worker-6 (0.93714), initial score = -1.00000
+Worker-5 (0.50046) explore worker-6 (0.93714), initial score = -1.00000
+Worker-8 (0.84315) explore worker-6 (0.93714), initial score = -1.00000
+Worker-1 (0.50046) explore worker-6 (0.93714), initial score = -1.00000
+ETA = 52477 seconds
+************************************************** Generation 111 START **************************************************
+Worker-5 score trained from 0.50046 --> 0.50046
+Worker-0 score trained from 0.93622 --> 0.93424
+Worker-7 score trained from 0.49466 --> 0.49954
+Worker-8 score trained from 0.49985 --> 0.50046
+Worker-9 score trained from 0.93470 --> 0.93378
+Worker-1 score trained from 0.49985 --> 0.50046
+Worker-2 score trained from 0.93271 --> 0.93424
+Worker-4 score trained from 0.93714 --> 0.93836
+Worker-6 score trained from 0.93714 --> 0.93515
+Worker-3 score trained from 0.49817 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 1}
+Best workers : (4,)
+Best scores : (0.93835825,)
+Worst workers : (8, 5, 3, 1, 7)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.50045776, 0.49954227)
+Worker-5 (0.50046) explore worker-4 (0.93836), initial score = -1.00000
+Worker-7 (0.49954) explore worker-4 (0.93836), initial score = -1.00000
+Worker-1 (0.50046) explore worker-4 (0.93836), initial score = -1.00000
+Worker-8 (0.50046) explore worker-4 (0.93836), initial score = -1.00000
+Worker-3 (0.50046) explore worker-4 (0.93836), initial score = -1.00000
+ETA = 52213 seconds
+************************************************** Generation 112 START **************************************************
+Worker-0 score trained from 0.93424 --> 0.93637
+Worker-7 score trained from 0.49695 --> 0.58300
+Worker-2 score trained from 0.93424 --> 0.93546
+Worker-9 score trained from 0.93378 --> 0.93622
+Worker-5 score trained from 0.49878 --> 0.54654
+Worker-4 score trained from 0.93836 --> 0.93424
+Worker-6 score trained from 0.93515 --> 0.93622
+Worker-3 score trained from 0.49832 --> 0.50046
+Worker-8 score trained from 0.50015 --> 0.92875
+Worker-1 score trained from 0.50046 --> 0.86054
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9363747,)
+Worst workers : (8, 1, 7, 5, 3)
+Worst scores : (0.9287458, 0.8605432, 0.58300275, 0.54653645, 0.50045776)
+Worker-7 (0.58300) explore worker-0 (0.93637), initial score = -1.00000
+Worker-1 (0.86054) explore worker-0 (0.93637), initial score = -1.00000
+Worker-5 (0.54654) explore worker-0 (0.93637), initial score = -1.00000
+Worker-8 (0.92875) explore worker-0 (0.93637), initial score = -1.00000
+Worker-3 (0.50046) explore worker-0 (0.93637), initial score = -1.00000
+ETA = 51962 seconds
+************************************************** Generation 113 START **************************************************
+Worker-8 score trained from 0.50092 --> 0.50046
+Worker-9 score trained from 0.93622 --> 0.93714
+Worker-0 score trained from 0.93637 --> 0.93653
+Worker-5 score trained from 0.50107 --> 0.88374
+Worker-2 score trained from 0.93546 --> 0.93622
+Worker-7 score trained from 0.50046 --> 0.50046
+Worker-3 score trained from 0.49786 --> 0.50046
+Worker-1 score trained from 0.40708 --> 0.93042
+Worker-4 score trained from 0.93424 --> 0.93515
+Worker-6 score trained from 0.93622 --> 0.93317
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 1, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.9371376,)
+Worst workers : (1, 5, 8, 7, 3)
+Worst scores : (0.93042415, 0.8837351, 0.50045776, 0.50045776, 0.50045776)
+Worker-7 (0.50046) explore worker-9 (0.93714), initial score = -1.00000
+Worker-5 (0.88374) explore worker-9 (0.93714), initial score = -1.00000
+Worker-8 (0.50046) explore worker-9 (0.93714), initial score = -1.00000
+Worker-1 (0.93042) explore worker-9 (0.93714), initial score = -1.00000
+Worker-3 (0.50046) explore worker-9 (0.93714), initial score = -1.00000
+ETA = 51671 seconds
+************************************************** Generation 114 START **************************************************
+Worker-5 score trained from 0.50748 --> 0.49954
+Worker-7 score trained from 0.49985 --> 0.88892
+Worker-9 score trained from 0.93714 --> 0.93637
+Worker-0 score trained from 0.93653 --> 0.93454
+Worker-8 score trained from 0.49985 --> 0.50046
+Worker-4 score trained from 0.93515 --> 0.93363
+Worker-1 score trained from 0.49954 --> 0.91181
+Worker-2 score trained from 0.93622 --> 0.93363
+Worker-3 score trained from 0.49985 --> 0.50046
+Worker-6 score trained from 0.93317 --> 0.93607
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 2, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.9363747,)
+Worst workers : (1, 7, 8, 3, 5)
+Worst scores : (0.91180956, 0.8889228, 0.50045776, 0.50045776, 0.49954227)
+Worker-5 (0.49954) explore worker-9 (0.93637), initial score = -1.00000
+Worker-7 (0.88892) explore worker-9 (0.93637), initial score = -1.00000
+Worker-3 (0.50046) explore worker-9 (0.93637), initial score = -1.00000
+Worker-8 (0.50046) explore worker-9 (0.93637), initial score = -1.00000
+Worker-1 (0.91181) explore worker-9 (0.93637), initial score = -1.00000
+ETA = 51306 seconds
+************************************************** Generation 115 START **************************************************
+Worker-1 score trained from 0.65853 --> 0.92325
+Worker-3 score trained from 0.50046 --> 0.50046
+Worker-7 score trained from 0.50046 --> 0.50046
+Worker-2 score trained from 0.93363 --> 0.93348
+Worker-0 score trained from 0.93454 --> 0.93699
+Worker-9 score trained from 0.93637 --> 0.93607
+Worker-5 score trained from 0.50046 --> 0.50046
+Worker-8 score trained from 0.44568 --> 0.83460
+Worker-4 score trained from 0.93363 --> 0.93409
+Worker-6 score trained from 0.93607 --> 0.93546
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9369851,)
+Worst workers : (1, 8, 7, 5, 3)
+Worst scores : (0.923253, 0.8346048, 0.50045776, 0.50045776, 0.50045776)
+Worker-7 (0.50046) explore worker-0 (0.93699), initial score = -1.00000
+Worker-3 (0.50046) explore worker-0 (0.93699), initial score = -1.00000
+Worker-1 (0.92325) explore worker-0 (0.93699), initial score = -1.00000
+Worker-8 (0.83460) explore worker-0 (0.93699), initial score = -1.00000
+Worker-5 (0.50046) explore worker-0 (0.93699), initial score = -1.00000
+ETA = 51001 seconds
+************************************************** Generation 116 START **************************************************
+Worker-7 score trained from 0.49985 --> 0.50046
+Worker-5 score trained from 0.50046 --> 0.50046
+Worker-8 score trained from 0.50244 --> 0.50046
+Worker-1 score trained from 0.50366 --> 0.50046
+Worker-0 score trained from 0.93699 --> 0.93668
+Worker-9 score trained from 0.93607 --> 0.93637
+Worker-2 score trained from 0.93348 --> 0.93470
+Worker-3 score trained from 0.50046 --> 0.50046
+Worker-4 score trained from 0.93409 --> 0.93500
+Worker-6 score trained from 0.93546 --> 0.93805
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 1, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.9380531,)
+Worst workers : (8, 7, 5, 3, 1)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-7 (0.50046) explore worker-6 (0.93805), initial score = -1.00000
+Worker-8 (0.50046) explore worker-6 (0.93805), initial score = -1.00000
+Worker-1 (0.50046) explore worker-6 (0.93805), initial score = -1.00000
+Worker-5 (0.50046) explore worker-6 (0.93805), initial score = -1.00000
+Worker-3 (0.50046) explore worker-6 (0.93805), initial score = -1.00000
+ETA = 50668 seconds
+************************************************** Generation 117 START **************************************************
+Worker-0 score trained from 0.93668 --> 0.93210
+Worker-9 score trained from 0.93637 --> 0.93470
+Worker-5 score trained from 0.50183 --> 0.49969
+Worker-3 score trained from 0.50046 --> 0.50046
+Worker-2 score trained from 0.93470 --> 0.93424
+Worker-4 score trained from 0.93500 --> 0.93622
+Worker-7 score trained from 0.49985 --> 0.50046
+Worker-6 score trained from 0.93805 --> 0.93729
+Worker-8 score trained from 0.50381 --> 0.50046
+Worker-1 score trained from 0.50015 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 2, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.9372902,)
+Worst workers : (8, 7, 3, 1, 5)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.50045776, 0.49969485)
+Worker-5 (0.49969) explore worker-6 (0.93729), initial score = -1.00000
+Worker-3 (0.50046) explore worker-6 (0.93729), initial score = -1.00000
+Worker-7 (0.50046) explore worker-6 (0.93729), initial score = -1.00000
+Worker-1 (0.50046) explore worker-6 (0.93729), initial score = -1.00000
+Worker-8 (0.50046) explore worker-6 (0.93729), initial score = -1.00000
+ETA = 50507 seconds
+************************************************** Generation 118 START **************************************************
+Worker-1 score trained from 0.49985 --> 0.50046
+Worker-7 score trained from 0.51129 --> 0.93180
+Worker-0 score trained from 0.93210 --> 0.93531
+Worker-8 score trained from 0.49908 --> 0.93515
+Worker-9 score trained from 0.93470 --> 0.93439
+Worker-2 score trained from 0.93424 --> 0.93485
+Worker-4 score trained from 0.93622 --> 0.93363
+Worker-6 score trained from 0.93729 --> 0.93576
+Worker-5 score trained from 0.49496 --> 0.50046
+Worker-3 score trained from 0.50046 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 3, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.93576443,)
+Worst workers : (4, 7, 5, 3, 1)
+Worst scores : (0.9336283, 0.9317974, 0.50045776, 0.50045776, 0.50045776)
+Worker-1 (0.50046) explore worker-6 (0.93576), initial score = -1.00000
+Worker-7 (0.93180) explore worker-6 (0.93576), initial score = -1.00000
+Worker-4 (0.93363) explore worker-6 (0.93576), initial score = -1.00000
+Worker-3 (0.50046) explore worker-6 (0.93576), initial score = -1.00000
+Worker-5 (0.50046) explore worker-6 (0.93576), initial score = -1.00000
+ETA = 50213 seconds
+************************************************** Generation 119 START **************************************************
+Worker-9 score trained from 0.93439 --> 0.93668
+Worker-0 score trained from 0.93531 --> 0.93668
+Worker-8 score trained from 0.93515 --> 0.93226
+Worker-5 score trained from 0.49985 --> 0.50046
+Worker-3 score trained from 0.50061 --> 0.50046
+Worker-2 score trained from 0.93485 --> 0.93561
+Worker-6 score trained from 0.93576 --> 0.93821
+Worker-7 score trained from 0.49985 --> 0.50046
+Worker-4 score trained from 0.50046 --> 0.50046
+Worker-1 score trained from 0.49939 --> 0.50046
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 4, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.93820566,)
+Worst workers : (7, 5, 4, 3, 1)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-5 (0.50046) explore worker-6 (0.93821), initial score = -1.00000
+Worker-3 (0.50046) explore worker-6 (0.93821), initial score = -1.00000
+Worker-7 (0.50046) explore worker-6 (0.93821), initial score = -1.00000
+Worker-1 (0.50046) explore worker-6 (0.93821), initial score = -1.00000
+Worker-4 (0.50046) explore worker-6 (0.93821), initial score = -1.00000
+ETA = 50197 seconds
+************************************************** Generation 120 START **************************************************
+Worker-9 score trained from 0.93668 --> 0.93561
+Worker-8 score trained from 0.93226 --> 0.93790
+Worker-0 score trained from 0.93668 --> 0.93531
+Worker-1 score trained from 0.50046 --> 0.93119
+Worker-3 score trained from 0.50519 --> 0.50046
+Worker-7 score trained from 0.50153 --> 0.93042
+Worker-4 score trained from 0.50275 --> 0.50046
+Worker-2 score trained from 0.93561 --> 0.93500
+Worker-6 score trained from 0.93821 --> 0.93226
+Worker-5 score trained from 0.49588 --> 0.69545
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93790054,)
+Worst workers : (1, 7, 5, 4, 3)
+Worst scores : (0.93118703, 0.93042415, 0.69545317, 0.50045776, 0.50045776)
+Worker-1 (0.93119) explore worker-8 (0.93790), initial score = -1.00000
+Worker-3 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-7 (0.93042) explore worker-8 (0.93790), initial score = -1.00000
+Worker-4 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-5 (0.69545) explore worker-8 (0.93790), initial score = -1.00000
+ETA = 49913 seconds
+************************************************** Generation 121 START **************************************************
+Worker-0 score trained from 0.93531 --> 0.93546
+Worker-3 score trained from 0.50381 --> 0.50046
+Worker-9 score trained from 0.93561 --> 0.93637
+Worker-5 score trained from 0.49893 --> 0.50046
+Worker-4 score trained from 0.50381 --> 0.50046
+Worker-8 score trained from 0.93790 --> 0.93256
+Worker-2 score trained from 0.93500 --> 0.93470
+Worker-6 score trained from 0.93226 --> 0.93699
+Worker-1 score trained from 0.50748 --> 0.50046
+Worker-7 score trained from 0.50046 --> 0.92432
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 1, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (6,)
+Best scores : (0.9369851,)
+Worst workers : (7, 5, 4, 3, 1)
+Worst scores : (0.924321, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-4 (0.50046) explore worker-6 (0.93699), initial score = -1.00000
+Worker-5 (0.50046) explore worker-6 (0.93699), initial score = -1.00000
+Worker-3 (0.50046) explore worker-6 (0.93699), initial score = -1.00000
+Worker-1 (0.50046) explore worker-6 (0.93699), initial score = -1.00000
+Worker-7 (0.92432) explore worker-6 (0.93699), initial score = -1.00000
+ETA = 49669 seconds
+************************************************** Generation 122 START **************************************************
+Worker-1 score trained from 0.49527 --> 0.50000
+Worker-4 score trained from 0.49985 --> 0.50046
+Worker-8 score trained from 0.93256 --> 0.93836
+Worker-0 score trained from 0.93546 --> 0.93744
+Worker-9 score trained from 0.93637 --> 0.93637
+Worker-2 score trained from 0.93470 --> 0.93439
+Worker-3 score trained from 0.49283 --> 0.50046
+Worker-6 score trained from 0.93699 --> 0.93561
+Worker-7 score trained from 0.49893 --> 0.50046
+Worker-5 score trained from 0.50015 --> 0.50046
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93835825,)
+Worst workers : (7, 5, 4, 3, 1)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.50045776, 0.5)
+Worker-1 (0.50000) explore worker-8 (0.93836), initial score = -1.00000
+Worker-4 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-5 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-3 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+ETA = 49567 seconds
+************************************************** Generation 123 START **************************************************
+Worker-5 score trained from 0.50046 --> 0.50046
+Worker-1 score trained from 0.50290 --> 0.50046
+Worker-4 score trained from 0.49664 --> 0.50046
+Worker-0 score trained from 0.93744 --> 0.93439
+Worker-8 score trained from 0.93836 --> 0.93866
+Worker-9 score trained from 0.93637 --> 0.93637
+Worker-7 score trained from 0.50198 --> 0.88770
+Worker-3 score trained from 0.49954 --> 0.88908
+Worker-2 score trained from 0.93439 --> 0.93683
+Worker-6 score trained from 0.93561 --> 0.93531
+Leaderboard: {8: 2, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9386634,)
+Worst workers : (3, 7, 5, 4, 1)
+Worst scores : (0.8890754, 0.88770217, 0.50045776, 0.50045776, 0.50045776)
+Worker-1 (0.50046) explore worker-8 (0.93866), initial score = -1.00000
+Worker-4 (0.50046) explore worker-8 (0.93866), initial score = -1.00000
+Worker-5 (0.50046) explore worker-8 (0.93866), initial score = -1.00000
+Worker-7 (0.88770) explore worker-8 (0.93866), initial score = -1.00000
+Worker-3 (0.88908) explore worker-8 (0.93866), initial score = -1.00000
+ETA = 49253 seconds
+************************************************** Generation 124 START **************************************************
+Worker-3 score trained from 0.50381 --> 0.50046
+Worker-4 score trained from 0.50381 --> 0.50046
+Worker-5 score trained from 0.50198 --> 0.85841
+Worker-1 score trained from 0.50214 --> 0.49649
+Worker-0 score trained from 0.93439 --> 0.93576
+Worker-8 score trained from 0.93866 --> 0.93592
+Worker-9 score trained from 0.93637 --> 0.93622
+Worker-2 score trained from 0.93683 --> 0.93546
+Worker-7 score trained from 0.50137 --> 0.50046
+Worker-6 score trained from 0.93531 --> 0.93546
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 1, 5: 0, 4: 0}
+Best workers : (9,)
+Best scores : (0.93622214,)
+Worst workers : (5, 7, 4, 3, 1)
+Worst scores : (0.8584071, 0.50045776, 0.50045776, 0.50045776, 0.4964907)
+Worker-3 (0.50046) explore worker-9 (0.93622), initial score = -1.00000
+Worker-1 (0.49649) explore worker-9 (0.93622), initial score = -1.00000
+Worker-5 (0.85841) explore worker-9 (0.93622), initial score = -1.00000
+Worker-4 (0.50046) explore worker-9 (0.93622), initial score = -1.00000
+Worker-7 (0.50046) explore worker-9 (0.93622), initial score = -1.00000
+ETA = 48939 seconds
+************************************************** Generation 125 START **************************************************
+Worker-5 score trained from 0.49969 --> 0.50046
+Worker-7 score trained from 0.50198 --> 0.50046
+Worker-4 score trained from 0.49985 --> 0.50046
+Worker-0 score trained from 0.93576 --> 0.93637
+Worker-1 score trained from 0.49405 --> 0.50046
+Worker-8 score trained from 0.93592 --> 0.93851
+Worker-9 score trained from 0.93622 --> 0.93637
+Worker-2 score trained from 0.93546 --> 0.93271
+Worker-3 score trained from 0.49985 --> 0.50046
+Worker-6 score trained from 0.93546 --> 0.93546
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93851084,)
+Worst workers : (7, 5, 4, 3, 1)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-5 (0.50046) explore worker-8 (0.93851), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93851), initial score = -1.00000
+Worker-1 (0.50046) explore worker-8 (0.93851), initial score = -1.00000
+Worker-4 (0.50046) explore worker-8 (0.93851), initial score = -1.00000
+Worker-3 (0.50046) explore worker-8 (0.93851), initial score = -1.00000
+ETA = 48621 seconds
+************************************************** Generation 126 START **************************************************
+Worker-3 score trained from 0.50046 --> 0.50046
+Worker-7 score trained from 0.49771 --> 0.50046
+Worker-5 score trained from 0.49847 --> 0.50046
+Worker-4 score trained from 0.50046 --> 0.89152
+Worker-0 score trained from 0.93637 --> 0.93470
+Worker-8 score trained from 0.93851 --> 0.93836
+Worker-9 score trained from 0.93637 --> 0.93714
+Worker-2 score trained from 0.93271 --> 0.93424
+Worker-1 score trained from 0.49954 --> 0.82560
+Worker-6 score trained from 0.93546 --> 0.93439
+Leaderboard: {8: 2, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93835825,)
+Worst workers : (4, 1, 7, 5, 3)
+Worst scores : (0.8915166, 0.8256027, 0.50045776, 0.50045776, 0.50045776)
+Worker-3 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-4 (0.89152) explore worker-8 (0.93836), initial score = -1.00000
+Worker-5 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-1 (0.82560) explore worker-8 (0.93836), initial score = -1.00000
+ETA = 48342 seconds
+************************************************** Generation 127 START **************************************************
+Worker-7 score trained from 0.50122 --> 0.50046
+Worker-3 score trained from 0.50290 --> 0.50046
+Worker-5 score trained from 0.50015 --> 0.50046
+Worker-4 score trained from 0.49985 --> 0.50046
+Worker-1 score trained from 0.50046 --> 0.50046
+Worker-0 score trained from 0.93470 --> 0.93454
+Worker-8 score trained from 0.93836 --> 0.93836
+Worker-9 score trained from 0.93714 --> 0.93790
+Worker-2 score trained from 0.93424 --> 0.93744
+Worker-6 score trained from 0.93439 --> 0.93500
+Leaderboard: {8: 3, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93835825,)
+Worst workers : (7, 5, 4, 3, 1)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-7 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-5 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-1 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-4 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+Worker-3 (0.50046) explore worker-8 (0.93836), initial score = -1.00000
+ETA = 48053 seconds
+************************************************** Generation 128 START **************************************************
+Worker-3 score trained from 0.52487 --> 0.55813
+Worker-1 score trained from 0.49817 --> 0.50046
+Worker-5 score trained from 0.49954 --> 0.86970
+Worker-4 score trained from 0.45865 --> 0.93195
+Worker-9 score trained from 0.93790 --> 0.93668
+Worker-0 score trained from 0.93454 --> 0.93683
+Worker-8 score trained from 0.93836 --> 0.93317
+Worker-7 score trained from 0.50015 --> 0.50046
+Worker-2 score trained from 0.93744 --> 0.93515
+Worker-6 score trained from 0.93500 --> 0.93317
+Leaderboard: {8: 0, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 1, 9: 0, 5: 0, 4: 0}
+Best workers : (0,)
+Best scores : (0.9368325,)
+Worst workers : (4, 5, 3, 7, 1)
+Worst scores : (0.93195, 0.86969787, 0.5581324, 0.50045776, 0.50045776)
+Worker-1 (0.50046) explore worker-0 (0.93683), initial score = -1.00000
+Worker-3 (0.55813) explore worker-0 (0.93683), initial score = -1.00000
+Worker-7 (0.50046) explore worker-0 (0.93683), initial score = -1.00000
+Worker-5 (0.86970) explore worker-0 (0.93683), initial score = -1.00000
+Worker-4 (0.93195) explore worker-0 (0.93683), initial score = -1.00000
+ETA = 47790 seconds
+************************************************** Generation 129 START **************************************************
+Worker-3 score trained from 0.50168 --> 0.50046
+Worker-7 score trained from 0.50137 --> 0.49954
+Worker-5 score trained from 0.41059 --> 0.92096
+Worker-1 score trained from 0.50046 --> 0.49954
+Worker-8 score trained from 0.93317 --> 0.93744
+Worker-0 score trained from 0.93683 --> 0.93500
+Worker-9 score trained from 0.93668 --> 0.93470
+Worker-4 score trained from 0.49985 --> 0.50046
+Worker-2 score trained from 0.93515 --> 0.93592
+Worker-6 score trained from 0.93317 --> 0.93592
+Leaderboard: {8: 1, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9374428,)
+Worst workers : (5, 4, 3, 7, 1)
+Worst scores : (0.9209643, 0.50045776, 0.50045776, 0.49954227, 0.49954227)
+Worker-3 (0.50046) explore worker-8 (0.93744), initial score = -1.00000
+Worker-5 (0.92096) explore worker-8 (0.93744), initial score = -1.00000
+Worker-1 (0.49954) explore worker-8 (0.93744), initial score = -1.00000
+Worker-7 (0.49954) explore worker-8 (0.93744), initial score = -1.00000
+Worker-4 (0.50046) explore worker-8 (0.93744), initial score = -1.00000
+ETA = 47512 seconds
+************************************************** Generation 130 START **************************************************
+Worker-1 score trained from 0.50626 --> 0.50046
+Worker-5 score trained from 0.50031 --> 0.50046
+Worker-3 score trained from 0.50427 --> 0.50046
+Worker-7 score trained from 0.54577 --> 0.82591
+Worker-9 score trained from 0.93470 --> 0.93637
+Worker-0 score trained from 0.93500 --> 0.93622
+Worker-4 score trained from 0.50046 --> 0.50046
+Worker-8 score trained from 0.93744 --> 0.93805
+Worker-2 score trained from 0.93592 --> 0.93363
+Worker-6 score trained from 0.93592 --> 0.93531
+Leaderboard: {8: 2, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9380531,)
+Worst workers : (7, 5, 4, 3, 1)
+Worst scores : (0.8259078, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-5 (0.50046) explore worker-8 (0.93805), initial score = -1.00000
+Worker-1 (0.50046) explore worker-8 (0.93805), initial score = -1.00000
+Worker-3 (0.50046) explore worker-8 (0.93805), initial score = -1.00000
+Worker-4 (0.50046) explore worker-8 (0.93805), initial score = -1.00000
+Worker-7 (0.82591) explore worker-8 (0.93805), initial score = -1.00000
+ETA = 47243 seconds
+************************************************** Generation 131 START **************************************************
+Worker-3 score trained from 0.49573 --> 0.50046
+Worker-1 score trained from 0.49664 --> 0.50046
+Worker-8 score trained from 0.93805 --> 0.93714
+Worker-0 score trained from 0.93622 --> 0.93439
+Worker-9 score trained from 0.93637 --> 0.93699
+Worker-5 score trained from 0.49985 --> 0.50046
+Worker-2 score trained from 0.93363 --> 0.93485
+Worker-7 score trained from 0.49695 --> 0.50046
+Worker-4 score trained from 0.49817 --> 0.83247
+Worker-6 score trained from 0.93531 --> 0.93576
+Leaderboard: {8: 3, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9371376,)
+Worst workers : (4, 7, 5, 3, 1)
+Worst scores : (0.83246875, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-5 (0.50046) explore worker-8 (0.93714), initial score = -1.00000
+Worker-1 (0.50046) explore worker-8 (0.93714), initial score = -1.00000
+Worker-3 (0.50046) explore worker-8 (0.93714), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93714), initial score = -1.00000
+Worker-4 (0.83247) explore worker-8 (0.93714), initial score = -1.00000
+ETA = 46954 seconds
+************************************************** Generation 132 START **************************************************
+Worker-1 score trained from 0.49802 --> 0.50046
+Worker-8 score trained from 0.93714 --> 0.93790
+Worker-0 score trained from 0.93439 --> 0.93409
+Worker-3 score trained from 0.50381 --> 0.69301
+Worker-7 score trained from 0.50580 --> 0.50046
+Worker-9 score trained from 0.93699 --> 0.93439
+Worker-4 score trained from 0.50275 --> 0.50046
+Worker-2 score trained from 0.93485 --> 0.93393
+Worker-5 score trained from 0.49954 --> 0.90738
+Worker-6 score trained from 0.93576 --> 0.93332
+Leaderboard: {8: 4, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93790054,)
+Worst workers : (5, 3, 7, 4, 1)
+Worst scores : (0.9073848, 0.6930119, 0.50045776, 0.50045776, 0.50045776)
+Worker-1 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-4 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-3 (0.69301) explore worker-8 (0.93790), initial score = -1.00000
+Worker-5 (0.90738) explore worker-8 (0.93790), initial score = -1.00000
+ETA = 46698 seconds
+************************************************** Generation 133 START **************************************************
+Worker-5 score trained from 0.50046 --> 0.92768
+Worker-4 score trained from 0.50046 --> 0.50046
+Worker-8 score trained from 0.93790 --> 0.93775
+Worker-0 score trained from 0.93409 --> 0.93760
+Worker-9 score trained from 0.93439 --> 0.93546
+Worker-1 score trained from 0.50336 --> 0.50046
+Worker-7 score trained from 0.49924 --> 0.50046
+Worker-2 score trained from 0.93393 --> 0.93424
+Worker-3 score trained from 0.50244 --> 0.88587
+Worker-6 score trained from 0.93332 --> 0.93241
+Leaderboard: {8: 5, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93774796,)
+Worst workers : (5, 3, 7, 4, 1)
+Worst scores : (0.92767775, 0.88587123, 0.50045776, 0.50045776, 0.50045776)
+Worker-5 (0.92768) explore worker-8 (0.93775), initial score = -1.00000
+Worker-4 (0.50046) explore worker-8 (0.93775), initial score = -1.00000
+Worker-1 (0.50046) explore worker-8 (0.93775), initial score = -1.00000
+Worker-3 (0.88587) explore worker-8 (0.93775), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93775), initial score = -1.00000
+ETA = 46456 seconds
+************************************************** Generation 134 START **************************************************
+Worker-7 score trained from 0.49817 --> 0.50046
+Worker-1 score trained from 0.49451 --> 0.50046
+Worker-3 score trained from 0.50046 --> 0.50046
+Worker-4 score trained from 0.49405 --> 0.50046
+Worker-0 score trained from 0.93760 --> 0.93363
+Worker-8 score trained from 0.93775 --> 0.93729
+Worker-9 score trained from 0.93546 --> 0.93454
+Worker-5 score trained from 0.49985 --> 0.50046
+Worker-2 score trained from 0.93424 --> 0.93592
+Worker-6 score trained from 0.93241 --> 0.93424
+Leaderboard: {8: 6, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9372902,)
+Worst workers : (7, 5, 4, 3, 1)
+Worst scores : (0.50045776, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-1 (0.50046) explore worker-8 (0.93729), initial score = -1.00000
+Worker-3 (0.50046) explore worker-8 (0.93729), initial score = -1.00000
+Worker-5 (0.50046) explore worker-8 (0.93729), initial score = -1.00000
+Worker-4 (0.50046) explore worker-8 (0.93729), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93729), initial score = -1.00000
+ETA = 46190 seconds
+************************************************** Generation 135 START **************************************************
+Worker-5 score trained from 0.50198 --> 0.50046
+Worker-3 score trained from 0.50031 --> 0.50046
+Worker-7 score trained from 0.50046 --> 0.50046
+Worker-0 score trained from 0.93363 --> 0.93653
+Worker-8 score trained from 0.93729 --> 0.93729
+Worker-2 score trained from 0.93592 --> 0.93424
+Worker-9 score trained from 0.93454 --> 0.93637
+Worker-4 score trained from 0.49847 --> 0.83674
+Worker-6 score trained from 0.93424 --> 0.93500
+Worker-1 score trained from 0.49542 --> 0.49619
+Leaderboard: {8: 7, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.9372902,)
+Worst workers : (4, 7, 5, 3, 1)
+Worst scores : (0.8367409, 0.50045776, 0.50045776, 0.50045776, 0.49618554)
+Worker-3 (0.50046) explore worker-8 (0.93729), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93729), initial score = -1.00000
+Worker-5 (0.50046) explore worker-8 (0.93729), initial score = -1.00000
+Worker-4 (0.83674) explore worker-8 (0.93729), initial score = -1.00000
+Worker-1 (0.49619) explore worker-8 (0.93729), initial score = -1.00000
+ETA = 45946 seconds
+************************************************** Generation 136 START **************************************************
+Worker-1 score trained from 0.50046 --> 0.50046
+Worker-5 score trained from 0.49573 --> 0.50046
+Worker-4 score trained from 0.50473 --> 0.91532
+Worker-0 score trained from 0.93653 --> 0.93622
+Worker-3 score trained from 0.49985 --> 0.50046
+Worker-7 score trained from 0.49985 --> 0.50046
+Worker-8 score trained from 0.93729 --> 0.93790
+Worker-9 score trained from 0.93637 --> 0.93500
+Worker-2 score trained from 0.93424 --> 0.93317
+Worker-6 score trained from 0.93500 --> 0.93256
+Leaderboard: {8: 8, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.93790054,)
+Worst workers : (4, 7, 5, 3, 1)
+Worst scores : (0.9153189, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-5 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-4 (0.91532) explore worker-8 (0.93790), initial score = -1.00000
+Worker-3 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-1 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93790), initial score = -1.00000
+ETA = 45681 seconds
+************************************************** Generation 137 START **************************************************
+Worker-0 score trained from 0.93622 --> 0.93317
+Worker-4 score trained from 0.50320 --> 0.93195
+Worker-5 score trained from 0.50046 --> 0.50046
+Worker-3 score trained from 0.50046 --> 0.50046
+Worker-7 score trained from 0.50305 --> 0.50046
+Worker-8 score trained from 0.93790 --> 0.93592
+Worker-1 score trained from 0.50107 --> 0.50046
+Worker-9 score trained from 0.93500 --> 0.93500
+Worker-2 score trained from 0.93317 --> 0.93149
+Worker-6 score trained from 0.93256 --> 0.93256
+Leaderboard: {8: 9, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.935917,)
+Worst workers : (2, 7, 5, 3, 1)
+Worst scores : (0.9314922, 0.50045776, 0.50045776, 0.50045776, 0.50045776)
+Worker-3 (0.50046) explore worker-8 (0.93592), initial score = -1.00000
+Worker-7 (0.50046) explore worker-8 (0.93592), initial score = -1.00000
+Worker-5 (0.50046) explore worker-8 (0.93592), initial score = -1.00000
+Worker-1 (0.50046) explore worker-8 (0.93592), initial score = -1.00000
+Worker-2 (0.93149) explore worker-8 (0.93592), initial score = -1.00000
+ETA = 45451 seconds
+************************************************** Generation 138 START **************************************************
+Worker-4 score trained from 0.93195 --> 0.93531
+Worker-0 score trained from 0.93317 --> 0.93699
+Worker-5 score trained from 0.49954 --> 0.87412
+Worker-8 score trained from 0.93592 --> 0.93882
+Worker-7 score trained from 0.50137 --> 0.87672
+Worker-9 score trained from 0.93500 --> 0.93454
+Worker-1 score trained from 0.49817 --> 0.49817
+Worker-2 score trained from 0.50046 --> 0.71422
+Worker-3 score trained from 0.49954 --> 0.75023
+Worker-6 score trained from 0.93256 --> 0.93378
+Leaderboard: {8: 10, 3: 0, 7: 0, 6: 0, 2: 0, 1: 0, 0: 0, 9: 0, 5: 0, 4: 0}
+Best workers : (8,)
+Best scores : (0.938816,)
+Worst workers : (7, 5, 3, 2, 1)
+Worst scores : (0.8767165, 0.8741227, 0.7502289, 0.71422035, 0.49816906)
+ETA = 45214 seconds
+Worker-8 has won! Score : 0.93882

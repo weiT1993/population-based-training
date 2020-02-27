@@ -1,7 +1,7 @@
 MODEL="$1"
 NUM_WORKERS="$2"
 NUM_LAYERS="$3"
-MAX_GENERATIONS="$3"
+MAX_GENERATIONS="$4"
 
 if [ ! -d "./$NUM_LAYERS-$MODEL-population" ]; then
   mkdir ./$NUM_LAYERS-$MODEL-population
