@@ -135,7 +135,7 @@ class CNN():
         activation=random.choice(self.activations),
         kernel_regularizer=tf.keras.regularizers.l2(random.choice(l2_norms)),
         padding='causal',
-        input_shape=(300,2))
+        input_shape=(4096,2))
         model.add(input_layer)
 
         for i in range(self.num_layers):
@@ -195,7 +195,7 @@ class CNN():
                 activation=random.choice(self.activations),
                 kernel_regularizer=tf.keras.regularizers.l2(explore_l2_norm),
                 padding='causal',
-                input_shape=(300,2))
+                input_shape=(4096,2))
                 explore_model.add(input_layer)
             elif isinstance(good_l,tf.keras.layers.Conv1D):
                 max_kernel_size = explore_model.layers[-1].output_shape[1]
