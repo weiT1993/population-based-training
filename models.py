@@ -44,10 +44,10 @@ class FC():
         dropout_rates = [0.5,0.4,0.3,0.2,0.1]
         
         model = tf.keras.models.Sequential(name='worker_%d'%self.worker_idx)
-        input_layer = tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer')
+        input_layer = tf.keras.layers.Flatten(input_shape=(4096, 2),name='input_layer')
         model.add(input_layer)
         for i in range(self.num_layers):
-            dense_layer = tf.keras.layers.Dense(random.randint(10,600),
+            dense_layer = tf.keras.layers.Dense(random.randint(10,1000),
             activation=random.choice(activations),
             kernel_regularizer=tf.keras.regularizers.l2(random.choice(l2_norms)))
             model.add(dense_layer)
@@ -71,7 +71,7 @@ class FC():
         activations = [tf.nn.selu,tf.nn.relu,tf.nn.leaky_relu]
         good_layers = good_model.layers
         explore_model = tf.keras.models.Sequential(name='worker_%d'%self.worker_idx)
-        input_layer = tf.keras.layers.Flatten(input_shape=(300, 2),name='input_layer')
+        input_layer = tf.keras.layers.Flatten(input_shape=(4096, 2),name='input_layer')
         explore_model.add(input_layer)
         for good_l in good_layers:
             if 'input' in good_l.name or 'output' in good_l.name:
