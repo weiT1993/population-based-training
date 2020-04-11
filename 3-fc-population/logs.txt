@@ -1,0 +1,62 @@
+Worker-0 instantiated
+Worker-2 instantiated
+Worker-1 instantiated
+************************************************** Generation 0 START **************************************************
+Worker-2 score trained from 0.38358 --> 0.50000
+Worker-1 score trained from 0.50839 --> 0.93119
+Worker-0 score trained from 0.50244 --> 0.93180
+Leaderboard: {0: 1, 1: 0, 2: 0}
+Best workers : (0,)
+Best scores : (0.9317974,)
+Worst workers : (1, 2)
+Worst scores : (0.93118703, 0.5)
+Worker-2 (0.50000) explore worker-0 (0.93180), initial score = -1.00000
+Worker-1 (0.93119) explore worker-0 (0.93180), initial score = -1.00000
+ETA = 57 seconds
+************************************************** Generation 1 START **************************************************
+Worker-1 score trained from 0.54821 --> 0.93637
+Worker-0 score trained from 0.93180 --> 0.90403
+Worker-2 score trained from 0.50000 --> 0.92814
+Leaderboard: {0: 0, 1: 1, 2: 0}
+Best workers : (1,)
+Best scores : (0.9363747,)
+Worst workers : (2, 0)
+Worst scores : (0.9281355, 0.90402806)
+Worker-0 (0.90403) explore worker-1 (0.93637), initial score = -1.00000
+Worker-2 (0.92814) explore worker-1 (0.93637), initial score = -1.00000
+ETA = 49 seconds
+************************************************** Generation 2 START **************************************************
+Worker-0 score trained from 0.50000 --> 0.92096
+Worker-2 score trained from 0.55066 --> 0.87168
+Worker-1 score trained from 0.93637 --> 0.93607
+Leaderboard: {0: 0, 1: 2, 2: 0}
+Best workers : (1,)
+Best scores : (0.93606955,)
+Worst workers : (0, 2)
+Worst scores : (0.9209643, 0.8716814)
+Worker-0 (0.92096) explore worker-1 (0.93607), initial score = -1.00000
+Worker-2 (0.87168) explore worker-1 (0.93607), initial score = -1.00000
+ETA = 29 seconds
+************************************************** Generation 3 START **************************************************
+Worker-0 score trained from 0.49390 --> 0.93531
+Worker-2 score trained from 0.46796 --> 0.93592
+Worker-1 score trained from 0.93607 --> 0.93409
+Leaderboard: {0: 0, 1: 0, 2: 1}
+Best workers : (2,)
+Best scores : (0.935917,)
+Worst workers : (0, 1)
+Worst scores : (0.93530667, 0.934086)
+Worker-1 (0.93409) explore worker-2 (0.93592), initial score = -1.00000
+Worker-0 (0.93531) explore worker-2 (0.93592), initial score = -1.00000
+ETA = 13 seconds
+************************************************** Generation 4 START **************************************************
+Worker-1 score trained from 0.50000 --> 0.93531
+Worker-0 score trained from 0.50565 --> 0.93592
+Worker-2 score trained from 0.93592 --> 0.93699
+Leaderboard: {0: 0, 1: 0, 2: 2}
+Best workers : (2,)
+Best scores : (0.9369851,)
+Worst workers : (0, 1)
+Worst scores : (0.935917, 0.93530667)
+ETA = 0 seconds
+Worker-2 has the best architecture. Score : 0.93699
