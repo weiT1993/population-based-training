@@ -40,6 +40,27 @@ def read_mat(file_name, time_range, concat):
         y = np.hstack((ground_y, excited_y))
         return X, y
 
+def read_npy(file_name,dt):
+    data = np.load(file_name)
+    data = data.astype(np.float)
+    [excited_I, excited_Q, ground_I, ground_Q, groundI_test, groundQ_test] = data
+
+    ground_x = []
+    for sample_I, sample_Q in zip(ground_I[:,:dt], ground_Q[:,:dt]):
+        ground_x.append([sample_I,sample_Q])
+    ground_x = np.array(ground_x)
+    ground_y = np.zeros(ground_x.shape[0], dtype=np.int)
+
+    excited_x = []
+    for sample_I, sample_Q in zip(excited_I[:,:dt], excited_Q[:,:dt]):
+        excited_x.append([sample_I,sample_Q])
+    excited_x = np.array(excited_x)
+    excited_y = np.ones(excited_x.shape[0], dtype=np.int)
+
+    X = np.vstack((ground_x, excited_x))
+    y = np.hstack((ground_y, excited_y))
+    return X, y
+
 def read_file(filename):
     if os.path.isfile(filename):
         f = open(filename,'rb')
