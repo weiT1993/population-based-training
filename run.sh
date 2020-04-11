@@ -3,8 +3,8 @@ NUM_WORKERS="$2"
 NUM_LAYERS="$3"
 MAX_GENERATIONS="$4"
 
-source ~/.bash_profile
-# source ~/anaconda3/etc/profile.d/conda.sh
+#source ~/.bash_profile
+source ~/anaconda3/etc/profile.d/conda.sh
 conda deactivate
 conda activate pbt
 

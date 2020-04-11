@@ -47,7 +47,9 @@ def get_dataset(data_file,dt=8000):
     val_x =  scaler.transform(val_x)
     test_x =  scaler.transform(test_x)
 
-    print(test_x.shape)
+    print(train_x.shape,train_y.shape)
+    print(val_x.shape,val_y.shape)
+    print(test_x.shape,test_y.shape)
 
     dataset_train = (train_x, train_y)    
     dataset_valid = (val_x, val_y)
@@ -55,4 +57,4 @@ def get_dataset(data_file,dt=8000):
     return dataset_train, dataset_valid, dataset_test
 
 dataset_train, dataset_valid, dataset_test = get_dataset(data_file='./data/power_5freq_7.3233.npy')
-# pickle.dump({'train':dataset_train,'valid':dataset_valid,'test':dataset_test},open('./data/dataset.p','wb'))
+pickle.dump({'train':dataset_train,'valid':dataset_valid,'test':dataset_test},open('./data/dataset.p','wb'),protocol=4)
